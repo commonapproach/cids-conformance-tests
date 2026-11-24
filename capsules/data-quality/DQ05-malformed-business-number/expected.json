@@ -1,0 +1,21 @@
+{
+  "id": "DQ05-malformed-business-number",
+  "category": "data-quality",
+  "title": "Business number in the wrong format",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-IDENTIFIER-FORMAT",
+          "focusNode": "https://tamarack-youth.example/OrganizationID/Tamarack/",
+          "resultPath": "org:hasIdentifier",
+          "explanation": "A CRA business number (BN15) is 9 digits, 2 letters and 4 digits, with no spaces, e.g. 123456789RC0001."
+        }
+      ]
+    }
+  }
+}

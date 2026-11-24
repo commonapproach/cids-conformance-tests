@@ -1,0 +1,14 @@
+{
+  "id": "V04-uncommon-properties",
+  "category": "valid",
+  "title": "Less common CIDS properties",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}

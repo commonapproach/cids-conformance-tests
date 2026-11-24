@@ -1,0 +1,379 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://driftwood-gear.example/Organization/Driftwood/",
+    "hasLegalName": "Driftwood Outdoor Gear Inc.",
+    "hasAddress": [
+      "https://driftwood-gear.example/Address/Driftwood/"
+    ],
+    "hasID": [
+      "https://driftwood-gear.example/OrganizationID/Driftwood/"
+    ],
+    "hasOutcome": [
+      "https://driftwood-gear.example/Outcome/ResponsibleBusiness/"
+    ],
+    "hasIndicator": [
+      "https://driftwood-gear.example/Indicator/BImpactAssessment/"
+    ],
+    "hasOrganizationProfile": [
+      "https://driftwood-gear.example/OrganizationProfile/Driftwood/2026/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://driftwood-gear.example/Address/Driftwood/",
+    "streetAddress": "18 Sample Quay",
+    "addressLocality": "Victoria",
+    "addressRegion": "BC",
+    "postalCode": "V8W 0A2",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://driftwood-gear.example/OrganizationID/Driftwood/",
+    "hasIdentifier": "912345678RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/12",
+    "hasName": "Goal 12: Responsible consumption and production",
+    "hasDescription": "Ensure sustainable consumption and production patterns"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://driftwood-gear.example/Outcome/ResponsibleBusiness/",
+    "hasName": "Responsible business practices",
+    "hasDescription": "The company is run in a way that benefits workers, community and environment.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/12"
+    ],
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/",
+    "hasIndicator": [
+      "https://driftwood-gear.example/Indicator/BImpactAssessment/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://driftwood-gear.example/Indicator/BImpactAssessment/",
+    "hasName": "B Impact Assessment overall score",
+    "hasDescription": "Overall score from the company's B Impact Assessment (0-200 scale).",
+    "unitDescription": "Points",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/",
+    "forOutcome": "https://driftwood-gear.example/Outcome/ResponsibleBusiness/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/12"
+    ],
+    "hasIndicatorReport": [
+      "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2021",
+      "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2022",
+      "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2023",
+      "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2024",
+      "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2025"
+    ],
+    "hasCode": [
+      "https://cids-conformance.example/Code/BImpactAssessmentOverallScore"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2021",
+    "hasName": "B Impact Assessment overall score 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "84.6",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-08:00",
+    "endedAtTime": "2021-12-31T23:59:59-08:00",
+    "forIndicator": "https://driftwood-gear.example/Indicator/BImpactAssessment/",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2022",
+    "hasName": "B Impact Assessment overall score 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "86.2",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-08:00",
+    "endedAtTime": "2022-12-31T23:59:59-08:00",
+    "forIndicator": "https://driftwood-gear.example/Indicator/BImpactAssessment/",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2023",
+    "hasName": "B Impact Assessment overall score 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "89.0",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-08:00",
+    "endedAtTime": "2023-12-31T23:59:59-08:00",
+    "forIndicator": "https://driftwood-gear.example/Indicator/BImpactAssessment/",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2024",
+    "hasName": "B Impact Assessment overall score 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "91.3",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-08:00",
+    "endedAtTime": "2024-12-31T23:59:59-08:00",
+    "forIndicator": "https://driftwood-gear.example/Indicator/BImpactAssessment/",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2025",
+    "hasName": "B Impact Assessment overall score 2025",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "92.8",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2025-01-01T00:00:00-08:00",
+    "endedAtTime": "2025-12-31T23:59:59-08:00",
+    "forIndicator": "https://driftwood-gear.example/Indicator/BImpactAssessment/",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://driftwood-gear.example/OrganizationProfile/Driftwood/2026/",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/",
+    "reportedDate": "2026-01-31T00:00:00-08:00",
+    "hasPrimaryContact": "https://driftwood-gear.example/Person/DriftwoodContact/",
+    "hasManagementTeamProfile": [
+      "https://driftwood-gear.example/TeamProfile/Driftwood/Management/2026/"
+    ],
+    "hasBoardProfile": [
+      "https://driftwood-gear.example/TeamProfile/Driftwood/Board/2026/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Climate",
+      "https://codelist.commonapproach.org/IRISImpactCategory#Waste"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc1"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#BC"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps25"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#forProfit"
+    ],
+    "hasFundingStatus": [
+      "https://driftwood-gear.example/FundingStatus/Driftwood/2026/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://driftwood-gear.example/Person/DriftwoodContact/",
+    "givenName": "Riley",
+    "familyName": "Chen",
+    "hasEmail": "riley.chen@driftwood-gear.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://driftwood-gear.example/TeamProfile/Driftwood/Management/2026/",
+    "hasTeamSize": 4,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://driftwood-gear.example/EDGProfile/Driftwood/Management/2026/edg10/"
+    ],
+    "reportedDate": "2026-01-31T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://driftwood-gear.example/EDGProfile/Driftwood/Management/2026/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2026-01-31T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://driftwood-gear.example/TeamProfile/Driftwood/Board/2026/",
+    "hasTeamSize": 5,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg8/",
+      "https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg10/"
+    ],
+    "reportedDate": "2026-01-31T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg8/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8",
+    "hasSize": 1,
+    "reportedDate": "2026-01-31T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 1,
+    "reportedDate": "2026-01-31T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://driftwood-gear.example/FundingStatus/Driftwood/2026/",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2026-01-31T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://driftwood-gear.example/ReportInfo/Driftwood/2025/",
+    "hasName": "Driftwood Outdoor Gear Inc. impact report 2025",
+    "startedAtTime": "2025-01-01T00:00:00-08:00",
+    "endedAtTime": "2025-12-31T23:59:59-08:00",
+    "forOrganization": "https://driftwood-gear.example/Organization/Driftwood/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps25",
+    "hasName": "General Population"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8",
+    "hasName": "Other Racialized Peoples"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:StandardsOrganization",
+      "cids:Organization"
+    ],
+    "@id": "https://cids-conformance.example/Organization/BLab/",
+    "hasLegalName": "B Lab"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Code",
+    "@id": "https://cids-conformance.example/Code/BImpactAssessmentOverallScore",
+    "hasName": "B Impact Assessment overall score",
+    "hasDescription": "The overall score a company earns on the B Impact Assessment. Scores run from 0 to 200; 80 or more is needed for B Corp certification.",
+    "definedBy": "https://cids-conformance.example/Organization/BLab/",
+    "sch:codeValue": "BIA-OVERALL"
+  }
+]

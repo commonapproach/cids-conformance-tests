@@ -1,0 +1,1443 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasLegalName": "Cedarline Home Retrofit Co-operative",
+    "hasAddress": [
+      "https://cedarline-retrofit.example/Address/Cedarline/"
+    ],
+    "hasID": [
+      "https://cedarline-retrofit.example/OrganizationID/Cedarline/"
+    ],
+    "hasOutcome": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+      "https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/"
+    ],
+    "hasIndicator": [
+      "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/",
+      "https://cedarline-retrofit.example/Indicator/AverageBillSavings/"
+    ],
+    "hasOrganizationProfile": [
+      "https://cedarline-retrofit.example/OrganizationProfile/Cedarline/2026/"
+    ],
+    "hasDescription": "A worker co-operative that trains youth crews to retrofit low-income homes.",
+    "hasPurpose": [
+      "Cut energy poverty and open trades careers for young people in northwestern Ontario."
+    ],
+    "hasWebAddress": [
+      "https://cedarline-retrofit.example/"
+    ],
+    "hasContact": [
+      "https://cedarline-retrofit.example/Person/CedarlineContact/"
+    ],
+    "hasProgram": [
+      "https://cedarline-retrofit.example/Program/RetrofitCrew/"
+    ],
+    "hasStakeholder": [
+      "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+      "https://cedarline-retrofit.example/Stakeholder/YouthTrainees/",
+      "https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/"
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Organization: Cedarline Home Retrofit Co-operative"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://cedarline-retrofit.example/Address/Cedarline/",
+    "streetAddress": "300 Illustrative Street",
+    "addressLocality": "Thunder Bay",
+    "addressRegion": "ON",
+    "postalCode": "P7B 0G8",
+    "addressCountry": "Canada",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Address: 300 Illustrative Street"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://cedarline-retrofit.example/OrganizationID/Cedarline/",
+    "hasIdentifier": "789123456RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/7",
+    "hasName": "Goal 7: Affordable and clean energy",
+    "hasDescription": "Ensure access to affordable, reliable, sustainable and modern energy for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/8",
+    "hasName": "Goal 8: Decent work and economic growth",
+    "hasDescription": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+    "hasName": "Lower home energy bills",
+    "hasDescription": "Low-income homeowners spend less of their income on heating and electricity.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/7"
+    ],
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasIndicator": [
+      "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/",
+      "https://cedarline-retrofit.example/Indicator/AverageBillSavings/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "hasStakeholderOutcome": [
+      "https://cedarline-retrofit.example/StakeholderOutcome/Homeowners/LowerEnergyBills/"
+    ],
+    "hasImpactReport": [
+      "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/"
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Outcome: Lower home energy bills"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/",
+    "hasName": "Youth working in skilled trades",
+    "hasDescription": "Young people who train on retrofit crews go on to apprenticeships and trades jobs.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/8"
+    ],
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasIndicator": [
+      "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Outcome: Youth working in skilled trades"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/",
+    "hasName": "Homes retrofitted",
+    "hasDescription": "Homes where the crew finished insulation, air sealing and a heat-pump install.",
+    "unitDescription": "Homes",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "forOutcome": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+      "https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/"
+    ],
+    "forTheme": [
+      "https://metadata.un.org/sdg/7",
+      "https://metadata.un.org/sdg/8"
+    ],
+    "hasIndicatorReport": [
+      "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024",
+      "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025"
+    ],
+    "definedBy": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasIdentifier": "CED-IND-01",
+    "hasBaseline": "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasBaseline/",
+    "hasThreshold": "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasThreshold/",
+    "hasCode": [
+      "https://cedarline-retrofit.example/Code/DeepRetrofit/"
+    ],
+    "hasAccess": [
+      "https://cedarline-retrofit.example/Stakeholder/Homeowners/"
+    ],
+    "prov:wasGeneratedBy": {
+      "@id": "https://cedarline-retrofit.example/Activity/HomeRetrofits/"
+    },
+    "cids:hasTarget": [
+      {
+        "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/"
+      },
+      {
+        "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/"
+      }
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Indicator: Homes retrofitted"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasBaseline/",
+    "hasNumericalValue": "0",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasThreshold/",
+    "hasNumericalValue": "40",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024",
+    "hasName": "Homes retrofitted 2024",
+    "value": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "forStakeholder": "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+    "cids:forTarget": {
+      "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/"
+    },
+    "prov:wasGeneratedBy": {
+      "@id": "https://cedarline-retrofit.example/Activity/HomeRetrofits/"
+    },
+    "cids:hasComment": "Checked against the 2024 inspection log.",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "IndicatorReport: Homes retrofitted 2024"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024/value/",
+    "hasNumericalValue": "64",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025",
+    "hasName": "Homes retrofitted 2025",
+    "value": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "forIndicator": "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "forStakeholder": "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+    "cids:forTarget": {
+      "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/"
+    },
+    "prov:wasGeneratedBy": {
+      "@id": "https://cedarline-retrofit.example/Activity/HomeRetrofits/"
+    },
+    "cids:hasComment": "Checked against the 2025 inspection log.",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "IndicatorReport: Homes retrofitted 2025"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025/value/",
+    "hasNumericalValue": "79",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/",
+    "hasName": "Average yearly energy bill savings",
+    "hasDescription": "Average drop in a retrofitted household's yearly energy bill, in Canadian dollars.",
+    "unitDescription": "CAD per household per year",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "forOutcome": "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/7"
+    ],
+    "hasIndicatorReport": [
+      "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024",
+      "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025"
+    ],
+    "definedBy": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasIdentifier": "CED-IND-02",
+    "hasBaseline": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasBaseline/",
+    "hasThreshold": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasThreshold/",
+    "hasAccess": [
+      "https://cedarline-retrofit.example/Stakeholder/Homeowners/"
+    ],
+    "prov:wasGeneratedBy": {
+      "@id": "https://cedarline-retrofit.example/Activity/HouseholdSurvey/"
+    },
+    "cids:hasTarget": [
+      {
+        "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2024/"
+      },
+      {
+        "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2025/"
+      }
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Indicator: Average yearly energy bill savings"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasBaseline/",
+    "hasNumericalValue": "0.00",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasThreshold/",
+    "hasNumericalValue": "800.00",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024",
+    "hasName": "Average yearly energy bill savings 2024",
+    "value": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "forStakeholder": "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+    "cids:forTarget": {
+      "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2024/"
+    },
+    "prov:wasGeneratedBy": {
+      "@id": "https://cedarline-retrofit.example/Activity/HouseholdSurvey/"
+    },
+    "cids:hasComment": "Checked against the 2024 inspection log.",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "IndicatorReport: Average yearly energy bill savings 2024"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024/value/",
+    "hasNumericalValue": "1180.00",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025",
+    "hasName": "Average yearly energy bill savings 2025",
+    "value": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "forIndicator": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "forStakeholder": "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+    "cids:forTarget": {
+      "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2025/"
+    },
+    "prov:wasGeneratedBy": {
+      "@id": "https://cedarline-retrofit.example/Activity/HouseholdSurvey/"
+    },
+    "cids:hasComment": "Checked against the 2025 inspection log.",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "IndicatorReport: Average yearly energy bill savings 2025"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025/value/",
+    "hasNumericalValue": "1265.50",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://cedarline-retrofit.example/OrganizationProfile/Cedarline/2026/",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "reportedDate": "2026-02-20T00:00:00-05:00",
+    "hasPrimaryContact": "https://cedarline-retrofit.example/Person/CedarlineContact/",
+    "hasManagementTeamProfile": [
+      "https://cedarline-retrofit.example/TeamProfile/Cedarline/Management/2026/"
+    ],
+    "hasBoardProfile": [
+      "https://cedarline-retrofit.example/TeamProfile/Cedarline/Board/2026/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Energy"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc2"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#ON"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps15"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#Cooperative"
+    ],
+    "hasFundingStatus": [
+      "https://cedarline-retrofit.example/FundingStatus/Cedarline/2026/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://cedarline-retrofit.example/Person/CedarlineContact/",
+    "givenName": "Riley",
+    "familyName": "Wapoose",
+    "hasEmail": "riley.wapoose@cedarline-retrofit.example",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Person: CedarlineContact"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://cedarline-retrofit.example/TeamProfile/Cedarline/Management/2026/",
+    "hasTeamSize": 5,
+    "hasEDGSize": 3,
+    "hasEDGProfile": [
+      "https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg3/",
+      "https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg10/"
+    ],
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg3/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasSize": 2,
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 1,
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://cedarline-retrofit.example/TeamProfile/Cedarline/Board/2026/",
+    "hasTeamSize": 7,
+    "hasEDGSize": 4,
+    "hasEDGProfile": [
+      "https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg3/",
+      "https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg6/",
+      "https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg10/"
+    ],
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg3/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasSize": 2,
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg6/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6",
+    "hasSize": 1,
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 1,
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://cedarline-retrofit.example/FundingStatus/Cedarline/2026/",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2026-02-20T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://cedarline-retrofit.example/ReportInfo/Cedarline/2025/",
+    "hasName": "Cedarline Home Retrofit Co-operative impact report 2025",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps15",
+    "hasName": "People Living on Low Income"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasName": "First Generation Immigrants, Refugees & Newcomers"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6",
+    "hasName": "Indigenous Peoples: Métis"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:ImpactPathway",
+      "cids:ImpactModel"
+    ],
+    "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/",
+    "hasName": "Retrofit impact pathway",
+    "hasDescription": "How crew training and home retrofits lead to lower bills and trades careers.",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasActivity": [
+      "https://cedarline-retrofit.example/Activity/CrewTraining/",
+      "https://cedarline-retrofit.example/Activity/HomeRetrofits/",
+      "https://cedarline-retrofit.example/Activity/HouseholdSurvey/"
+    ],
+    "hasProgram": [
+      "https://cedarline-retrofit.example/Program/RetrofitCrew/"
+    ],
+    "hasOutcome": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+      "https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/"
+    ],
+    "hasIndicator": [
+      "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/",
+      "https://cedarline-retrofit.example/Indicator/AverageBillSavings/"
+    ],
+    "hasInput": [
+      "https://cedarline-retrofit.example/Input/RetrofitMaterials/"
+    ],
+    "hasOutput": [
+      "https://cedarline-retrofit.example/Output/CompletedRetrofits/"
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "ImpactPathway: Retrofit impact pathway"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Program",
+    "@id": "https://cedarline-retrofit.example/Program/RetrofitCrew/",
+    "hasName": "Youth retrofit crew program",
+    "hasDescription": "A paid, year-long program in which youth crews retrofit low-income homes.",
+    "hasService": [
+      "https://cedarline-retrofit.example/Service/HomeRetrofit/"
+    ],
+    "hasOutcome": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+      "https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/"
+    ],
+    "hasBeneficialStakeholder": [
+      "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+      "https://cedarline-retrofit.example/Stakeholder/YouthTrainees/"
+    ],
+    "hasContributingStakeholder": [
+      "https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/"
+    ],
+    "hasInput": [
+      "https://cedarline-retrofit.example/Input/RetrofitMaterials/"
+    ],
+    "hasOutput": [
+      "https://cedarline-retrofit.example/Output/CompletedRetrofits/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Program: Youth retrofit crew program"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Service",
+    "@id": "https://cedarline-retrofit.example/Service/HomeRetrofit/",
+    "hasName": "Free home energy retrofit",
+    "hasDescription": "Insulation, air sealing and a heat pump at no cost to eligible homeowners.",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "canProduce": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/"
+    ],
+    "cids:beneficialSizeStart": {
+      "@value": "1",
+      "@type": "xsd:positiveInteger"
+    },
+    "cids:beneficialSizeEnd": {
+      "@value": "6",
+      "@type": "xsd:positiveInteger"
+    },
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Service: Free home energy retrofit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Activity",
+    "@id": "https://cedarline-retrofit.example/Activity/CrewTraining/",
+    "hasName": "Crew training",
+    "hasDescription": "Classroom and on-site training in building science and safe work.",
+    "canProduce": [
+      "https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Activity: Crew training"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Activity",
+    "@id": "https://cedarline-retrofit.example/Activity/HomeRetrofits/",
+    "hasName": "Home retrofits",
+    "hasDescription": "Crews retrofit homes under the supervision of licensed tradespeople.",
+    "hasInput": [
+      "https://cedarline-retrofit.example/Input/RetrofitMaterials/"
+    ],
+    "hasOutput": [
+      "https://cedarline-retrofit.example/Output/CompletedRetrofits/"
+    ],
+    "canProduce": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Activity: Home retrofits"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Activity",
+    "@id": "https://cedarline-retrofit.example/Activity/HouseholdSurvey/",
+    "hasName": "Household survey and bill tracking",
+    "hasDescription": "Homeowners share 12 months of bills before and after the retrofit.",
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Activity: Household survey and bill tracking"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "act:Resource",
+    "@id": "https://cedarline-retrofit.example/Resource/InsulationAndHeatPumps/",
+    "hasName": "Insulation and heat pumps"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Input",
+    "@id": "https://cedarline-retrofit.example/Input/RetrofitMaterials/",
+    "hasName": "Retrofit materials",
+    "hasDescription": "Insulation, air-sealing supplies and heat pumps bought for the year.",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "cids:hasType": {
+      "@id": "https://cedarline-retrofit.example/Resource/InsulationAndHeatPumps/"
+    },
+    "cids:hasPlannedAmount": {
+      "@id": "https://cedarline-retrofit.example/Input/RetrofitMaterials/hasPlannedAmount/"
+    },
+    "cids:hasActualAmount": {
+      "@id": "https://cedarline-retrofit.example/Input/RetrofitMaterials/hasActualAmount/"
+    },
+    "cids:inputFor": {
+      "@id": "https://cedarline-retrofit.example/Activity/HomeRetrofits/"
+    },
+    "cids:hasContributingStakeholder": {
+      "@id": "https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/"
+    },
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Input: Retrofit materials"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Input/RetrofitMaterials/hasPlannedAmount/",
+    "hasNumericalValue": "640000",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Input/RetrofitMaterials/hasActualAmount/",
+    "hasNumericalValue": "612450.75",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Output",
+    "@id": "https://cedarline-retrofit.example/Output/CompletedRetrofits/",
+    "hasName": "Completed retrofits",
+    "hasDescription": "Homes signed off by a licensed inspector.",
+    "canProduce": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/"
+    ],
+    "usedByIndicator": [
+      "https://cedarline-retrofit.example/Indicator/HomesRetrofitted/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Output: Completed retrofits"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:BeneficialStakeholder",
+      "cids:Stakeholder"
+    ],
+    "@id": "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+    "hasName": "Low-income homeowners",
+    "hasDescription": "Homeowners in the city whose household income is below the program limit.",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasCatchmentArea": "local",
+    "hasCharacteristic": [
+      "https://cedarline-retrofit.example/Characteristic/LowIncomeHomeowner/"
+    ],
+    "benefitsFrom": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "BeneficialStakeholder: Low-income homeowners"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:BeneficialStakeholder",
+      "cids:Stakeholder"
+    ],
+    "@id": "https://cedarline-retrofit.example/Stakeholder/YouthTrainees/",
+    "hasName": "Youth trainees",
+    "hasDescription": "Young adults hired onto retrofit crews for one year.",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasCatchmentArea": "provincial",
+    "hasCharacteristic": [
+      "https://cedarline-retrofit.example/Characteristic/Aged18To29/"
+    ],
+    "benefitsFrom": [
+      "https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/"
+    ],
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "BeneficialStakeholder: Youth trainees"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:ContributingStakeholder",
+      "cids:Stakeholder"
+    ],
+    "@id": "https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/",
+    "hasName": "Volunteer tradespeople",
+    "hasDescription": "Retired and working tradespeople who supervise crews.",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "hasCatchmentArea": "local",
+    "cids:contributes": {
+      "@id": "https://cedarline-retrofit.example/Input/RetrofitMaterials/"
+    },
+    "cids:performs": {
+      "@id": "https://cedarline-retrofit.example/Activity/CrewTraining/"
+    },
+    "oep:partOf": {
+      "@id": "https://cedarline-retrofit.example/ImpactPathway/Retrofit/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "ContributingStakeholder: Volunteer tradespeople"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://cedarline-retrofit.example/Characteristic/LowIncomeHomeowner/",
+    "hasName": "Low-income homeowner",
+    "forStakeholder": [
+      "https://cedarline-retrofit.example/Stakeholder/Homeowners/"
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Characteristic: Low-income homeowner"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://cedarline-retrofit.example/Characteristic/Aged18To29/",
+    "hasName": "Aged 18 to 29",
+    "forStakeholder": [
+      "https://cedarline-retrofit.example/Stakeholder/YouthTrainees/"
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Characteristic: Aged 18 to 29"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:StandardsOrganization",
+      "cids:Organization"
+    ],
+    "@id": "https://impact-standards-council.example/Organization/ISC/",
+    "hasLegalName": "Impact Standards Council (fictional)",
+    "hasDescription": "A fictional body that publishes impact codes, used only in this test suite.",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "StandardsOrganization: Impact Standards Council (fictional)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Code",
+    "@id": "https://cedarline-retrofit.example/Code/DeepRetrofit/",
+    "hasName": "Deep energy retrofit",
+    "hasDescription": "Identifies indicators about retrofits that cut a home's energy use by at least half.",
+    "hasSpecification": "https://impact-standards-council.example/codes/deep-retrofit",
+    "definedBy": "https://impact-standards-council.example/Organization/ISC/",
+    "value": "https://cedarline-retrofit.example/Code/DeepRetrofit/value/",
+    "sch:codeValue": "DER-50",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Code: Deep energy retrofit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Code/DeepRetrofit/value/",
+    "hasNumericalValue": "50",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/",
+    "hasName": "Homes retrofitted target 2024",
+    "value": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "cids:hasComment": "Target set in the 2024 funding agreement.",
+    "sch:dateCreated": {
+      "@value": "2023-12-01T09:00:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024"
+    },
+    "description": "Target: Homes retrofitted target 2024"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/value/",
+    "hasNumericalValue": "60",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/",
+    "hasName": "Homes retrofitted target 2025",
+    "value": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "cids:hasComment": "Target set in the 2025 funding agreement.",
+    "sch:dateCreated": {
+      "@value": "2024-12-01T09:00:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025"
+    },
+    "description": "Target: Homes retrofitted target 2025"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/value/",
+    "hasNumericalValue": "75",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2024/",
+    "hasName": "Average yearly energy bill savings target 2024",
+    "value": "https://cedarline-retrofit.example/Target/AverageBillSavings/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "cids:hasComment": "Target set in the 2024 funding agreement.",
+    "sch:dateCreated": {
+      "@value": "2023-12-01T09:00:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024"
+    },
+    "description": "Target: Average yearly energy bill savings target 2024"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2024/value/",
+    "hasNumericalValue": "1100.00",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2025/",
+    "hasName": "Average yearly energy bill savings target 2025",
+    "value": "https://cedarline-retrofit.example/Target/AverageBillSavings/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "cids:hasComment": "Target set in the 2025 funding agreement.",
+    "sch:dateCreated": {
+      "@value": "2024-12-01T09:00:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025"
+    },
+    "description": "Target: Average yearly energy bill savings target 2025"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Target/AverageBillSavings/2025/value/",
+    "hasNumericalValue": "1200.00",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:StakeholderOutcome",
+    "@id": "https://cedarline-retrofit.example/StakeholderOutcome/Homeowners/LowerEnergyBills/",
+    "hasName": "Lower bills for low-income homeowners",
+    "hasDescription": "Homeowners keep more of their income because heating costs less.",
+    "forOutcome": "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+    "forStakeholder": "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+    "fromPerspectiveOf": "https://cedarline-retrofit.example/Stakeholder/Homeowners/",
+    "hasImportance": "highImportance",
+    "intendedImpact": "positive",
+    "isUnderserved": true,
+    "hasIndicator": [
+      "https://cedarline-retrofit.example/Indicator/AverageBillSavings/"
+    ],
+    "hasImpactReport": [
+      "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/"
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "StakeholderOutcome: Lower bills for low-income homeowners"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Counterfactual",
+    "@id": "https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/",
+    "hasDescription": "Expected bills had the homes not been retrofitted, from utility rate trends.",
+    "value": "https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "prov:wasGeneratedBy": {
+      "@id": "https://cedarline-retrofit.example/Activity/HouseholdSurvey/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "Counterfactual: 2025"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/value/",
+    "hasNumericalValue": "0.00",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:EvidenceRisk",
+      "cids:ImpactRisk"
+    ],
+    "@id": "https://cedarline-retrofit.example/ImpactRisk/SurveyResponseRate/",
+    "hasIdentifier": "CED-RISK-01",
+    "hasDescription": "Fewer than half of homeowners may return the 12-month bill survey.",
+    "hasMitigation": [
+      "Collect bills directly from the utility with the homeowner's consent."
+    ],
+    "forOutcome": [
+      "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/"
+    ],
+    "cids:hasLikelihood": "likely",
+    "cids:hasConsequence": "average",
+    "cids:forImpactReport": {
+      "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "EvidenceRisk: SurveyResponseRate"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactScale",
+    "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/",
+    "hasDescription": "How many: 79 households had lower bills in 2025.",
+    "value": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/value/",
+    "forIndicator": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "ImpactScale: ImpactScale"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/value/",
+    "hasNumericalValue": "79",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactDepth",
+    "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/",
+    "hasDescription": "How much: bills fell by 41% on average.",
+    "value": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/value/",
+    "forIndicator": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/",
+    "hasCounterfactual": [
+      "https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/"
+    ],
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "ImpactDepth: ImpactDepth"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/value/",
+    "hasNumericalValue": "41",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactDuration",
+    "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/",
+    "hasDescription": "How long: savings last for the 20-year life of the equipment.",
+    "value": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/value/",
+    "forIndicator": "https://cedarline-retrofit.example/Indicator/AverageBillSavings/",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2045-12-31T23:59:59-05:00",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "ImpactDuration: ImpactDuration"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/value/",
+    "hasNumericalValue": "20",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#unspecifiedUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactReport",
+    "@id": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/",
+    "hasName": "Impact report 2025: lower energy bills",
+    "forOrganization": "https://cedarline-retrofit.example/Organization/Cedarline/",
+    "forOutcome": "https://cedarline-retrofit.example/Outcome/LowerEnergyBills/",
+    "hasImpactScale": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/",
+    "hasImpactDepth": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/",
+    "hasImpactDuration": "https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/",
+    "hasExpectation": "Savings were expected to reach CAD 1,200 per household; actual savings beat that.",
+    "hasReportedImpact": "positive",
+    "hasImpactRisk": [
+      "https://cedarline-retrofit.example/ImpactRisk/SurveyResponseRate/"
+    ],
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "cids:hasComment": "Savings are measured from 12 months of bills before and after each retrofit.",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "ImpactReport: Impact report 2025: lower energy bills"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:StakeholderReport",
+    "@id": "https://cedarline-retrofit.example/StakeholderReport/Homeowners/2025/",
+    "forOrganization": [
+      "https://cedarline-retrofit.example/Organization/Cedarline/"
+    ],
+    "forStakeholder": [
+      "https://cedarline-retrofit.example/Stakeholder/Homeowners/"
+    ],
+    "hasCharacteristicReport": [
+      "https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/"
+    ],
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "StakeholderReport: 2025"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:CharacteristicReport",
+    "@id": "https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/",
+    "forCharacteristic": [
+      "https://cedarline-retrofit.example/Characteristic/LowIncomeHomeowner/"
+    ],
+    "i72:numberOf": {
+      "@id": "https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/numberOf/"
+    },
+    "sch:dateCreated": {
+      "@value": "2026-01-12T09:30:00-05:00",
+      "@type": "xsd:dateTime"
+    },
+    "description": "CharacteristicReport: LowIncome"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/numberOf/",
+    "hasNumericalValue": "79",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  }
+]

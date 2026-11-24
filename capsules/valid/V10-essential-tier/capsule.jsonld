@@ -1,0 +1,835 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "hasLegalName": "Harbourlight Community Kitchen Society",
+    "hasAddress": [
+      "https://harbourlight-kitchens.example/Address/Harbourlight/"
+    ],
+    "hasID": [
+      "https://harbourlight-kitchens.example/OrganizationID/Harbourlight/"
+    ],
+    "hasOutcome": [
+      "https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/",
+      "https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/"
+    ],
+    "hasIndicator": [
+      "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/",
+      "https://harbourlight-kitchens.example/Indicator/MealsServed/"
+    ],
+    "hasStakeholder": [
+      "https://harbourlight-kitchens.example/Stakeholder/TrainingParticipants/",
+      "https://harbourlight-kitchens.example/Stakeholder/NeighbourhoodHouseholds/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://harbourlight-kitchens.example/Address/Harbourlight/",
+    "streetAddress": "52 Specimen Wharf Road",
+    "addressLocality": "Halifax",
+    "addressRegion": "NS",
+    "postalCode": "B3K 0F7",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://harbourlight-kitchens.example/OrganizationID/Harbourlight/",
+    "hasIdentifier": "678912345RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/2",
+    "hasName": "Goal 2: Zero hunger",
+    "hasDescription": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/8",
+    "hasName": "Goal 8: Decent work and economic growth",
+    "hasDescription": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/",
+    "hasName": "Graduates in stable food-service jobs",
+    "hasDescription": "People who complete the kitchen training program find and keep jobs in food service.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/8"
+    ],
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "hasIndicator": [
+      "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/",
+      "https://harbourlight-kitchens.example/Indicator/MealsServed/"
+    ],
+    "hasStakeholderOutcome": [
+      "https://harbourlight-kitchens.example/StakeholderOutcome/TrainingParticipants/GraduatesInFoodServiceJobs/"
+    ],
+    "hasImpactReport": [
+      "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/",
+    "hasName": "Improved food security for neighbours",
+    "hasDescription": "Households in the neighbourhood have reliable access to healthy meals.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/2"
+    ],
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "hasIndicator": [
+      "https://harbourlight-kitchens.example/Indicator/MealsServed/"
+    ],
+    "hasStakeholderOutcome": [
+      "https://harbourlight-kitchens.example/StakeholderOutcome/NeighbourhoodHouseholds/ImprovedFoodSecurity/"
+    ],
+    "hasImpactReport": [
+      "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/",
+    "hasName": "Graduates employed after six months",
+    "hasDescription": "Program graduates who are working in food service six months after finishing the program.",
+    "unitDescription": "Graduates",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "forOutcome": "https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/8"
+    ],
+    "hasIndicatorReport": [
+      "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023",
+      "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024",
+      "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025"
+    ],
+    "definedBy": "https://impact-standards-council.example/Organization/ISC/",
+    "hasBaseline": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/hasBaseline/",
+    "hasCode": [
+      "https://harbourlight-kitchens.example/Code/FoodServiceCertificate/"
+    ],
+    "cids:hasTarget": [
+      {
+        "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/"
+      },
+      {
+        "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/"
+      },
+      {
+        "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/"
+      }
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/hasBaseline/",
+    "hasNumericalValue": "30",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023",
+    "hasName": "Graduates employed after six months 2023",
+    "value": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023/value/",
+    "startedAtTime": "2023-01-01T00:00:00-04:00",
+    "endedAtTime": "2023-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "cids:forTarget": {
+      "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023/value/",
+    "hasNumericalValue": "38",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024",
+    "hasName": "Graduates employed after six months 2024",
+    "value": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-04:00",
+    "endedAtTime": "2024-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "cids:forTarget": {
+      "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024/value/",
+    "hasNumericalValue": "44",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025",
+    "hasName": "Graduates employed after six months 2025",
+    "value": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-04:00",
+    "endedAtTime": "2025-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "cids:forTarget": {
+      "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025/value/",
+    "hasNumericalValue": "51",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://harbourlight-kitchens.example/Indicator/MealsServed/",
+    "hasName": "Community meals served",
+    "hasDescription": "Meals cooked by trainees and served at the community dining room or delivered to households.",
+    "unitDescription": "Meals",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "forOutcome": [
+      "https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/",
+      "https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/"
+    ],
+    "forTheme": [
+      "https://metadata.un.org/sdg/2",
+      "https://metadata.un.org/sdg/8"
+    ],
+    "hasIndicatorReport": [
+      "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023",
+      "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024",
+      "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025"
+    ],
+    "definedBy": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "hasBaseline": "https://harbourlight-kitchens.example/Indicator/MealsServed/hasBaseline/",
+    "cids:hasTarget": [
+      {
+        "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2023/"
+      },
+      {
+        "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2024/"
+      },
+      {
+        "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2025/"
+      }
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Indicator/MealsServed/hasBaseline/",
+    "hasNumericalValue": "18000",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023",
+    "hasName": "Community meals served 2023",
+    "value": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023/value/",
+    "startedAtTime": "2023-01-01T00:00:00-04:00",
+    "endedAtTime": "2023-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/MealsServed/",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "cids:forTarget": {
+      "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2023/"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023/value/",
+    "hasNumericalValue": "21400",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024",
+    "hasName": "Community meals served 2024",
+    "value": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-04:00",
+    "endedAtTime": "2024-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/MealsServed/",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "cids:forTarget": {
+      "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2024/"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024/value/",
+    "hasNumericalValue": "23850",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025",
+    "hasName": "Community meals served 2025",
+    "value": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-04:00",
+    "endedAtTime": "2025-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/MealsServed/",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "cids:forTarget": {
+      "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2025/"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025/value/",
+    "hasNumericalValue": "26100",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": [
+      "cids:StandardsOrganization",
+      "cids:Organization"
+    ],
+    "@id": "https://impact-standards-council.example/Organization/ISC/",
+    "hasLegalName": "Impact Standards Council (fictional)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Code",
+    "@id": "https://harbourlight-kitchens.example/Code/FoodServiceCertificate/",
+    "hasName": "Recognised food-service training credential",
+    "hasDescription": "Identifies indicators about graduates of a recognised food-service training program.",
+    "hasSpecification": "https://impact-standards-council.example/codes/food-service-credential",
+    "definedBy": "https://impact-standards-council.example/Organization/ISC/",
+    "value": "https://harbourlight-kitchens.example/Code/FoodServiceCertificate/value/",
+    "sch:codeValue": "FSC-01"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Code/FoodServiceCertificate/value/",
+    "hasNumericalValue": "1",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#unspecifiedUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/",
+    "hasName": "Graduates employed after six months target 2023",
+    "value": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/value/",
+    "startedAtTime": "2023-01-01T00:00:00-04:00",
+    "endedAtTime": "2023-12-31T23:59:59-04:00",
+    "cids:hasComment": "Board-approved target for 2023.",
+    "sch:dateCreated": {
+      "@value": "2022-11-15T09:00:00-04:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/value/",
+    "hasNumericalValue": "40",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/",
+    "hasName": "Graduates employed after six months target 2024",
+    "value": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-04:00",
+    "endedAtTime": "2024-12-31T23:59:59-04:00",
+    "cids:hasComment": "Board-approved target for 2024.",
+    "sch:dateCreated": {
+      "@value": "2023-11-15T09:00:00-04:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/value/",
+    "hasNumericalValue": "45",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/",
+    "hasName": "Graduates employed after six months target 2025",
+    "value": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-04:00",
+    "endedAtTime": "2025-12-31T23:59:59-04:00",
+    "cids:hasComment": "Board-approved target for 2025.",
+    "sch:dateCreated": {
+      "@value": "2024-11-15T09:00:00-04:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/value/",
+    "hasNumericalValue": "50",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2023/",
+    "hasName": "Community meals served target 2023",
+    "value": "https://harbourlight-kitchens.example/Target/MealsServed/2023/value/",
+    "startedAtTime": "2023-01-01T00:00:00-04:00",
+    "endedAtTime": "2023-12-31T23:59:59-04:00",
+    "cids:hasComment": "Board-approved target for 2023.",
+    "sch:dateCreated": {
+      "@value": "2022-11-15T09:00:00-04:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2023/value/",
+    "hasNumericalValue": "22000",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2024/",
+    "hasName": "Community meals served target 2024",
+    "value": "https://harbourlight-kitchens.example/Target/MealsServed/2024/value/",
+    "startedAtTime": "2024-01-01T00:00:00-04:00",
+    "endedAtTime": "2024-12-31T23:59:59-04:00",
+    "cids:hasComment": "Board-approved target for 2024.",
+    "sch:dateCreated": {
+      "@value": "2023-11-15T09:00:00-04:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2024/value/",
+    "hasNumericalValue": "24000",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Target",
+    "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2025/",
+    "hasName": "Community meals served target 2025",
+    "value": "https://harbourlight-kitchens.example/Target/MealsServed/2025/value/",
+    "startedAtTime": "2025-01-01T00:00:00-04:00",
+    "endedAtTime": "2025-12-31T23:59:59-04:00",
+    "cids:hasComment": "Board-approved target for 2025.",
+    "sch:dateCreated": {
+      "@value": "2024-11-15T09:00:00-04:00",
+      "@type": "xsd:dateTime"
+    },
+    "cids:forIndicatorReport": {
+      "@id": "https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/Target/MealsServed/2025/value/",
+    "hasNumericalValue": "26000",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Stakeholder",
+    "@id": "https://harbourlight-kitchens.example/Stakeholder/TrainingParticipants/",
+    "hasName": "Kitchen training participants",
+    "hasDescription": "Adults facing barriers to employment who enrol in the 16-week kitchen training program.",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "hasCatchmentArea": "local",
+    "hasCharacteristic": [
+      "https://harbourlight-kitchens.example/Characteristic/BarriersToEmployment/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Stakeholder",
+    "@id": "https://harbourlight-kitchens.example/Stakeholder/NeighbourhoodHouseholds/",
+    "hasName": "Neighbourhood households",
+    "hasDescription": "Low-income households in the north end who eat at the dining room or get meals delivered.",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "hasCatchmentArea": "local",
+    "hasCharacteristic": [
+      "https://harbourlight-kitchens.example/Characteristic/LowIncomeHousehold/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://harbourlight-kitchens.example/Characteristic/BarriersToEmployment/",
+    "hasName": "Facing barriers to employment"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://harbourlight-kitchens.example/Characteristic/LowIncomeHousehold/",
+    "hasName": "Low-income household"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:StakeholderOutcome",
+    "@id": "https://harbourlight-kitchens.example/StakeholderOutcome/TrainingParticipants/GraduatesInFoodServiceJobs/",
+    "hasName": "Stable jobs for training participants",
+    "hasDescription": "Participants move from unemployment or precarious work into steady food-service jobs.",
+    "forOutcome": "https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/",
+    "forStakeholder": "https://harbourlight-kitchens.example/Stakeholder/TrainingParticipants/",
+    "isUnderserved": true,
+    "hasImpactReport": [
+      "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:StakeholderOutcome",
+    "@id": "https://harbourlight-kitchens.example/StakeholderOutcome/NeighbourhoodHouseholds/ImprovedFoodSecurity/",
+    "hasName": "Reliable meals for neighbourhood households",
+    "hasDescription": "Households that often skip meals get at least one healthy meal a day.",
+    "forOutcome": "https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/",
+    "forStakeholder": "https://harbourlight-kitchens.example/Stakeholder/NeighbourhoodHouseholds/",
+    "isUnderserved": false,
+    "hasImpactReport": [
+      "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactScale",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/",
+    "hasDescription": "How many: 51 people or meals reached in 2025.",
+    "value": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/value/",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/value/",
+    "hasNumericalValue": "51",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactDepth",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/",
+    "hasDescription": "How much: 62% reported a large improvement.",
+    "value": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/value/",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/value/",
+    "hasNumericalValue": "62",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactDuration",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/",
+    "hasDescription": "How long: the change lasts about 18 months.",
+    "value": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/value/",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/value/",
+    "hasNumericalValue": "18",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#unspecifiedUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactReport",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/",
+    "hasName": "Impact report 2025: jobs",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "forOutcome": "https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/",
+    "hasImpactScale": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/",
+    "hasImpactDepth": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/",
+    "hasImpactDuration": "https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/",
+    "startedAtTime": "2025-01-01T00:00:00-04:00",
+    "endedAtTime": "2025-12-31T23:59:59-04:00",
+    "cids:hasComment": "Based on the year-end participant survey and the meal log."
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactScale",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/",
+    "hasDescription": "How many: 26100 people or meals reached in 2025.",
+    "value": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/value/",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/MealsServed/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/value/",
+    "hasNumericalValue": "26100",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactDepth",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/",
+    "hasDescription": "How much: 40% reported a large improvement.",
+    "value": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/value/",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/MealsServed/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/value/",
+    "hasNumericalValue": "40",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactDuration",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/",
+    "hasDescription": "How long: the change lasts about 12 months.",
+    "value": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/value/",
+    "forIndicator": "https://harbourlight-kitchens.example/Indicator/MealsServed/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Measure",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/value/",
+    "hasNumericalValue": "12",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#unspecifiedUnit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:ImpactReport",
+    "@id": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/",
+    "hasName": "Impact report 2025: food security",
+    "forOrganization": "https://harbourlight-kitchens.example/Organization/Harbourlight/",
+    "forOutcome": "https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/",
+    "hasImpactScale": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/",
+    "hasImpactDepth": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/",
+    "hasImpactDuration": "https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/",
+    "startedAtTime": "2025-01-01T00:00:00-04:00",
+    "endedAtTime": "2025-12-31T23:59:59-04:00",
+    "cids:hasComment": "Based on the year-end participant survey and the meal log."
+  }
+]

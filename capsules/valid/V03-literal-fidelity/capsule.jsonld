@@ -1,0 +1,370 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://ruisseau-vert.example/Organization/RuisseauVert/",
+    "hasLegalName": "Coopérative d’habitation du Ruisseau-Vert",
+    "hasAddress": [
+      "https://ruisseau-vert.example/Address/RuisseauVert/"
+    ],
+    "hasOutcome": [
+      "https://ruisseau-vert.example/Outcome/AffordableHomes/"
+    ],
+    "hasIndicator": [
+      "https://ruisseau-vert.example/Indicator/HouseholdsHoused/",
+      "https://ruisseau-vert.example/Indicator/RentToIncome/",
+      "https://ruisseau-vert.example/Indicator/RentSubsidy/",
+      "https://ruisseau-vert.example/Indicator/EnergyChange/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://ruisseau-vert.example/Address/RuisseauVert/",
+    "streetAddress": "1200, rue de l’Exemple",
+    "addressLocality": "Trois-Rivières",
+    "addressRegion": "QC",
+    "postalCode": "G9A 0A1",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/11",
+    "hasName": "Goal 11: Sustainable cities and communities",
+    "hasDescription": "Make cities and human settlements inclusive, safe, resilient and sustainable"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://ruisseau-vert.example/Outcome/AffordableHomes/",
+    "hasName": "Logements abordables — affordable homes",
+    "hasDescription": "Line 1: « Des logements sûrs ».\nLine 2: \"Safe homes\" & <stable> tenancy.\n\tLine 3 starts with a tab.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/",
+    "hasIndicator": [
+      "https://ruisseau-vert.example/Indicator/HouseholdsHoused/",
+      "https://ruisseau-vert.example/Indicator/RentToIncome/",
+      "https://ruisseau-vert.example/Indicator/RentSubsidy/",
+      "https://ruisseau-vert.example/Indicator/EnergyChange/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://ruisseau-vert.example/Indicator/HouseholdsHoused/",
+    "hasName": "Households housed ",
+    "hasDescription": "Households in co-op homes at year end. ᐃᓪᓗᐃᑦ means \"houses\" in Inuktitut.",
+    "unitDescription": "Ménages",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/",
+    "forOutcome": "https://ruisseau-vert.example/Outcome/AffordableHomes/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "hasIndicatorReport": [
+      "https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2022",
+      "https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2023",
+      "https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2022",
+    "hasName": "Households housed 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "48",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/HouseholdsHoused/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2023",
+    "hasName": "Households housed 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "52",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-01-01T05:00:00Z",
+    "endedAtTime": "2023-12-31T23:59:59.999-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/HouseholdsHoused/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2024",
+    "hasName": "Households housed 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "55",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-01-01T04:59:59+00:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/HouseholdsHoused/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://ruisseau-vert.example/Indicator/RentToIncome/",
+    "hasName": "Average rent as % of income",
+    "hasDescription": "Average monthly rent divided by household income.",
+    "unitDescription": "Percent",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/",
+    "forOutcome": "https://ruisseau-vert.example/Outcome/AffordableHomes/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "hasIndicatorReport": [
+      "https://ruisseau-vert.example/IndicatorReport/RentToIncome/2022",
+      "https://ruisseau-vert.example/IndicatorReport/RentToIncome/2023",
+      "https://ruisseau-vert.example/IndicatorReport/RentToIncome/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/RentToIncome/2022",
+    "hasName": "Average rent as % of income2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "27.50",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/RentToIncome/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/RentToIncome/2023",
+    "hasName": "Average rent as % of income2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "26.75",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2023-01-01T05:00:00Z",
+    "endedAtTime": "2023-12-31T23:59:59.999-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/RentToIncome/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/RentToIncome/2024",
+    "hasName": "Average rent as % of income2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "26.00",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-01-01T04:59:59+00:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/RentToIncome/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://ruisseau-vert.example/Indicator/RentSubsidy/",
+    "hasName": "Rent subsidy paid",
+    "hasDescription": "Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught.",
+    "unitDescription": "CAD",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#cad",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/",
+    "forOutcome": "https://ruisseau-vert.example/Outcome/AffordableHomes/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "hasIndicatorReport": [
+      "https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2022",
+      "https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2023",
+      "https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2022",
+    "hasName": "Rent subsidy paid2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1250000.00",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/RentSubsidy/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2023",
+    "hasName": "Rent subsidy paid2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1312500.50",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+    },
+    "startedAtTime": "2023-01-01T05:00:00Z",
+    "endedAtTime": "2023-12-31T23:59:59.999-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/RentSubsidy/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2024",
+    "hasName": "Rent subsidy paid2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1378125.75",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#cad"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-01-01T04:59:59+00:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/RentSubsidy/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://ruisseau-vert.example/Indicator/EnergyChange/",
+    "hasName": "Change in energy use",
+    "hasDescription": "Year-over-year change in energy use per home. Negative means less energy used.",
+    "unitDescription": "Percent change",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/",
+    "forOutcome": "https://ruisseau-vert.example/Outcome/AffordableHomes/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "hasIndicatorReport": [
+      "https://ruisseau-vert.example/IndicatorReport/EnergyChange/2022",
+      "https://ruisseau-vert.example/IndicatorReport/EnergyChange/2023",
+      "https://ruisseau-vert.example/IndicatorReport/EnergyChange/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/EnergyChange/2022",
+    "hasName": "Change in energy use2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "-3.5",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/EnergyChange/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/EnergyChange/2023",
+    "hasName": "Change in energy use2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "-4.25",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2023-01-01T05:00:00Z",
+    "endedAtTime": "2023-12-31T23:59:59.999-05:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/EnergyChange/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://ruisseau-vert.example/IndicatorReport/EnergyChange/2024",
+    "hasName": "Change in energy use2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "-0.75",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-01-01T04:59:59+00:00",
+    "forIndicator": "https://ruisseau-vert.example/Indicator/EnergyChange/",
+    "forOrganization": "https://ruisseau-vert.example/Organization/RuisseauVert/"
+  }
+]

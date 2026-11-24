@@ -1,0 +1,30 @@
+{
+  "id": "I05-report-without-indicator",
+  "category": "invalid",
+  "title": "IndicatorReport not linked to any Indicator",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2019",
+            "resultPath": "cids:forIndicator",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every IndicatorReport must say which Indicator it reports on."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2019",
+            "resultPath": "cids:forIndicator",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every IndicatorReport must say which Indicator it reports on."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

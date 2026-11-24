@@ -1,0 +1,21 @@
+{
+  "id": "DQ02-missing-primary-contact",
+  "category": "data-quality",
+  "title": "Organization profile with no primary contact",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-MISSING-CONTACT",
+          "focusNode": "https://tamarack-youth.example/OrganizationProfile/Tamarack/2025/",
+          "resultPath": "sff:hasPrimaryContact",
+          "explanation": "hasPrimaryContact is optional in SHACL, but SFF reports should name a contact person."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "I04-invalid-date",
+  "category": "invalid",
+  "title": "\"Invalid date\" as a report's end date",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2024",
+            "resultPath": "prov:endedAtTime",
+            "sourceConstraintComponent": "sh:DatatypeConstraintComponent",
+            "explanation": "endedAtTime must be an xsd:dateTime."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2024",
+            "resultPath": "prov:endedAtTime",
+            "sourceConstraintComponent": "sh:DatatypeConstraintComponent",
+            "explanation": "endedAtTime must be an xsd:dateTime."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

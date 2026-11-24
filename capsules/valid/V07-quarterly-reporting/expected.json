@@ -1,0 +1,14 @@
+{
+  "id": "V07-quarterly-reporting",
+  "category": "valid",
+  "title": "A portfolio organization that reports by quarter",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}

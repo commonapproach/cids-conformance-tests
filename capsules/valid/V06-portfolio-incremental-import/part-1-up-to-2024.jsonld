@@ -1,0 +1,1631 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://northwind-food.example/Organization/Northwind/",
+    "hasLegalName": "Northwind Food Recovery Society",
+    "hasAddress": [
+      "https://northwind-food.example/Address/Northwind/"
+    ],
+    "hasID": [
+      "https://northwind-food.example/OrganizationID/Northwind/"
+    ],
+    "hasOutcome": [
+      "https://northwind-food.example/Outcome/LessFoodWaste/",
+      "https://northwind-food.example/Outcome/ImprovedFoodSecurity/"
+    ],
+    "hasIndicator": [
+      "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+      "https://northwind-food.example/Indicator/MealsProvided/"
+    ],
+    "hasOrganizationProfile": [
+      "https://northwind-food.example/OrganizationProfile/Northwind/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://northwind-food.example/Address/Northwind/",
+    "streetAddress": "88 Imaginary Avenue",
+    "addressLocality": "Vancouver",
+    "addressRegion": "BC",
+    "postalCode": "V5K 0C3",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://northwind-food.example/OrganizationID/Northwind/",
+    "hasIdentifier": "345678912RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/2",
+    "hasName": "Goal 2: Zero hunger",
+    "hasDescription": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/12",
+    "hasName": "Goal 12: Responsible consumption and production",
+    "hasDescription": "Ensure sustainable consumption and production patterns"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://northwind-food.example/Outcome/LessFoodWaste/",
+    "hasName": "Less food waste sent to landfill",
+    "hasDescription": "Surplus food is recovered instead of thrown away.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/12"
+    ],
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+    "hasIndicator": [
+      "https://northwind-food.example/Indicator/TonnesFoodRecovered/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://northwind-food.example/Outcome/ImprovedFoodSecurity/",
+    "hasName": "Improved food security",
+    "hasDescription": "Low-income households have reliable access to healthy food.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/2"
+    ],
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+    "hasIndicator": [
+      "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+      "https://northwind-food.example/Indicator/MealsProvided/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+    "hasName": "Tonnes of food recovered",
+    "hasDescription": "Tonnes of surplus food recovered from grocers and farms.",
+    "unitDescription": "Tonnes",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+    "forOutcome": [
+      "https://northwind-food.example/Outcome/LessFoodWaste/",
+      "https://northwind-food.example/Outcome/ImprovedFoodSecurity/"
+    ],
+    "forTheme": [
+      "https://metadata.un.org/sdg/12"
+    ],
+    "hasIndicatorReport": [
+      "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2019",
+      "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2020",
+      "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2021",
+      "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022",
+      "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023",
+      "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2019",
+    "hasName": "Tonnes of food recovered 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "820",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-05:00",
+    "endedAtTime": "2019-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2020",
+    "hasName": "Tonnes of food recovered 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "905",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-05:00",
+    "endedAtTime": "2020-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2021",
+    "hasName": "Tonnes of food recovered 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "960",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-05:00",
+    "endedAtTime": "2021-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022",
+    "hasName": "Tonnes of food recovered 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1040",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023",
+    "hasName": "Tonnes of food recovered 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1115",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-05:00",
+    "endedAtTime": "2023-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024",
+    "hasName": "Tonnes of food recovered 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1190",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://northwind-food.example/Indicator/MealsProvided/",
+    "hasName": "Meals provided",
+    "hasDescription": "Meals provided through partner agencies.",
+    "unitDescription": "Meals",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+    "forOutcome": "https://northwind-food.example/Outcome/ImprovedFoodSecurity/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/2"
+    ],
+    "hasIndicatorReport": [
+      "https://northwind-food.example/IndicatorReport/MealsProvided/2019",
+      "https://northwind-food.example/IndicatorReport/MealsProvided/2020",
+      "https://northwind-food.example/IndicatorReport/MealsProvided/2021",
+      "https://northwind-food.example/IndicatorReport/MealsProvided/2022",
+      "https://northwind-food.example/IndicatorReport/MealsProvided/2023",
+      "https://northwind-food.example/IndicatorReport/MealsProvided/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2019",
+    "hasName": "Meals provided 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "41000",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-05:00",
+    "endedAtTime": "2019-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2020",
+    "hasName": "Meals provided 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "52300",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-05:00",
+    "endedAtTime": "2020-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2021",
+    "hasName": "Meals provided 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "55100",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-05:00",
+    "endedAtTime": "2021-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2022",
+    "hasName": "Meals provided 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "58900",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2023",
+    "hasName": "Meals provided 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "61200",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-05:00",
+    "endedAtTime": "2023-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2024",
+    "hasName": "Meals provided 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "64800",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://northwind-food.example/OrganizationProfile/Northwind/2025/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+    "reportedDate": "2025-01-30T00:00:00-08:00",
+    "hasPrimaryContact": "https://northwind-food.example/Person/NorthwindContact/",
+    "hasManagementTeamProfile": [
+      "https://northwind-food.example/TeamProfile/Northwind/Management/2025/"
+    ],
+    "hasBoardProfile": [
+      "https://northwind-food.example/TeamProfile/Northwind/Board/2025/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Agriculture",
+      "https://codelist.commonapproach.org/IRISImpactCategory#Waste"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc1"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#BC"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps15",
+      "https://codelist.commonapproach.org/PopulationServed#ps14"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#Charitable"
+    ],
+    "hasFundingStatus": [
+      "https://northwind-food.example/FundingStatus/Northwind/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://northwind-food.example/Person/NorthwindContact/",
+    "givenName": "Mika",
+    "familyName": "Tanaka",
+    "hasEmail": "mika.tanaka@northwind-food.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://northwind-food.example/TeamProfile/Northwind/Management/2025/",
+    "hasTeamSize": 5,
+    "hasEDGSize": 3,
+    "hasEDGProfile": [
+      "https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg8/",
+      "https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg10/"
+    ],
+    "reportedDate": "2025-01-30T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg8/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8",
+    "hasSize": 2,
+    "reportedDate": "2025-01-30T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 3,
+    "reportedDate": "2025-01-30T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://northwind-food.example/TeamProfile/Northwind/Board/2025/",
+    "hasTeamSize": 8,
+    "hasEDGSize": 4,
+    "hasEDGProfile": [
+      "https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg1/",
+      "https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg10/"
+    ],
+    "reportedDate": "2025-01-30T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg1/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg1",
+    "hasSize": 1,
+    "reportedDate": "2025-01-30T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 4,
+    "reportedDate": "2025-01-30T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://northwind-food.example/FundingStatus/Northwind/2025/",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2025-01-30T00:00:00-08:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://northwind-food.example/ReportInfo/Northwind/2024/",
+    "hasName": "Northwind Food Recovery Society impact report 2024",
+    "startedAtTime": "2024-01-01T00:00:00-08:00",
+    "endedAtTime": "2024-12-31T23:59:59-08:00",
+    "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps15",
+    "hasName": "People Living on Low Income"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps14",
+    "hasName": "People Experiencing Homelessness or Housing Insecurities"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8",
+    "hasName": "Other Racialized Peoples"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg1",
+    "hasName": "2SLGBTQIA+"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://maplehollow-learning.example/Organization/MapleHollow/",
+    "hasLegalName": "Maple Hollow Learning Collective",
+    "hasAddress": [
+      "https://maplehollow-learning.example/Address/MapleHollow/"
+    ],
+    "hasID": [
+      "https://maplehollow-learning.example/OrganizationID/MapleHollow/"
+    ],
+    "hasOutcome": [
+      "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/"
+    ],
+    "hasIndicator": [
+      "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+      "https://maplehollow-learning.example/Indicator/CompletionRate/"
+    ],
+    "hasOrganizationProfile": [
+      "https://maplehollow-learning.example/OrganizationProfile/MapleHollow/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://maplehollow-learning.example/Address/MapleHollow/",
+    "streetAddress": "7 Fictional Crescent",
+    "addressLocality": "Winnipeg",
+    "addressRegion": "MB",
+    "postalCode": "R3C 0D4",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://maplehollow-learning.example/OrganizationID/MapleHollow/",
+    "hasIdentifier": "456789123RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/4",
+    "hasName": "Goal 4: Quality education",
+    "hasDescription": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/",
+    "hasName": "Improved adult literacy",
+    "hasDescription": "Adult learners gain the reading and writing skills they need for work and daily life.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/4"
+    ],
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+    "hasIndicator": [
+      "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+      "https://maplehollow-learning.example/Indicator/CompletionRate/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+    "hasName": "Adult learners enrolled",
+    "hasDescription": "Adults enrolled in the literacy program during the year.",
+    "unitDescription": "Learners",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+    "forOutcome": "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/4"
+    ],
+    "hasIndicatorReport": [
+      "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2019",
+      "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2020",
+      "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2021",
+      "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022",
+      "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023",
+      "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2019",
+    "hasName": "Adult learners enrolled 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "210",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-06:00",
+    "endedAtTime": "2019-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2020",
+    "hasName": "Adult learners enrolled 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "188",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-06:00",
+    "endedAtTime": "2020-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2021",
+    "hasName": "Adult learners enrolled 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "236",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-06:00",
+    "endedAtTime": "2021-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022",
+    "hasName": "Adult learners enrolled 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "251",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-06:00",
+    "endedAtTime": "2022-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023",
+    "hasName": "Adult learners enrolled 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "274",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-06:00",
+    "endedAtTime": "2023-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024",
+    "hasName": "Adult learners enrolled 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "290",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-06:00",
+    "endedAtTime": "2024-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+    "hasName": "Program completion rate",
+    "hasDescription": "Percent of enrolled learners who completed the program.",
+    "unitDescription": "Percent",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+    "forOutcome": "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/4"
+    ],
+    "hasIndicatorReport": [
+      "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2019",
+      "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2020",
+      "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2021",
+      "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022",
+      "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023",
+      "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2019",
+    "hasName": "Program completion rate 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "61",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-06:00",
+    "endedAtTime": "2019-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2020",
+    "hasName": "Program completion rate 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "58",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-06:00",
+    "endedAtTime": "2020-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2021",
+    "hasName": "Program completion rate 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "63",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-06:00",
+    "endedAtTime": "2021-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022",
+    "hasName": "Program completion rate 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "66",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-06:00",
+    "endedAtTime": "2022-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023",
+    "hasName": "Program completion rate 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "68",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-06:00",
+    "endedAtTime": "2023-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024",
+    "hasName": "Program completion rate 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "71",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-06:00",
+    "endedAtTime": "2024-12-31T23:59:59-06:00",
+    "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://maplehollow-learning.example/OrganizationProfile/MapleHollow/2025/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+    "reportedDate": "2025-02-14T00:00:00-06:00",
+    "hasPrimaryContact": "https://maplehollow-learning.example/Person/MapleHollowContact/",
+    "hasManagementTeamProfile": [
+      "https://maplehollow-learning.example/TeamProfile/MapleHollow/Management/2025/"
+    ],
+    "hasBoardProfile": [
+      "https://maplehollow-learning.example/TeamProfile/MapleHollow/Board/2025/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Education"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc1"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#MB"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps20",
+      "https://codelist.commonapproach.org/PopulationServed#ps10"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#nonProfit"
+    ],
+    "hasFundingStatus": [
+      "https://maplehollow-learning.example/FundingStatus/MapleHollow/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://maplehollow-learning.example/Person/MapleHollowContact/",
+    "givenName": "Jordan",
+    "familyName": "Beaulieu",
+    "hasEmail": "jordan.beaulieu@maplehollow-learning.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://maplehollow-learning.example/TeamProfile/MapleHollow/Management/2025/",
+    "hasTeamSize": 3,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg3/",
+      "https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg10/"
+    ],
+    "reportedDate": "2025-02-14T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg3/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasSize": 1,
+    "reportedDate": "2025-02-14T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 1,
+    "reportedDate": "2025-02-14T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://maplehollow-learning.example/TeamProfile/MapleHollow/Board/2025/",
+    "hasTeamSize": 6,
+    "hasEDGSize": 3,
+    "hasEDGProfile": [
+      "https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg6/",
+      "https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg10/"
+    ],
+    "reportedDate": "2025-02-14T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg6/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6",
+    "hasSize": 1,
+    "reportedDate": "2025-02-14T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2025-02-14T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://maplehollow-learning.example/FundingStatus/MapleHollow/2025/",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2025-02-14T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://maplehollow-learning.example/ReportInfo/MapleHollow/2024/",
+    "hasName": "Maple Hollow Learning Collective impact report 2024",
+    "startedAtTime": "2024-01-01T00:00:00-06:00",
+    "endedAtTime": "2024-12-31T23:59:59-06:00",
+    "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps20",
+    "hasName": "People without Advanced Educational Qualification"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps10",
+    "hasName": "First Generation Immigrants, Refugees & Newcomers"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasName": "First Generation Immigrants, Refugees & Newcomers"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6",
+    "hasName": "Indigenous Peoples: Métis"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/",
+    "hasLegalName": "Prairie Spoke Bicycle Works Ltd.",
+    "hasAddress": [
+      "https://prairiespoke-bikes.example/Address/PrairieSpoke/"
+    ],
+    "hasID": [
+      "https://prairiespoke-bikes.example/OrganizationID/PrairieSpoke/"
+    ],
+    "hasOutcome": [
+      "https://prairiespoke-bikes.example/Outcome/LowCarbonTransport/",
+      "https://prairiespoke-bikes.example/Outcome/SkilledTrades/"
+    ],
+    "hasIndicator": [
+      "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+      "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/"
+    ],
+    "hasOrganizationProfile": [
+      "https://prairiespoke-bikes.example/OrganizationProfile/PrairieSpoke/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://prairiespoke-bikes.example/Address/PrairieSpoke/",
+    "streetAddress": "1200 Notional Street",
+    "addressLocality": "Saskatoon",
+    "addressRegion": "SK",
+    "postalCode": "S7K 0E5",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://prairiespoke-bikes.example/OrganizationID/PrairieSpoke/",
+    "hasIdentifier": "567891234RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/11",
+    "hasName": "Goal 11: Sustainable cities and communities",
+    "hasDescription": "Make cities and human settlements inclusive, safe, resilient and sustainable"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/8",
+    "hasName": "Goal 8: Decent work and economic growth",
+    "hasDescription": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://prairiespoke-bikes.example/Outcome/LowCarbonTransport/",
+    "hasName": "More people using low-carbon transport",
+    "hasDescription": "Refurbished bikes replace car trips.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/",
+    "hasIndicator": [
+      "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://prairiespoke-bikes.example/Outcome/SkilledTrades/",
+    "hasName": "New skills for trade apprentices",
+    "hasDescription": "Apprentices gain bicycle mechanic certification.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/8"
+    ],
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/",
+    "hasIndicator": [
+      "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+    "hasName": "Bicycles refurbished and sold",
+    "hasDescription": "Refurbished bicycles sold or donated during the year.",
+    "unitDescription": "Bicycles",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/",
+    "forOutcome": "https://prairiespoke-bikes.example/Outcome/LowCarbonTransport/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "hasIndicatorReport": [
+      "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2019",
+      "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2020",
+      "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2021",
+      "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2022",
+      "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2023",
+      "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2019",
+    "hasName": "Bicycles refurbished and sold 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1450",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-06:00",
+    "endedAtTime": "2019-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2020",
+    "hasName": "Bicycles refurbished and sold 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1610",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-06:00",
+    "endedAtTime": "2020-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2021",
+    "hasName": "Bicycles refurbished and sold 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1720",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-06:00",
+    "endedAtTime": "2021-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2022",
+    "hasName": "Bicycles refurbished and sold 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1805",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-06:00",
+    "endedAtTime": "2022-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2023",
+    "hasName": "Bicycles refurbished and sold 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1930",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-06:00",
+    "endedAtTime": "2023-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2024",
+    "hasName": "Bicycles refurbished and sold 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "2040",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-06:00",
+    "endedAtTime": "2024-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/BikesRefurbished/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/",
+    "hasName": "Apprentices certified",
+    "hasDescription": "Apprentices who earned mechanic certification during the year.",
+    "unitDescription": "Apprentices",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/",
+    "forOutcome": "https://prairiespoke-bikes.example/Outcome/SkilledTrades/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/8"
+    ],
+    "hasIndicatorReport": [
+      "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2019",
+      "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2020",
+      "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2021",
+      "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2022",
+      "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2023",
+      "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2019",
+    "hasName": "Apprentices certified 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "18",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-06:00",
+    "endedAtTime": "2019-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2020",
+    "hasName": "Apprentices certified 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "21",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-06:00",
+    "endedAtTime": "2020-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2021",
+    "hasName": "Apprentices certified 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "24",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-06:00",
+    "endedAtTime": "2021-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2022",
+    "hasName": "Apprentices certified 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "26",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-06:00",
+    "endedAtTime": "2022-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2023",
+    "hasName": "Apprentices certified 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "29",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-06:00",
+    "endedAtTime": "2023-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2024",
+    "hasName": "Apprentices certified 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "31",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-06:00",
+    "endedAtTime": "2024-12-31T23:59:59-06:00",
+    "forIndicator": "https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://prairiespoke-bikes.example/OrganizationProfile/PrairieSpoke/2025/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/",
+    "reportedDate": "2025-03-02T00:00:00-06:00",
+    "hasPrimaryContact": "https://prairiespoke-bikes.example/Person/PrairieSpokeContact/",
+    "hasManagementTeamProfile": [
+      "https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Management/2025/"
+    ],
+    "hasBoardProfile": [
+      "https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Board/2025/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Employment",
+      "https://codelist.commonapproach.org/IRISImpactCategory#Climate"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc2"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#SK"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps24",
+      "https://codelist.commonapproach.org/PopulationServed#ps15"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#forProfit"
+    ],
+    "hasFundingStatus": [
+      "https://prairiespoke-bikes.example/FundingStatus/PrairieSpoke/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://prairiespoke-bikes.example/Person/PrairieSpokeContact/",
+    "givenName": "Alex",
+    "familyName": "Desjardins",
+    "hasEmail": "alex.desjardins@prairiespoke-bikes.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Management/2025/",
+    "hasTeamSize": 4,
+    "hasEDGSize": 1,
+    "hasEDGProfile": [
+      "https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Management/2025/edg5/"
+    ],
+    "reportedDate": "2025-03-02T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Management/2025/edg5/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg5",
+    "hasSize": 1,
+    "reportedDate": "2025-03-02T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Board/2025/",
+    "hasTeamSize": 5,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Board/2025/edg10/"
+    ],
+    "reportedDate": "2025-03-02T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Board/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2025-03-02T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://prairiespoke-bikes.example/FundingStatus/PrairieSpoke/2025/",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2025-03-02T00:00:00-06:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://prairiespoke-bikes.example/ReportInfo/PrairieSpoke/2024/",
+    "hasName": "Prairie Spoke Bicycle Works Ltd. impact report 2024",
+    "startedAtTime": "2024-01-01T00:00:00-06:00",
+    "endedAtTime": "2024-12-31T23:59:59-06:00",
+    "forOrganization": "https://prairiespoke-bikes.example/Organization/PrairieSpoke/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps24",
+    "hasName": "Youth (Ages 15-24)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps15",
+    "hasName": "People Living on Low Income"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg5",
+    "hasName": "Indigenous Peoples: Inuit"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  }
+]

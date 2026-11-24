@@ -1,0 +1,15 @@
+{
+  "id": "V10-essential-tier",
+  "category": "valid",
+  "title": "Full, realistic Essential tier capsule",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": [],
+        "essential": []
+      },
+      "dq": []
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "V09-bcorp-indicator-hascode",
+  "category": "valid",
+  "title": "B Corp assessment as an Indicator with hasCode",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}

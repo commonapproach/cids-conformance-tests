@@ -1,0 +1,30 @@
+{
+  "id": "I08-indicator-missing-unit-description",
+  "category": "invalid",
+  "title": "Indicator with no unit description",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Indicator/BImpactScore/",
+            "resultPath": "cids:unitDescription",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Indicator needs a unitDescription."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Indicator/BImpactScore/",
+            "resultPath": "cids:unitDescription",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Indicator needs a unitDescription."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

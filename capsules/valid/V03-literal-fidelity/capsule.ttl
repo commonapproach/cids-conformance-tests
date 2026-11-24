@@ -1,0 +1,206 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ruisseau-vert.example/Address/RuisseauVert/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Trois-Rivières" ;
+    cids:addressRegion "QC" ;
+    cids:postalCode "G9A 0A1" ;
+    cids:streetAddress "1200, rue de l’Exemple" .
+
+<https://ruisseau-vert.example/IndicatorReport/EnergyChange/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "-3.5" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Change in energy use2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/EnergyChange/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/EnergyChange/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "-4.25" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Change in energy use2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59.999-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T05:00:00Z"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/EnergyChange/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/EnergyChange/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "-0.75" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Change in energy use2024" ;
+    prov:endedAtTime "2025-01-01T04:59:59+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/EnergyChange/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "48" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Households housed 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/HouseholdsHoused/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "52" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Households housed 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59.999-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T05:00:00Z"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/HouseholdsHoused/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "55" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Households housed 2024" ;
+    prov:endedAtTime "2025-01-01T04:59:59+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/HouseholdsHoused/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1250000.00" ;
+            i72:unit_of_measure cids:cad ] ;
+    org:hasName "Rent subsidy paid2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/RentSubsidy/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1312500.50" ;
+            i72:unit_of_measure cids:cad ] ;
+    org:hasName "Rent subsidy paid2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59.999-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T05:00:00Z"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/RentSubsidy/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1378125.75" ;
+            i72:unit_of_measure cids:cad ] ;
+    org:hasName "Rent subsidy paid2024" ;
+    prov:endedAtTime "2025-01-01T04:59:59+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/RentSubsidy/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/RentToIncome/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "27.50" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Average rent as % of income2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/RentToIncome/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/RentToIncome/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "26.75" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Average rent as % of income2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59.999-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T05:00:00Z"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/RentToIncome/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://ruisseau-vert.example/IndicatorReport/RentToIncome/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "26.00" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Average rent as % of income2024" ;
+    prov:endedAtTime "2025-01-01T04:59:59+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://ruisseau-vert.example/Indicator/RentToIncome/> ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> .
+
+<https://metadata.un.org/sdg/11> a cids:Theme ;
+    org:hasName "Goal 11: Sustainable cities and communities" ;
+    cids:hasDescription "Make cities and human settlements inclusive, safe, resilient and sustainable" .
+
+<https://ruisseau-vert.example/Indicator/EnergyChange/> a cids:Indicator ;
+    i72:unit_of_measure cids:percentUnit ;
+    org:hasName "Change in energy use" ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> ;
+    cids:forOutcome <https://ruisseau-vert.example/Outcome/AffordableHomes/> ;
+    cids:forTheme <https://metadata.un.org/sdg/11> ;
+    cids:hasDescription "Year-over-year change in energy use per home. Negative means less energy used." ;
+    cids:hasIndicatorReport <https://ruisseau-vert.example/IndicatorReport/EnergyChange/2022>,
+        <https://ruisseau-vert.example/IndicatorReport/EnergyChange/2023>,
+        <https://ruisseau-vert.example/IndicatorReport/EnergyChange/2024> ;
+    cids:unitDescription "Percent change" .
+
+<https://ruisseau-vert.example/Indicator/HouseholdsHoused/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Households housed " ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> ;
+    cids:forOutcome <https://ruisseau-vert.example/Outcome/AffordableHomes/> ;
+    cids:forTheme <https://metadata.un.org/sdg/11> ;
+    cids:hasDescription "Households in co-op homes at year end. ᐃᓪᓗᐃᑦ means \"houses\" in Inuktitut." ;
+    cids:hasIndicatorReport <https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2022>,
+        <https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2023>,
+        <https://ruisseau-vert.example/IndicatorReport/HouseholdsHoused/2024> ;
+    cids:unitDescription "Ménages" .
+
+<https://ruisseau-vert.example/Indicator/RentSubsidy/> a cids:Indicator ;
+    i72:unit_of_measure cids:cad ;
+    org:hasName "Rent subsidy paid" ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> ;
+    cids:forOutcome <https://ruisseau-vert.example/Outcome/AffordableHomes/> ;
+    cids:forTheme <https://metadata.un.org/sdg/11> ;
+    cids:hasDescription "Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught. Le Ruisseau-Vert est une coopérative fictive créée pour les tests de conformité CIDS. This description is deliberately long so that importers which cut text at 255 or 1000 characters are caught." ;
+    cids:hasIndicatorReport <https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2022>,
+        <https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2023>,
+        <https://ruisseau-vert.example/IndicatorReport/RentSubsidy/2024> ;
+    cids:unitDescription "CAD" .
+
+<https://ruisseau-vert.example/Indicator/RentToIncome/> a cids:Indicator ;
+    i72:unit_of_measure cids:percentUnit ;
+    org:hasName "Average rent as % of income" ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> ;
+    cids:forOutcome <https://ruisseau-vert.example/Outcome/AffordableHomes/> ;
+    cids:forTheme <https://metadata.un.org/sdg/11> ;
+    cids:hasDescription "Average monthly rent divided by household income." ;
+    cids:hasIndicatorReport <https://ruisseau-vert.example/IndicatorReport/RentToIncome/2022>,
+        <https://ruisseau-vert.example/IndicatorReport/RentToIncome/2023>,
+        <https://ruisseau-vert.example/IndicatorReport/RentToIncome/2024> ;
+    cids:unitDescription "Percent" .
+
+<https://ruisseau-vert.example/Outcome/AffordableHomes/> a cids:Outcome ;
+    org:hasName "Logements abordables — affordable homes" ;
+    cids:forOrganization <https://ruisseau-vert.example/Organization/RuisseauVert/> ;
+    cids:forTheme <https://metadata.un.org/sdg/11> ;
+    cids:hasDescription """Line 1: « Des logements sûrs ».
+Line 2: "Safe homes" & <stable> tenancy.
+	Line 3 starts with a tab.""" ;
+    cids:hasIndicator <https://ruisseau-vert.example/Indicator/EnergyChange/>,
+        <https://ruisseau-vert.example/Indicator/HouseholdsHoused/>,
+        <https://ruisseau-vert.example/Indicator/RentSubsidy/>,
+        <https://ruisseau-vert.example/Indicator/RentToIncome/> .
+
+<https://ruisseau-vert.example/Organization/RuisseauVert/> a cids:Organization ;
+    org:hasLegalName "Coopérative d’habitation du Ruisseau-Vert" ;
+    cids:hasAddress <https://ruisseau-vert.example/Address/RuisseauVert/> ;
+    cids:hasIndicator <https://ruisseau-vert.example/Indicator/EnergyChange/>,
+        <https://ruisseau-vert.example/Indicator/HouseholdsHoused/>,
+        <https://ruisseau-vert.example/Indicator/RentSubsidy/>,
+        <https://ruisseau-vert.example/Indicator/RentToIncome/> ;
+    cids:hasOutcome <https://ruisseau-vert.example/Outcome/AffordableHomes/> .
+

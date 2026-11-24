@@ -1,0 +1,21 @@
+{
+  "id": "DQ07-time-series-gap",
+  "category": "data-quality",
+  "title": "Missing year in a time series",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-TIME-SERIES-GAP",
+          "focusNode": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+          "resultPath": "cids:hasIndicatorReport",
+          "explanation": "No report covers 2022, although there are reports before and after it."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "I11-organization-missing-legal-name",
+  "category": "invalid",
+  "title": "Organization with no legal name",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Organization/Tamarack/",
+            "resultPath": "org:hasLegalName",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Organization needs exactly one legal name."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Organization/Tamarack/",
+            "resultPath": "org:hasLegalName",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Organization needs exactly one legal name."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "I13-undefined-outcome",
+  "category": "invalid",
+  "title": "Link to an Outcome that isn't in the capsule",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+            "resultPath": "cids:forOutcome",
+            "sourceConstraintComponent": "sh:ClassConstraintComponent",
+            "explanation": "https://tamarack-youth.example/Outcome/HigherYouthIncomes/ is not defined as a cids:Outcome in the capsule."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+            "resultPath": "cids:forOutcome",
+            "sourceConstraintComponent": "sh:ClassConstraintComponent",
+            "explanation": "https://tamarack-youth.example/Outcome/HigherYouthIncomes/ is not defined as a cids:Outcome in the capsule."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

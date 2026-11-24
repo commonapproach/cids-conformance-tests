@@ -1,0 +1,195 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://literacy-standards.example/Code/LIT-01> a cids:Code ;
+    org:hasIdentifier "LIT-01" ;
+    org:hasName "Adult learners enrolled (LIT-01)" ;
+    schema:codeValue "LIT-01" ;
+    cids:definedBy <https://literacy-standards.example/Organization/Council/> ;
+    cids:hasDescription "Standard indicator code for adult literacy enrolment." ;
+    cids:hasSpecification "https://literacy-standards.example/spec/LIT-01"^^xsd:anyURI .
+
+<https://maplehollow-learning.example/Address/MapleHollow/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Winnipeg" ;
+    cids:addressRegion "MB" ;
+    cids:extendedAddress "Suite 210" ;
+    cids:postOfficeBoxNumber "PO Box 4417" ;
+    cids:postalCode "R3C 0D4" ;
+    cids:streetAddress "7 Fictional Crescent" .
+
+<https://maplehollow-learning.example/Characteristic/NewcomerLearners/> a cids:Characteristic ;
+    org:hasName "Learners who are newcomers to Canada" ;
+    cids:hasDescription "Learners who arrived in Canada in the last five years." .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "66" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "68" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "71" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "251" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:hasComment "Enrolment includes the spring intake only.",
+        "Figures checked against the attendance register." .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "274" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "290" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/OrganizationID/MapleHollow/> a org:OrganizationID ;
+    org:hasIdentifier "456789123RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/Person/ProgramLead/> a cids:Person ;
+    ic:hasEmail "noor.haddad@maplehollow-learning.example" ;
+    foaf:familyName "Haddad" ;
+    foaf:givenName "Noor" .
+
+<https://maplehollow-learning.example/Population/AdultLearners> a i72:Population ;
+    rdfs:label "Adult learners" .
+
+<https://maplehollow-learning.example/Theme/AdultLiteracy/> a cids:Theme ;
+    org:hasName "Adult literacy" ;
+    cids:hasCode <https://literacy-standards.example/Code/OUT-ADULT> ;
+    cids:hasDescription "Reading, writing and numeracy for adults." ;
+    cids:relatesTo <https://maplehollow-learning.example/Theme/LifelongLearning/> .
+
+<https://maplehollow-learning.example/Theme/LifelongLearning/> a cids:Theme ;
+    org:hasName "Lifelong learning" ;
+    cids:hasDescription "Learning at every stage of life." .
+
+<https://literacy-standards.example/Code/OUT-ADULT> a cids:Code ;
+    org:hasName "Adult literacy outcome (OUT-ADULT)" ;
+    schema:codeValue "OUT-ADULT" ;
+    cids:definedBy <https://literacy-standards.example/Organization/Council/> ;
+    cids:hasDescription "Standard outcome code for adult literacy." .
+
+<https://maplehollow-learning.example/Outcome/BetterJobProspects/> a cids:Outcome ;
+    org:hasName "Better job prospects" ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:hasDescription "Learners qualify for jobs that need a literacy certificate." .
+
+<https://literacy-standards.example/Organization/Council/> a cids:Organization,
+        cids:StandardsOrganization ;
+    org:hasLegalName "Example Literacy Standards Council" .
+
+<https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> a cids:Outcome ;
+    org:hasName "Improved adult literacy" ;
+    cids:canProduce <https://maplehollow-learning.example/Outcome/BetterJobProspects/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:forTheme <https://metadata.un.org/sdg/4> ;
+    cids:hasCode <https://literacy-standards.example/Code/OUT-ADULT> ;
+    cids:hasDescription "Adult learners gain the reading and writing skills they need for work and daily life." ;
+    cids:hasIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/>,
+        <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> .
+
+<https://metadata.un.org/sdg/4> a cids:Theme ;
+    org:hasName "Goal 4: Quality education" ;
+    cids:hasDescription "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all" .
+
+<https://maplehollow-learning.example/Indicator/CompletionRate/> a cids:Indicator ;
+    i72:unit_of_measure cids:percentUnit ;
+    org:hasName "Program completion rate" ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:forOutcome <https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> ;
+    cids:forTheme <https://metadata.un.org/sdg/4> ;
+    cids:hasDescription "Percent of enrolled learners who completed the program." ;
+    cids:hasIndicatorReport <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024> ;
+    cids:unitDescription "Percent" .
+
+<https://maplehollow-learning.example/Indicator/LearnersEnrolled/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasIdentifier "MH-IND-001" ;
+    org:hasName "Adult learners enrolled" ;
+    cids:definedBy <https://literacy-standards.example/Organization/Council/> ;
+    cids:describesPopulation <https://maplehollow-learning.example/Population/AdultLearners> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:forOutcome <https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> ;
+    cids:forTheme <https://maplehollow-learning.example/Theme/AdultLiteracy/>,
+        <https://metadata.un.org/sdg/4> ;
+    cids:hasBaseline [ a i72:Measure ;
+            i72:hasNumericalValue "150" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    cids:hasCode <https://literacy-standards.example/Code/LIT-01> ;
+    cids:hasDescription "Adults enrolled in the literacy program during the year." ;
+    cids:hasIndicatorReport <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024> ;
+    cids:hasThreshold [ a i72:Measure ;
+            i72:hasNumericalValue "200" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    cids:unitDescription "Learners" .
+
+<https://maplehollow-learning.example/Organization/MapleHollow/> a cids:Organization ;
+    org:hasID <https://maplehollow-learning.example/OrganizationID/MapleHollow/> ;
+    org:hasLegalName "Maple Hollow Learning Collective" ;
+    org:numberOfEmployees "14"^^xsd:nonNegativeInteger ;
+    cids:hasAddress <https://maplehollow-learning.example/Address/MapleHollow/> ;
+    cids:hasCharacteristic <https://maplehollow-learning.example/Characteristic/NewcomerLearners/> ;
+    cids:hasContact <https://maplehollow-learning.example/Person/ProgramLead/> ;
+    cids:hasDescription "A fictional learning collective used in the CIDS conformance tests." ;
+    cids:hasIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/>,
+        <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:hasOutcome <https://maplehollow-learning.example/Outcome/BetterJobProspects/>,
+        <https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> ;
+    cids:hasPurpose "Free literacy classes for adults in Winnipeg." ;
+    cids:hasWebAddress "https://maplehollow-learning.example/"^^xsd:anyURI .
+

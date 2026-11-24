@@ -1,0 +1,277 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sff: <https://ontology.commonapproach.org/sff#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://lakeshore-repair.example/ReportInfo/Lakeshore/FY2024-25/> a sff:ReportInfo ;
+    org:hasName "Lakeshore Repair Café Co-operative impact report FY2024-25" ;
+    prov:endedAtTime "2025-06-30T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> .
+
+<https://silverbirch-family.example/ReportInfo/Silverbirch/FY2024-25/> a sff:ReportInfo ;
+    org:hasName "Silverbirch Family Services impact report FY2024-25" ;
+    prov:endedAtTime "2025-03-31T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-04-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> a cids:Characteristic ;
+    org:hasName "First Generation Immigrants, Refugees & Newcomers" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps11> a cids:Characteristic ;
+    org:hasName "Lone Parent Families" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps15> a cids:Characteristic ;
+    org:hasName "People Living on Low Income" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps25> a cids:Characteristic ;
+    org:hasName "General Population" .
+
+<https://lakeshore-repair.example/Address/Lakeshore/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Kingston" ;
+    cids:addressRegion "ON" ;
+    cids:postalCode "K7L 0A9" ;
+    cids:streetAddress "300 Pretend Boulevard" .
+
+<https://lakeshore-repair.example/EDGProfile/Lakeshore/Board/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-08-29T00:00:00-04:00"^^xsd:dateTime .
+
+<https://lakeshore-repair.example/EDGProfile/Lakeshore/Management/2025/edg3/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-08-29T00:00:00-04:00"^^xsd:dateTime .
+
+<https://lakeshore-repair.example/FundingStatus/Lakeshore/2025/> a sff:FundingStatus ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2025-08-29T00:00:00-04:00"^^xsd:dateTime .
+
+<https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2022-23> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1320" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Items repaired FY2022-23" ;
+    prov:endedAtTime "2023-06-30T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-07-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://lakeshore-repair.example/Indicator/ItemsRepaired/> ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> .
+
+<https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2023-24> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1475" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Items repaired FY2023-24" ;
+    prov:endedAtTime "2024-06-30T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-07-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://lakeshore-repair.example/Indicator/ItemsRepaired/> ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> .
+
+<https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2024-25> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1590" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Items repaired FY2024-25" ;
+    prov:endedAtTime "2025-06-30T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://lakeshore-repair.example/Indicator/ItemsRepaired/> ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> .
+
+<https://lakeshore-repair.example/OrganizationID/Lakeshore/> a org:OrganizationID ;
+    org:hasIdentifier "891234567RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> .
+
+<https://lakeshore-repair.example/OrganizationProfile/Lakeshore/2025/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> ;
+    sff:hasBoardProfile <https://lakeshore-repair.example/TeamProfile/Lakeshore/Board/2025/> ;
+    sff:hasFundingStatus <https://lakeshore-repair.example/FundingStatus/Lakeshore/2025/> ;
+    sff:hasManagementTeamProfile <https://lakeshore-repair.example/TeamProfile/Lakeshore/Management/2025/> ;
+    sff:hasPrimaryContact <https://lakeshore-repair.example/Person/LakeshoreContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc2> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#Cooperative> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps25> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#ON> ;
+    sff:reportedDate "2025-08-29T00:00:00-04:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Waste> .
+
+<https://lakeshore-repair.example/Person/LakeshoreContact/> a cids:Person ;
+    ic:hasEmail "jamie.kowalczyk@lakeshore-repair.example" ;
+    foaf:familyName "Kowalczyk" ;
+    foaf:givenName "Jamie" .
+
+<https://lakeshore-repair.example/TeamProfile/Lakeshore/Board/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://lakeshore-repair.example/EDGProfile/Lakeshore/Board/2025/edg10/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-08-29T00:00:00-04:00"^^xsd:dateTime .
+
+<https://lakeshore-repair.example/TeamProfile/Lakeshore/Management/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://lakeshore-repair.example/EDGProfile/Lakeshore/Management/2025/edg3/> ;
+    sff:hasEDGSize "1"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-08-29T00:00:00-04:00"^^xsd:dateTime .
+
+<https://silverbirch-family.example/Address/Silverbirch/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Fredericton" ;
+    cids:addressRegion "NB" ;
+    cids:postalCode "E3B 0A8" ;
+    cids:streetAddress "9 Mock Street" .
+
+<https://silverbirch-family.example/EDGProfile/Silverbirch/Board/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-06-30T00:00:00-03:00"^^xsd:dateTime .
+
+<https://silverbirch-family.example/EDGProfile/Silverbirch/Management/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-06-30T00:00:00-03:00"^^xsd:dateTime .
+
+<https://silverbirch-family.example/FundingStatus/Silverbirch/2025/> a sff:FundingStatus ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2025-06-30T00:00:00-03:00"^^xsd:dateTime .
+
+<https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2022-23> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "188" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Families supported FY2022-23" ;
+    prov:endedAtTime "2023-03-31T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-04-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://silverbirch-family.example/Indicator/FamiliesSupported/> ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> .
+
+<https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2023-24> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "203" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Families supported FY2023-24" ;
+    prov:endedAtTime "2024-03-31T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-04-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://silverbirch-family.example/Indicator/FamiliesSupported/> ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> .
+
+<https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2024-25> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "219" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Families supported FY2024-25" ;
+    prov:endedAtTime "2025-03-31T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-04-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://silverbirch-family.example/Indicator/FamiliesSupported/> ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> .
+
+<https://silverbirch-family.example/OrganizationID/Silverbirch/> a org:OrganizationID ;
+    org:hasIdentifier "789123456RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> .
+
+<https://silverbirch-family.example/OrganizationProfile/Silverbirch/2025/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> ;
+    sff:hasBoardProfile <https://silverbirch-family.example/TeamProfile/Silverbirch/Board/2025/> ;
+    sff:hasFundingStatus <https://silverbirch-family.example/FundingStatus/Silverbirch/2025/> ;
+    sff:hasManagementTeamProfile <https://silverbirch-family.example/TeamProfile/Silverbirch/Management/2025/> ;
+    sff:hasPrimaryContact <https://silverbirch-family.example/Person/SilverbirchContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc2> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#Charitable> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps11>,
+        <https://codelist.commonapproach.org/PopulationServed#ps15> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#NB> ;
+    sff:reportedDate "2025-06-30T00:00:00-03:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#RealEstate> .
+
+<https://silverbirch-family.example/Person/SilverbirchContact/> a cids:Person ;
+    ic:hasEmail "taylor.arsenault@silverbirch-family.example" ;
+    foaf:familyName "Arsenault" ;
+    foaf:givenName "Taylor" .
+
+<https://silverbirch-family.example/TeamProfile/Silverbirch/Board/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://silverbirch-family.example/EDGProfile/Silverbirch/Board/2025/edg10/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-06-30T00:00:00-03:00"^^xsd:dateTime .
+
+<https://silverbirch-family.example/TeamProfile/Silverbirch/Management/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://silverbirch-family.example/EDGProfile/Silverbirch/Management/2025/edg10/> ;
+    sff:hasEDGSize "1"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "3"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-06-30T00:00:00-03:00"^^xsd:dateTime .
+
+<https://lakeshore-repair.example/Outcome/LessWaste/> a cids:Outcome ;
+    org:hasName "Fewer items thrown away" ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasDescription "Broken items are repaired instead of replaced." ;
+    cids:hasIndicator <https://lakeshore-repair.example/Indicator/ItemsRepaired/> .
+
+<https://metadata.un.org/sdg/1> a cids:Theme ;
+    org:hasName "Goal 1: No poverty" ;
+    cids:hasDescription "End poverty in all its forms everywhere" .
+
+<https://metadata.un.org/sdg/12> a cids:Theme ;
+    org:hasName "Goal 12: Responsible consumption and production" ;
+    cids:hasDescription "Ensure sustainable consumption and production patterns" .
+
+<https://silverbirch-family.example/Outcome/StableHousing/> a cids:Outcome ;
+    org:hasName "Families in stable housing" ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> ;
+    cids:forTheme <https://metadata.un.org/sdg/1> ;
+    cids:hasDescription "Families at risk of eviction keep their homes." ;
+    cids:hasIndicator <https://silverbirch-family.example/Indicator/FamiliesSupported/> .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> a cids:Characteristic ;
+    org:hasName "Women (Cisgender and Transgender)" .
+
+<https://lakeshore-repair.example/Indicator/ItemsRepaired/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Items repaired" ;
+    cids:forOrganization <https://lakeshore-repair.example/Organization/Lakeshore/> ;
+    cids:forOutcome <https://lakeshore-repair.example/Outcome/LessWaste/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasDescription "Household items repaired at repair events." ;
+    cids:hasIndicatorReport <https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2022-23>,
+        <https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2023-24>,
+        <https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2024-25> ;
+    cids:unitDescription "Items" .
+
+<https://silverbirch-family.example/Indicator/FamiliesSupported/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Families supported" ;
+    cids:forOrganization <https://silverbirch-family.example/Organization/Silverbirch/> ;
+    cids:forOutcome <https://silverbirch-family.example/Outcome/StableHousing/> ;
+    cids:forTheme <https://metadata.un.org/sdg/1> ;
+    cids:hasDescription "Families who received a housing support plan." ;
+    cids:hasIndicatorReport <https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2022-23>,
+        <https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2023-24>,
+        <https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2024-25> ;
+    cids:unitDescription "Families" .
+
+<https://lakeshore-repair.example/Organization/Lakeshore/> a cids:Organization ;
+    org:hasID <https://lakeshore-repair.example/OrganizationID/Lakeshore/> ;
+    org:hasLegalName "Lakeshore Repair Café Co-operative" ;
+    cids:hasAddress <https://lakeshore-repair.example/Address/Lakeshore/> ;
+    cids:hasIndicator <https://lakeshore-repair.example/Indicator/ItemsRepaired/> ;
+    cids:hasOutcome <https://lakeshore-repair.example/Outcome/LessWaste/> ;
+    sff:hasOrganizationProfile <https://lakeshore-repair.example/OrganizationProfile/Lakeshore/2025/> .
+
+<https://silverbirch-family.example/Organization/Silverbirch/> a cids:Organization ;
+    org:hasID <https://silverbirch-family.example/OrganizationID/Silverbirch/> ;
+    org:hasLegalName "Silverbirch Family Services" ;
+    cids:hasAddress <https://silverbirch-family.example/Address/Silverbirch/> ;
+    cids:hasIndicator <https://silverbirch-family.example/Indicator/FamiliesSupported/> ;
+    cids:hasOutcome <https://silverbirch-family.example/Outcome/StableHousing/> ;
+    sff:hasOrganizationProfile <https://silverbirch-family.example/OrganizationProfile/Silverbirch/2025/> .
+

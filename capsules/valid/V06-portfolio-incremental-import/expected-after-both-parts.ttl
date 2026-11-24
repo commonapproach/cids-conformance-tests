@@ -1,0 +1,1045 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sff: <https://ontology.commonapproach.org/sff#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://maplehollow-learning.example/ReportInfo/MapleHollow/2024/> a sff:ReportInfo ;
+    org:hasName "Maple Hollow Learning Collective impact report 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/ReportInfo/MapleHollow/2025/> a sff:ReportInfo ;
+    org:hasName "Maple Hollow Learning Collective impact report 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://northwind-food.example/ReportInfo/Northwind/2024/> a sff:ReportInfo ;
+    org:hasName "Northwind Food Recovery Society impact report 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/ReportInfo/Northwind/2025/> a sff:ReportInfo ;
+    org:hasName "Northwind Food Recovery Society impact report 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://prairiespoke-bikes.example/ReportInfo/PrairieSpoke/2024/> a sff:ReportInfo ;
+    org:hasName "Prairie Spoke Bicycle Works Ltd. impact report 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/ReportInfo/PrairieSpoke/2025/> a sff:ReportInfo ;
+    org:hasName "Prairie Spoke Bicycle Works Ltd. impact report 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://maplehollow-learning.example/Address/MapleHollow/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Winnipeg" ;
+    cids:addressRegion "MB" ;
+    cids:postalCode "R3C 0D4" ;
+    cids:streetAddress "7 Fictional Crescent" .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg6/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2026/edg6/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg3/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2026/edg3/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/FundingStatus/MapleHollow/2025/> a sff:FundingStatus ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/FundingStatus/MapleHollow/2026/> a sff:FundingStatus ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "61" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "58" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "63" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "66" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "68" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "71" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/CompletionRate/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "73" ;
+            i72:unit_of_measure cids:percentUnit ] ;
+    org:hasName "Program completion rate 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "210" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "188" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "236" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "251" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "274" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "290" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "305" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Adult learners enrolled 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/OrganizationID/MapleHollow/> a org:OrganizationID ;
+    org:hasIdentifier "456789123RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> .
+
+<https://maplehollow-learning.example/OrganizationProfile/MapleHollow/2025/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    sff:hasBoardProfile <https://maplehollow-learning.example/TeamProfile/MapleHollow/Board/2025/> ;
+    sff:hasFundingStatus <https://maplehollow-learning.example/FundingStatus/MapleHollow/2025/> ;
+    sff:hasManagementTeamProfile <https://maplehollow-learning.example/TeamProfile/MapleHollow/Management/2025/> ;
+    sff:hasPrimaryContact <https://maplehollow-learning.example/Person/MapleHollowContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc1> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#nonProfit> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps10>,
+        <https://codelist.commonapproach.org/PopulationServed#ps20> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#MB> ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Education> .
+
+<https://maplehollow-learning.example/OrganizationProfile/MapleHollow/2026/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    sff:hasBoardProfile <https://maplehollow-learning.example/TeamProfile/MapleHollow/Board/2026/> ;
+    sff:hasFundingStatus <https://maplehollow-learning.example/FundingStatus/MapleHollow/2026/> ;
+    sff:hasManagementTeamProfile <https://maplehollow-learning.example/TeamProfile/MapleHollow/Management/2026/> ;
+    sff:hasPrimaryContact <https://maplehollow-learning.example/Person/MapleHollowContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc1> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#nonProfit> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps10>,
+        <https://codelist.commonapproach.org/PopulationServed#ps20> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#MB> ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Education> .
+
+<https://maplehollow-learning.example/TeamProfile/MapleHollow/Board/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg10/>,
+        <https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2025/edg6/> ;
+    sff:hasEDGSize "3"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "6"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/TeamProfile/MapleHollow/Board/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2026/edg10/>,
+        <https://maplehollow-learning.example/EDGProfile/MapleHollow/Board/2026/edg6/> ;
+    sff:hasEDGSize "3"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "6"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/TeamProfile/MapleHollow/Management/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg10/>,
+        <https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2025/edg3/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "3"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://maplehollow-learning.example/TeamProfile/MapleHollow/Management/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2026/edg10/>,
+        <https://maplehollow-learning.example/EDGProfile/MapleHollow/Management/2026/edg3/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "3"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-14T00:00:00-06:00"^^xsd:dateTime .
+
+<https://northwind-food.example/Address/Northwind/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Vancouver" ;
+    cids:addressRegion "BC" ;
+    cids:postalCode "V5K 0C3" ;
+    cids:streetAddress "88 Imaginary Avenue" .
+
+<https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg1/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg1> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "4"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/EDGProfile/Northwind/Board/2026/edg1/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg1> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/EDGProfile/Northwind/Board/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "4"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "3"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg8/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/EDGProfile/Northwind/Management/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "3"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/EDGProfile/Northwind/Management/2026/edg8/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/FundingStatus/Northwind/2025/> a sff:FundingStatus ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/FundingStatus/Northwind/2026/> a sff:FundingStatus ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "41000" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "52300" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "55100" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "58900" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "61200" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "64800" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "67400" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "820" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "905" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "960" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1040" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1115" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1190" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1260" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/OrganizationID/Northwind/> a org:OrganizationID ;
+    org:hasIdentifier "345678912RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/OrganizationProfile/Northwind/2025/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    sff:hasBoardProfile <https://northwind-food.example/TeamProfile/Northwind/Board/2025/> ;
+    sff:hasFundingStatus <https://northwind-food.example/FundingStatus/Northwind/2025/> ;
+    sff:hasManagementTeamProfile <https://northwind-food.example/TeamProfile/Northwind/Management/2025/> ;
+    sff:hasPrimaryContact <https://northwind-food.example/Person/NorthwindContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc1> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#Charitable> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps14>,
+        <https://codelist.commonapproach.org/PopulationServed#ps15> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#BC> ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Agriculture>,
+        <https://codelist.commonapproach.org/IRISImpactCategory#Waste> .
+
+<https://northwind-food.example/OrganizationProfile/Northwind/2026/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    sff:hasBoardProfile <https://northwind-food.example/TeamProfile/Northwind/Board/2026/> ;
+    sff:hasFundingStatus <https://northwind-food.example/FundingStatus/Northwind/2026/> ;
+    sff:hasManagementTeamProfile <https://northwind-food.example/TeamProfile/Northwind/Management/2026/> ;
+    sff:hasPrimaryContact <https://northwind-food.example/Person/NorthwindContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc1> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#Charitable> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps14>,
+        <https://codelist.commonapproach.org/PopulationServed#ps15> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#BC> ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Agriculture>,
+        <https://codelist.commonapproach.org/IRISImpactCategory#Waste> .
+
+<https://northwind-food.example/TeamProfile/Northwind/Board/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg1/>,
+        <https://northwind-food.example/EDGProfile/Northwind/Board/2025/edg10/> ;
+    sff:hasEDGSize "4"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "8"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/TeamProfile/Northwind/Board/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://northwind-food.example/EDGProfile/Northwind/Board/2026/edg1/>,
+        <https://northwind-food.example/EDGProfile/Northwind/Board/2026/edg10/> ;
+    sff:hasEDGSize "4"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "8"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/TeamProfile/Northwind/Management/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg10/>,
+        <https://northwind-food.example/EDGProfile/Northwind/Management/2025/edg8/> ;
+    sff:hasEDGSize "3"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://northwind-food.example/TeamProfile/Northwind/Management/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://northwind-food.example/EDGProfile/Northwind/Management/2026/edg10/>,
+        <https://northwind-food.example/EDGProfile/Northwind/Management/2026/edg8/> ;
+    sff:hasEDGSize "3"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-30T00:00:00-08:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/Address/PrairieSpoke/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Saskatoon" ;
+    cids:addressRegion "SK" ;
+    cids:postalCode "S7K 0E5" ;
+    cids:streetAddress "1200 Notional Street" .
+
+<https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Board/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Board/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Management/2025/edg5/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg5> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Management/2026/edg5/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg5> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/FundingStatus/PrairieSpoke/2025/> a sff:FundingStatus ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2025-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/FundingStatus/PrairieSpoke/2026/> a sff:FundingStatus ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2026-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "18" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Apprentices certified 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "21" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Apprentices certified 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "24" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Apprentices certified 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "26" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Apprentices certified 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "29" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Apprentices certified 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "31" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Apprentices certified 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "33" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Apprentices certified 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1450" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Bicycles refurbished and sold 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1610" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Bicycles refurbished and sold 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1720" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Bicycles refurbished and sold 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1805" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Bicycles refurbished and sold 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1930" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Bicycles refurbished and sold 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "2040" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Bicycles refurbished and sold 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "2115" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Bicycles refurbished and sold 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-06:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-06:00"^^xsd:dateTime ;
+    cids:forIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/OrganizationID/PrairieSpoke/> a org:OrganizationID ;
+    org:hasIdentifier "567891234RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> .
+
+<https://prairiespoke-bikes.example/OrganizationProfile/PrairieSpoke/2025/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    sff:hasBoardProfile <https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Board/2025/> ;
+    sff:hasFundingStatus <https://prairiespoke-bikes.example/FundingStatus/PrairieSpoke/2025/> ;
+    sff:hasManagementTeamProfile <https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Management/2025/> ;
+    sff:hasPrimaryContact <https://prairiespoke-bikes.example/Person/PrairieSpokeContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc2> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#forProfit> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps15>,
+        <https://codelist.commonapproach.org/PopulationServed#ps24> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#SK> ;
+    sff:reportedDate "2025-03-02T00:00:00-06:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Climate>,
+        <https://codelist.commonapproach.org/IRISImpactCategory#Employment> .
+
+<https://prairiespoke-bikes.example/OrganizationProfile/PrairieSpoke/2026/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    sff:hasBoardProfile <https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Board/2026/> ;
+    sff:hasFundingStatus <https://prairiespoke-bikes.example/FundingStatus/PrairieSpoke/2026/> ;
+    sff:hasManagementTeamProfile <https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Management/2026/> ;
+    sff:hasPrimaryContact <https://prairiespoke-bikes.example/Person/PrairieSpokeContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc2> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#forProfit> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps15>,
+        <https://codelist.commonapproach.org/PopulationServed#ps24> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#SK> ;
+    sff:reportedDate "2026-03-02T00:00:00-06:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Climate>,
+        <https://codelist.commonapproach.org/IRISImpactCategory#Employment> .
+
+<https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Board/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Board/2025/edg10/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Board/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Board/2026/edg10/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Management/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Management/2025/edg5/> ;
+    sff:hasEDGSize "1"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "4"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://prairiespoke-bikes.example/TeamProfile/PrairieSpoke/Management/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://prairiespoke-bikes.example/EDGProfile/PrairieSpoke/Management/2026/edg5/> ;
+    sff:hasEDGSize "1"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "4"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-03-02T00:00:00-06:00"^^xsd:dateTime .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg1> a cids:Characteristic ;
+    org:hasName "2SLGBTQIA+" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> a cids:Characteristic ;
+    org:hasName "First Generation Immigrants, Refugees & Newcomers" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg5> a cids:Characteristic ;
+    org:hasName "Indigenous Peoples: Inuit" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6> a cids:Characteristic ;
+    org:hasName "Indigenous Peoples: Métis" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8> a cids:Characteristic ;
+    org:hasName "Other Racialized Peoples" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps10> a cids:Characteristic ;
+    org:hasName "First Generation Immigrants, Refugees & Newcomers" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps14> a cids:Characteristic ;
+    org:hasName "People Experiencing Homelessness or Housing Insecurities" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps20> a cids:Characteristic ;
+    org:hasName "People without Advanced Educational Qualification" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps24> a cids:Characteristic ;
+    org:hasName "Youth (Ages 15-24)" .
+
+<https://maplehollow-learning.example/Person/MapleHollowContact/> a cids:Person ;
+    ic:hasEmail "jordan.beaulieu@maplehollow-learning.example" ;
+    foaf:familyName "Beaulieu" ;
+    foaf:givenName "Jordan" .
+
+<https://metadata.un.org/sdg/11> a cids:Theme ;
+    org:hasName "Goal 11: Sustainable cities and communities" ;
+    cids:hasDescription "Make cities and human settlements inclusive, safe, resilient and sustainable" .
+
+<https://metadata.un.org/sdg/12> a cids:Theme ;
+    org:hasName "Goal 12: Responsible consumption and production" ;
+    cids:hasDescription "Ensure sustainable consumption and production patterns" .
+
+<https://metadata.un.org/sdg/2> a cids:Theme ;
+    org:hasName "Goal 2: Zero hunger" ;
+    cids:hasDescription "End hunger, achieve food security and improved nutrition and promote sustainable agriculture" .
+
+<https://metadata.un.org/sdg/8> a cids:Theme ;
+    org:hasName "Goal 8: Decent work and economic growth" ;
+    cids:hasDescription "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all" .
+
+<https://northwind-food.example/Outcome/LessFoodWaste/> a cids:Outcome ;
+    org:hasName "Less food waste sent to landfill" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasDescription "Surplus food is recovered instead of thrown away." ;
+    cids:hasIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> .
+
+<https://northwind-food.example/Person/NorthwindContact/> a cids:Person ;
+    ic:hasEmail "mika.tanaka@northwind-food.example" ;
+    foaf:familyName "Tanaka" ;
+    foaf:givenName "Mika" .
+
+<https://prairiespoke-bikes.example/Outcome/LowCarbonTransport/> a cids:Outcome ;
+    org:hasName "More people using low-carbon transport" ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    cids:forTheme <https://metadata.un.org/sdg/11> ;
+    cids:hasDescription "Refurbished bikes replace car trips." ;
+    cids:hasIndicator <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> .
+
+<https://prairiespoke-bikes.example/Outcome/SkilledTrades/> a cids:Outcome ;
+    org:hasName "New skills for trade apprentices" ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    cids:forTheme <https://metadata.un.org/sdg/8> ;
+    cids:hasDescription "Apprentices gain bicycle mechanic certification." ;
+    cids:hasIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> .
+
+<https://prairiespoke-bikes.example/Person/PrairieSpokeContact/> a cids:Person ;
+    ic:hasEmail "alex.desjardins@prairiespoke-bikes.example" ;
+    foaf:familyName "Desjardins" ;
+    foaf:givenName "Alex" .
+
+<https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> a cids:Outcome ;
+    org:hasName "Improved adult literacy" ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:forTheme <https://metadata.un.org/sdg/4> ;
+    cids:hasDescription "Adult learners gain the reading and writing skills they need for work and daily life." ;
+    cids:hasIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/>,
+        <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> .
+
+<https://metadata.un.org/sdg/4> a cids:Theme ;
+    org:hasName "Goal 4: Quality education" ;
+    cids:hasDescription "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all" .
+
+<https://northwind-food.example/Outcome/ImprovedFoodSecurity/> a cids:Outcome ;
+    org:hasName "Improved food security" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forTheme <https://metadata.un.org/sdg/2> ;
+    cids:hasDescription "Low-income households have reliable access to healthy food." ;
+    cids:hasIndicator <https://northwind-food.example/Indicator/MealsProvided/>,
+        <https://northwind-food.example/Indicator/TonnesFoodRecovered/> .
+
+<https://codelist.commonapproach.org/PopulationServed#ps15> a cids:Characteristic ;
+    org:hasName "People Living on Low Income" .
+
+<https://maplehollow-learning.example/Indicator/CompletionRate/> a cids:Indicator ;
+    i72:unit_of_measure cids:percentUnit ;
+    org:hasName "Program completion rate" ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:forOutcome <https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> ;
+    cids:forTheme <https://metadata.un.org/sdg/4> ;
+    cids:hasDescription "Percent of enrolled learners who completed the program." ;
+    cids:hasIndicatorReport <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2019>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2020>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2021>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024>,
+        <https://maplehollow-learning.example/IndicatorReport/CompletionRate/2025> ;
+    cids:unitDescription "Percent" .
+
+<https://maplehollow-learning.example/Indicator/LearnersEnrolled/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Adult learners enrolled" ;
+    cids:forOrganization <https://maplehollow-learning.example/Organization/MapleHollow/> ;
+    cids:forOutcome <https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> ;
+    cids:forTheme <https://metadata.un.org/sdg/4> ;
+    cids:hasDescription "Adults enrolled in the literacy program during the year." ;
+    cids:hasIndicatorReport <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2019>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2020>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2021>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024>,
+        <https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2025> ;
+    cids:unitDescription "Learners" .
+
+<https://northwind-food.example/Indicator/MealsProvided/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Meals provided" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forOutcome <https://northwind-food.example/Outcome/ImprovedFoodSecurity/> ;
+    cids:forTheme <https://metadata.un.org/sdg/2> ;
+    cids:hasDescription "Meals provided through partner agencies." ;
+    cids:hasIndicatorReport <https://northwind-food.example/IndicatorReport/MealsProvided/2019>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2020>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2021>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2022>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2023>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2024>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2025> ;
+    cids:unitDescription "Meals" .
+
+<https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Apprentices certified" ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    cids:forOutcome <https://prairiespoke-bikes.example/Outcome/SkilledTrades/> ;
+    cids:forTheme <https://metadata.un.org/sdg/8> ;
+    cids:hasDescription "Apprentices who earned mechanic certification during the year." ;
+    cids:hasIndicatorReport <https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2019>,
+        <https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2020>,
+        <https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2021>,
+        <https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2022>,
+        <https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2023>,
+        <https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2024>,
+        <https://prairiespoke-bikes.example/IndicatorReport/ApprenticesCertified/2025> ;
+    cids:unitDescription "Apprentices" .
+
+<https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Bicycles refurbished and sold" ;
+    cids:forOrganization <https://prairiespoke-bikes.example/Organization/PrairieSpoke/> ;
+    cids:forOutcome <https://prairiespoke-bikes.example/Outcome/LowCarbonTransport/> ;
+    cids:forTheme <https://metadata.un.org/sdg/11> ;
+    cids:hasDescription "Refurbished bicycles sold or donated during the year." ;
+    cids:hasIndicatorReport <https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2019>,
+        <https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2020>,
+        <https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2021>,
+        <https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2022>,
+        <https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2023>,
+        <https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2024>,
+        <https://prairiespoke-bikes.example/IndicatorReport/BikesRefurbished/2025> ;
+    cids:unitDescription "Bicycles" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> a cids:Characteristic ;
+    org:hasName "Women (Cisgender and Transgender)" .
+
+<https://northwind-food.example/Indicator/TonnesFoodRecovered/> a cids:Indicator ;
+    i72:unit_of_measure cids:tonne ;
+    org:hasName "Tonnes of food recovered" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forOutcome <https://northwind-food.example/Outcome/ImprovedFoodSecurity/>,
+        <https://northwind-food.example/Outcome/LessFoodWaste/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasDescription "Tonnes of surplus food recovered from grocers and farms." ;
+    cids:hasIndicatorReport <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2019>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2020>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2021>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2025> ;
+    cids:unitDescription "Tonnes" .
+
+<https://maplehollow-learning.example/Organization/MapleHollow/> a cids:Organization ;
+    org:hasID <https://maplehollow-learning.example/OrganizationID/MapleHollow/> ;
+    org:hasLegalName "Maple Hollow Learning Collective" ;
+    cids:hasAddress <https://maplehollow-learning.example/Address/MapleHollow/> ;
+    cids:hasIndicator <https://maplehollow-learning.example/Indicator/CompletionRate/>,
+        <https://maplehollow-learning.example/Indicator/LearnersEnrolled/> ;
+    cids:hasOutcome <https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/> ;
+    sff:hasOrganizationProfile <https://maplehollow-learning.example/OrganizationProfile/MapleHollow/2025/>,
+        <https://maplehollow-learning.example/OrganizationProfile/MapleHollow/2026/> .
+
+<https://northwind-food.example/Organization/Northwind/> a cids:Organization ;
+    org:hasID <https://northwind-food.example/OrganizationID/Northwind/> ;
+    org:hasLegalName "Northwind Food Recovery Society" ;
+    cids:hasAddress <https://northwind-food.example/Address/Northwind/> ;
+    cids:hasIndicator <https://northwind-food.example/Indicator/MealsProvided/>,
+        <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:hasOutcome <https://northwind-food.example/Outcome/ImprovedFoodSecurity/>,
+        <https://northwind-food.example/Outcome/LessFoodWaste/> ;
+    sff:hasOrganizationProfile <https://northwind-food.example/OrganizationProfile/Northwind/2025/>,
+        <https://northwind-food.example/OrganizationProfile/Northwind/2026/> .
+
+<https://prairiespoke-bikes.example/Organization/PrairieSpoke/> a cids:Organization ;
+    org:hasID <https://prairiespoke-bikes.example/OrganizationID/PrairieSpoke/> ;
+    org:hasLegalName "Prairie Spoke Bicycle Works Ltd." ;
+    cids:hasAddress <https://prairiespoke-bikes.example/Address/PrairieSpoke/> ;
+    cids:hasIndicator <https://prairiespoke-bikes.example/Indicator/ApprenticesCertified/>,
+        <https://prairiespoke-bikes.example/Indicator/BikesRefurbished/> ;
+    cids:hasOutcome <https://prairiespoke-bikes.example/Outcome/LowCarbonTransport/>,
+        <https://prairiespoke-bikes.example/Outcome/SkilledTrades/> ;
+    sff:hasOrganizationProfile <https://prairiespoke-bikes.example/OrganizationProfile/PrairieSpoke/2025/>,
+        <https://prairiespoke-bikes.example/OrganizationProfile/PrairieSpoke/2026/> .
+

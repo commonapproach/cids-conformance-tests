@@ -1,0 +1,14 @@
+{
+  "id": "V03-literal-fidelity",
+  "category": "valid",
+  "title": "Text, numbers and dates that must survive unchanged",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}

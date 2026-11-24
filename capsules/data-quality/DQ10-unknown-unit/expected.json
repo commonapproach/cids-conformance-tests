@@ -1,0 +1,21 @@
+{
+  "id": "DQ10-unknown-unit",
+  "category": "data-quality",
+  "title": "Unit of measure that isn't defined anywhere",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-UNKNOWN-UNIT",
+          "focusNode": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2024 / i72:value",
+          "resultPath": "i72:unit_of_measure",
+          "explanation": "Use a unit from the CIDS units list (here cids:countUnit), or define the unit in the capsule."
+        }
+      ]
+    }
+  }
+}

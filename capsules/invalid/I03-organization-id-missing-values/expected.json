@@ -1,0 +1,29 @@
+{
+  "id": "I03-organization-id-missing-values",
+  "category": "invalid",
+  "title": "OrganizationID with no identifier and no issuer",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/OrganizationID/Tamarack/",
+            "resultPath": "org:hasIdentifier",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "An OrganizationID needs the identifier itself (e.g. the business number)."
+          },
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/OrganizationID/Tamarack/",
+            "resultPath": "org:issuedBy",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "An OrganizationID needs the organization that issued it (e.g. Canada Revenue Agency)."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

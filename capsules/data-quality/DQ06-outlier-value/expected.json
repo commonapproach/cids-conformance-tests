@@ -1,0 +1,21 @@
+{
+  "id": "DQ06-outlier-value",
+  "category": "data-quality",
+  "title": "B Impact score far too high",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-OUTLIER",
+          "focusNode": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2024 / i72:value",
+          "resultPath": "i72:hasNumericalValue",
+          "explanation": "790 is more than 5 times the median of the other B Impact reports. Likely a typo (79.0?)."
+        }
+      ]
+    }
+  }
+}

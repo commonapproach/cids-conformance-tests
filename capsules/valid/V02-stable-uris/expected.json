@@ -1,0 +1,14 @@
+{
+  "id": "V02-stable-uris",
+  "category": "valid",
+  "title": "IRIs that must survive unchanged",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}

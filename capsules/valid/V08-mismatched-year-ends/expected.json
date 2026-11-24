@@ -1,0 +1,14 @@
+{
+  "id": "V08-mismatched-year-ends",
+  "category": "valid",
+  "title": "Organizations with different fiscal year ends",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}

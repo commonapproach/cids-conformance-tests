@@ -1,0 +1,30 @@
+{
+  "id": "I06-undefined-indicator",
+  "category": "invalid",
+  "title": "Link to an Indicator that isn't in the capsule",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Organization/Tamarack/",
+            "resultPath": "cids:hasIndicator",
+            "sourceConstraintComponent": "sh:ClassConstraintComponent",
+            "explanation": "https://tamarack-youth.example/Indicator/MentorHoursLogged/ is not defined as a cids:Indicator in the capsule."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Organization/Tamarack/",
+            "resultPath": "cids:hasIndicator",
+            "sourceConstraintComponent": "sh:ClassConstraintComponent",
+            "explanation": "https://tamarack-youth.example/Indicator/MentorHoursLogged/ is not defined as a cids:Indicator in the capsule."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

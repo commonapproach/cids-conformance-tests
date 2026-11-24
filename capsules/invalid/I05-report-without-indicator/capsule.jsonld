@@ -1,0 +1,521 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://tamarack-youth.example/Organization/Tamarack/",
+    "hasLegalName": "Tamarack Youth Employment Network",
+    "hasAddress": [
+      "https://tamarack-youth.example/Address/Tamarack/"
+    ],
+    "hasID": [
+      "https://tamarack-youth.example/OrganizationID/Tamarack/"
+    ],
+    "hasOutcome": [
+      "https://tamarack-youth.example/Outcome/YouthInStableEmployment/"
+    ],
+    "hasIndicator": [
+      "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+      "https://tamarack-youth.example/Indicator/BImpactScore/"
+    ],
+    "hasOrganizationProfile": [
+      "https://tamarack-youth.example/OrganizationProfile/Tamarack/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://tamarack-youth.example/Address/Tamarack/",
+    "streetAddress": "410 Sample Road",
+    "addressLocality": "Sudbury",
+    "addressRegion": "ON",
+    "postalCode": "P3E 0A1",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://tamarack-youth.example/OrganizationID/Tamarack/",
+    "hasIdentifier": "123456789RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/8",
+    "hasName": "Goal 8: Decent work and economic growth",
+    "hasDescription": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://tamarack-youth.example/Outcome/YouthInStableEmployment/",
+    "hasName": "Youth in stable employment",
+    "hasDescription": "Young people facing barriers find and keep stable jobs.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/8"
+    ],
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/",
+    "hasIndicator": [
+      "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+      "https://tamarack-youth.example/Indicator/BImpactScore/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+    "hasName": "Youth placed in jobs",
+    "hasDescription": "Number of program participants who started a job lasting at least three months.",
+    "unitDescription": "Youth",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/",
+    "forOutcome": "https://tamarack-youth.example/Outcome/YouthInStableEmployment/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/8"
+    ],
+    "hasIndicatorReport": [
+      "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2019",
+      "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2020",
+      "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2021",
+      "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2022",
+      "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2023",
+      "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2019",
+    "hasName": "Youth placed in jobs 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "112",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-05:00",
+    "endedAtTime": "2019-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2020",
+    "hasName": "Youth placed in jobs 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "126",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-05:00",
+    "endedAtTime": "2020-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2021",
+    "hasName": "Youth placed in jobs 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "131",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-05:00",
+    "endedAtTime": "2021-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2022",
+    "hasName": "Youth placed in jobs 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "148",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2023",
+    "hasName": "Youth placed in jobs 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "155",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-05:00",
+    "endedAtTime": "2023-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2024",
+    "hasName": "Youth placed in jobs 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "163",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/YouthPlacedInJobs/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://tamarack-youth.example/Indicator/BImpactScore/",
+    "hasName": "B Impact Assessment score",
+    "hasDescription": "Overall B Impact Assessment score.",
+    "unitDescription": "Points",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/",
+    "forOutcome": "https://tamarack-youth.example/Outcome/YouthInStableEmployment/",
+    "hasIndicatorReport": [
+      "https://tamarack-youth.example/IndicatorReport/BImpactScore/2020",
+      "https://tamarack-youth.example/IndicatorReport/BImpactScore/2021",
+      "https://tamarack-youth.example/IndicatorReport/BImpactScore/2022",
+      "https://tamarack-youth.example/IndicatorReport/BImpactScore/2023",
+      "https://tamarack-youth.example/IndicatorReport/BImpactScore/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2019",
+    "hasName": "B Impact Assessment score 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "82.4",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-05:00",
+    "endedAtTime": "2019-12-31T23:59:59-05:00",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2020",
+    "hasName": "B Impact Assessment score 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "85.1",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-05:00",
+    "endedAtTime": "2020-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/BImpactScore/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2021",
+    "hasName": "B Impact Assessment score 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "88.9",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-05:00",
+    "endedAtTime": "2021-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/BImpactScore/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2022",
+    "hasName": "B Impact Assessment score 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "90.2",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/BImpactScore/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2023",
+    "hasName": "B Impact Assessment score 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "93.6",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-05:00",
+    "endedAtTime": "2023-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/BImpactScore/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2024",
+    "hasName": "B Impact Assessment score 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "95.0",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#scoreUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://tamarack-youth.example/Indicator/BImpactScore/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://tamarack-youth.example/OrganizationProfile/Tamarack/2025/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/",
+    "reportedDate": "2025-03-31T00:00:00-04:00",
+    "hasPrimaryContact": "https://tamarack-youth.example/Person/TamarackContact/",
+    "hasManagementTeamProfile": [
+      "https://tamarack-youth.example/TeamProfile/Tamarack/Management/2025/"
+    ],
+    "hasBoardProfile": [
+      "https://tamarack-youth.example/TeamProfile/Tamarack/Board/2025/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Employment"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc2"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#ON"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps24"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#nonProfit"
+    ],
+    "hasFundingStatus": [
+      "https://tamarack-youth.example/FundingStatus/Tamarack/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://tamarack-youth.example/Person/TamarackContact/",
+    "givenName": "Robin",
+    "familyName": "Okafor",
+    "hasEmail": "robin.okafor@tamarack-youth.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://tamarack-youth.example/TeamProfile/Tamarack/Management/2025/",
+    "hasTeamSize": 4,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg4/",
+      "https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg10/"
+    ],
+    "reportedDate": "2025-03-31T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg4/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4",
+    "hasSize": 1,
+    "reportedDate": "2025-03-31T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2025-03-31T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://tamarack-youth.example/TeamProfile/Tamarack/Board/2025/",
+    "hasTeamSize": 7,
+    "hasEDGSize": 4,
+    "hasEDGProfile": [
+      "https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg2/",
+      "https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg10/"
+    ],
+    "reportedDate": "2025-03-31T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg2/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2",
+    "hasSize": 1,
+    "reportedDate": "2025-03-31T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 3,
+    "reportedDate": "2025-03-31T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://tamarack-youth.example/FundingStatus/Tamarack/2025/",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2025-03-31T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://tamarack-youth.example/ReportInfo/Tamarack/2024/",
+    "hasName": "Tamarack Youth Employment Network impact report 2024",
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forOrganization": "https://tamarack-youth.example/Organization/Tamarack/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps24",
+    "hasName": "Youth (Ages 15-24)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4",
+    "hasName": "Indigenous Peoples: First Nations"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2",
+    "hasName": "Black People"
+  }
+]

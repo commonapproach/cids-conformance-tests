@@ -1,0 +1,243 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sff: <https://ontology.commonapproach.org/sff#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://harbourlight-health.example/ReportInfo/Harbourlight/2025-Q3/> a sff:ReportInfo ;
+    org:hasName "Harbourlight Health Navigation Inc. impact report 2025-Q3" ;
+    prov:endedAtTime "2025-09-30T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2> a cids:Characteristic ;
+    org:hasName "Black People" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps18> a cids:Characteristic ;
+    org:hasName "People Living with Terminal or Chronic Illness/Diseases" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps19> a cids:Characteristic ;
+    org:hasName "People of Advanced Age (65+)" .
+
+<https://harbourlight-health.example/Address/Harbourlight/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Halifax" ;
+    cids:addressRegion "NS" ;
+    cids:postalCode "B3J 0A7" ;
+    cids:streetAddress "55 Hypothetical Wharf" .
+
+<https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-10-15T00:00:00-03:00"^^xsd:dateTime .
+
+<https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg2/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-10-15T00:00:00-03:00"^^xsd:dateTime .
+
+<https://harbourlight-health.example/EDGProfile/Harbourlight/Management/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-10-15T00:00:00-03:00"^^xsd:dateTime .
+
+<https://harbourlight-health.example/FundingStatus/Harbourlight/2025/> a sff:FundingStatus ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2025-10-15T00:00:00-03:00"^^xsd:dateTime .
+
+<https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "2950" ;
+            i72:unit_of_measure cids:dayUnit ] ;
+    org:hasName "Hospital days avoided 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/HospitalDaysAvoided/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "3310" ;
+            i72:unit_of_measure cids:dayUnit ] ;
+    org:hasName "Hospital days avoided 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/HospitalDaysAvoided/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "3605" ;
+            i72:unit_of_measure cids:dayUnit ] ;
+    org:hasName "Hospital days avoided 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/HospitalDaysAvoided/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q1> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "412" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Patients supported 2024-Q1" ;
+    prov:endedAtTime "2024-03-31T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q2> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "438" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Patients supported 2024-Q2" ;
+    prov:endedAtTime "2024-06-30T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-04-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q3> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "451" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Patients supported 2024-Q3" ;
+    prov:endedAtTime "2024-09-30T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-07-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q4> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "470" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Patients supported 2024-Q4" ;
+    prov:endedAtTime "2024-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-10-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q1> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "486" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Patients supported 2025-Q1" ;
+    prov:endedAtTime "2025-03-31T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q2> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "502" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Patients supported 2025-Q2" ;
+    prov:endedAtTime "2025-06-30T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-04-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q3> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "519" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Patients supported 2025-Q3" ;
+    prov:endedAtTime "2025-09-30T23:59:59-03:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-01T00:00:00-03:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/OrganizationID/Harbourlight/> a org:OrganizationID ;
+    org:hasIdentifier "678912345RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> .
+
+<https://harbourlight-health.example/OrganizationProfile/Harbourlight/2025/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> ;
+    sff:hasBoardProfile <https://harbourlight-health.example/TeamProfile/Harbourlight/Board/2025/> ;
+    sff:hasFundingStatus <https://harbourlight-health.example/FundingStatus/Harbourlight/2025/> ;
+    sff:hasManagementTeamProfile <https://harbourlight-health.example/TeamProfile/Harbourlight/Management/2025/> ;
+    sff:hasPrimaryContact <https://harbourlight-health.example/Person/HarbourlightContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc1>,
+        <https://codelist.commonapproach.org/LocalityStatsCan#loc4> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#forProfit> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps18>,
+        <https://codelist.commonapproach.org/PopulationServed#ps19> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#NS> ;
+    sff:reportedDate "2025-10-15T00:00:00-03:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Health> .
+
+<https://harbourlight-health.example/Person/HarbourlightContact/> a cids:Person ;
+    ic:hasEmail "casey.macneil@harbourlight-health.example" ;
+    foaf:familyName "MacNeil" ;
+    foaf:givenName "Casey" .
+
+<https://harbourlight-health.example/TeamProfile/Harbourlight/Board/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg10/>,
+        <https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg2/> ;
+    sff:hasEDGSize "3"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "6"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-10-15T00:00:00-03:00"^^xsd:dateTime .
+
+<https://harbourlight-health.example/TeamProfile/Harbourlight/Management/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://harbourlight-health.example/EDGProfile/Harbourlight/Management/2025/edg10/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-10-15T00:00:00-03:00"^^xsd:dateTime .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> a cids:Characteristic ;
+    org:hasName "Women (Cisgender and Transgender)" .
+
+<https://harbourlight-health.example/Outcome/FewerHospitalDays/> a cids:Outcome ;
+    org:hasName "Fewer avoidable hospital days" ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> ;
+    cids:forTheme <https://metadata.un.org/sdg/3> ;
+    cids:hasDescription "Patients get care at home instead of waiting in hospital." ;
+    cids:hasIndicator <https://harbourlight-health.example/Indicator/HospitalDaysAvoided/>,
+        <https://harbourlight-health.example/Indicator/PatientsSupported/> .
+
+<https://metadata.un.org/sdg/3> a cids:Theme ;
+    org:hasName "Goal 3: Good health and well-being" ;
+    cids:hasDescription "Ensure healthy lives and promote well-being for all at all ages" .
+
+<https://harbourlight-health.example/Indicator/HospitalDaysAvoided/> a cids:Indicator ;
+    i72:unit_of_measure cids:dayUnit ;
+    org:hasName "Hospital days avoided" ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> ;
+    cids:forOutcome <https://harbourlight-health.example/Outcome/FewerHospitalDays/> ;
+    cids:forTheme <https://metadata.un.org/sdg/3> ;
+    cids:hasDescription "Estimated hospital bed-days avoided in the year." ;
+    cids:hasIndicatorReport <https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2022>,
+        <https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2023>,
+        <https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2024> ;
+    cids:unitDescription "Days" .
+
+<https://harbourlight-health.example/Indicator/PatientsSupported/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Patients supported" ;
+    cids:forOrganization <https://harbourlight-health.example/Organization/Harbourlight/> ;
+    cids:forOutcome <https://harbourlight-health.example/Outcome/FewerHospitalDays/> ;
+    cids:forTheme <https://metadata.un.org/sdg/3> ;
+    cids:hasDescription "Patients who received navigation support in the quarter." ;
+    cids:hasIndicatorReport <https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q1>,
+        <https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q2>,
+        <https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q3>,
+        <https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q4>,
+        <https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q1>,
+        <https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q2>,
+        <https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q3> ;
+    cids:unitDescription "Patients" .
+
+<https://harbourlight-health.example/Organization/Harbourlight/> a cids:Organization ;
+    org:hasID <https://harbourlight-health.example/OrganizationID/Harbourlight/> ;
+    org:hasLegalName "Harbourlight Health Navigation Inc." ;
+    cids:hasAddress <https://harbourlight-health.example/Address/Harbourlight/> ;
+    cids:hasIndicator <https://harbourlight-health.example/Indicator/HospitalDaysAvoided/>,
+        <https://harbourlight-health.example/Indicator/PatientsSupported/> ;
+    cids:hasOutcome <https://harbourlight-health.example/Outcome/FewerHospitalDays/> ;
+    sff:hasOrganizationProfile <https://harbourlight-health.example/OrganizationProfile/Harbourlight/2025/> .
+
