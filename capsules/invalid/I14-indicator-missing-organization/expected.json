@@ -1,0 +1,30 @@
+{
+  "id": "I14-indicator-missing-organization",
+  "category": "invalid",
+  "title": "Indicator with no organization",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Indicator/BImpactScore/",
+            "resultPath": "cids:forOrganization",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Indicator must say which Organization it belongs to."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Indicator/BImpactScore/",
+            "resultPath": "cids:forOrganization",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Indicator must say which Organization it belongs to."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

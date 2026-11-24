@@ -1,0 +1,4 @@
+# Python 3.10 or newer. Versions are pinned so everyone gets the same results.
+rdflib==7.6.0
+pyshacl==0.40.2
+pytest==9.2.0

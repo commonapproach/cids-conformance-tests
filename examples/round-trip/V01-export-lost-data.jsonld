@@ -1,0 +1,240 @@
+{
+  "@context": [
+    "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+    "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+  ],
+  "@graph": [
+    {
+      "@type": "cids:Organization",
+      "@id": "https://northwind-food.example/Organization/Northwind/",
+      "hasLegalName": "Northwind Food Recovery Society",
+      "hasAddress": [
+        "https://northwind-food.example/Address/Northwind/"
+      ],
+      "hasID": [
+        "https://northwind-food.example/OrganizationID/Northwind/"
+      ],
+      "hasOutcome": [
+        "urn:uuid:0d5c9f9e-6a3b-4f1e-9d55-1c2b3a4d5e6f",
+        "https://northwind-food.example/Outcome/ImprovedFoodSecurity/",
+        "https://northwind-food.example/Outcome/LowerLandfillMethane/"
+      ],
+      "hasIndicator": [
+        "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+        "https://northwind-food.example/Indicator/MealsProvided/"
+      ]
+    },
+    {
+      "@type": "cids:Address",
+      "@id": "https://northwind-food.example/Address/Northwind/",
+      "streetAddress": "88 Imaginary Avenue",
+      "addressLocality": "Vancouver",
+      "addressRegion": "BC",
+      "postalCode": "V5K 0C3",
+      "addressCountry": "Canada"
+    },
+    {
+      "@type": "org:OrganizationID",
+      "@id": "https://northwind-food.example/OrganizationID/Northwind/",
+      "hasIdentifier": "345678912RC0001",
+      "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    },
+    {
+      "@type": "cids:Theme",
+      "@id": "https://metadata.un.org/sdg/2",
+      "hasName": "Goal 2: Zero hunger",
+      "hasDescription": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture"
+    },
+    {
+      "@type": "cids:Theme",
+      "@id": "https://metadata.un.org/sdg/12",
+      "hasName": "Goal 12: Responsible consumption and production",
+      "hasDescription": "Ensure sustainable consumption and production patterns"
+    },
+    {
+      "@type": "cids:Theme",
+      "@id": "https://metadata.un.org/sdg/13",
+      "hasName": "Goal 13: Climate action",
+      "hasDescription": "Take urgent action to combat climate change and its impacts"
+    },
+    {
+      "@type": "cids:Outcome",
+      "@id": "urn:uuid:0d5c9f9e-6a3b-4f1e-9d55-1c2b3a4d5e6f",
+      "hasName": "Less food waste sent to landfill",
+      "hasDescription": "Surplus food is recovered instead of thrown away.",
+      "forTheme": [
+        "https://metadata.un.org/sdg/12"
+      ],
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+      "hasIndicator": [
+        "https://northwind-food.example/Indicator/TonnesFoodRecovered/"
+      ]
+    },
+    {
+      "@type": "cids:Outcome",
+      "@id": "https://northwind-food.example/Outcome/ImprovedFoodSecurity/",
+      "hasName": "Improved food security",
+      "hasDescription": "Low-income households have reliable access to healthy food.",
+      "forTheme": [
+        "https://metadata.un.org/sdg/2"
+      ],
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+      "hasIndicator": [
+        "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+        "https://northwind-food.example/Indicator/MealsProvided/"
+      ]
+    },
+    {
+      "@type": "cids:Outcome",
+      "@id": "https://northwind-food.example/Outcome/LowerLandfillMethane/",
+      "hasName": "Lower methane emissions from landfills",
+      "hasDescription": "Less organic waste in landfills means less methane released.",
+      "forTheme": [
+        "https://metadata.un.org/sdg/13"
+      ],
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+      "hasIndicator": [
+        "https://northwind-food.example/Indicator/TonnesFoodRecovered/"
+      ]
+    },
+    {
+      "@type": "cids:Indicator",
+      "@id": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+      "hasName": "Tonnes of food recovered",
+      "hasDescription": "Tonnes of surplus food recovered from grocers and farms.",
+      "unitDescription": "Tonnes",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+      "forOutcome": [
+        "urn:uuid:0d5c9f9e-6a3b-4f1e-9d55-1c2b3a4d5e6f",
+        "https://northwind-food.example/Outcome/ImprovedFoodSecurity/",
+        "https://northwind-food.example/Outcome/LowerLandfillMethane/"
+      ],
+      "forTheme": [
+        "https://metadata.un.org/sdg/12"
+      ],
+      "hasIndicatorReport": [
+        "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022",
+        "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023",
+        "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024",
+        "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2025"
+      ]
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022",
+      "hasName": "Tonnes of food recovered 2022",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "1040",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+      },
+      "startedAtTime": "2022-01-01T00:00:00-05:00",
+      "endedAtTime": "2022-12-31T23:59:59-05:00",
+      "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023",
+      "hasName": "Tonnes of food recovered 2023",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "1115.0",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+      },
+      "startedAtTime": "2023-01-01T00:00:00-05:00",
+      "endedAtTime": "2023-12-31T23:59:59-05:00",
+      "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024",
+      "hasName": "Tonnes of food recovered 2024",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "1190",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+      },
+      "startedAtTime": "2024-01-01T00:00:00-05:00",
+      "endedAtTime": "2024-12-31T23:59:59-05:00",
+      "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2025",
+      "hasName": "Tonnes of food recovered 2025",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "1260",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+      },
+      "startedAtTime": "2025-01-01T00:00:00-05:00",
+      "endedAtTime": "2025-12-31T23:59:59-05:00",
+      "forIndicator": "https://northwind-food.example/Indicator/TonnesFoodRecovered/",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    },
+    {
+      "@type": "cids:Indicator",
+      "@id": "https://northwind-food.example/Indicator/MealsProvided/",
+      "hasName": "Meals provided",
+      "unitDescription": "Meals",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/",
+      "forOutcome": "https://northwind-food.example/Outcome/ImprovedFoodSecurity/",
+      "forTheme": [
+        "https://metadata.un.org/sdg/2"
+      ],
+      "hasIndicatorReport": [
+        "https://northwind-food.example/IndicatorReport/MealsProvided/2023",
+        "https://northwind-food.example/IndicatorReport/MealsProvided/2024",
+        "https://northwind-food.example/IndicatorReport/MealsProvided/2025"
+      ]
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2023",
+      "hasName": "Meals provided 2023",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "61200",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      },
+      "startedAtTime": "2023-01-01T00:00:00-05:00",
+      "endedAtTime": "2023-12-31T23:59:59-05:00",
+      "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2024",
+      "hasName": "Meals provided 2024",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "64800",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      },
+      "startedAtTime": "2024-01-01T00:00:00-05:00",
+      "endedAtTime": "2024-12-31T23:59:59-05:00",
+      "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://northwind-food.example/IndicatorReport/MealsProvided/2025",
+      "hasName": "Meals provided 2025",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "67400",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      },
+      "startedAtTime": "2025-01-01T00:00:00-05:00",
+      "endedAtTime": "2025-12-31T23:59:59-05:00",
+      "forIndicator": "https://northwind-food.example/Indicator/MealsProvided/",
+      "forOrganization": "https://northwind-food.example/Organization/Northwind/"
+    }
+  ]
+}

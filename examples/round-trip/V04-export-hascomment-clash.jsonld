@@ -1,0 +1,293 @@
+{
+  "@context": [
+    "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+    "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+  ],
+  "@graph": [
+    {
+      "@type": "cids:Organization",
+      "@id": "https://maplehollow-learning.example/Organization/MapleHollow/",
+      "hasLegalName": "Maple Hollow Learning Collective",
+      "hasAddress": [
+        "https://maplehollow-learning.example/Address/MapleHollow/"
+      ],
+      "hasID": [
+        "https://maplehollow-learning.example/OrganizationID/MapleHollow/"
+      ],
+      "hasOutcome": [
+        "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/",
+        "https://maplehollow-learning.example/Outcome/BetterJobProspects/"
+      ],
+      "hasIndicator": [
+        "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+        "https://maplehollow-learning.example/Indicator/CompletionRate/"
+      ],
+      "hasWebAddress": "https://maplehollow-learning.example/",
+      "hasPurpose": "Free literacy classes for adults in Winnipeg.",
+      "hasDescription": "A fictional learning collective used in the CIDS conformance tests.",
+      "numberOfEmployees": 14,
+      "hasContact": [
+        "https://maplehollow-learning.example/Person/ProgramLead/"
+      ],
+      "hasCharacteristic": [
+        "https://maplehollow-learning.example/Characteristic/NewcomerLearners/"
+      ]
+    },
+    {
+      "@type": "cids:Address",
+      "@id": "https://maplehollow-learning.example/Address/MapleHollow/",
+      "streetAddress": "7 Fictional Crescent",
+      "addressLocality": "Winnipeg",
+      "addressRegion": "MB",
+      "postalCode": "R3C 0D4",
+      "addressCountry": "Canada",
+      "extendedAddress": "Suite 210",
+      "postOfficeBoxNumber": "PO Box 4417"
+    },
+    {
+      "@type": "org:OrganizationID",
+      "@id": "https://maplehollow-learning.example/OrganizationID/MapleHollow/",
+      "hasIdentifier": "456789123RC0001",
+      "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+    },
+    {
+      "@type": "cids:Theme",
+      "@id": "https://metadata.un.org/sdg/4",
+      "hasName": "Goal 4: Quality education",
+      "hasDescription": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all"
+    },
+    {
+      "@type": "cids:Outcome",
+      "@id": "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/",
+      "hasName": "Improved adult literacy",
+      "hasDescription": "Adult learners gain the reading and writing skills they need for work and daily life.",
+      "forTheme": [
+        "https://metadata.un.org/sdg/4"
+      ],
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+      "hasIndicator": [
+        "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+        "https://maplehollow-learning.example/Indicator/CompletionRate/"
+      ],
+      "hasCode": [
+        "https://literacy-standards.example/Code/OUT-ADULT"
+      ],
+      "canProduce": [
+        "https://maplehollow-learning.example/Outcome/BetterJobProspects/"
+      ]
+    },
+    {
+      "@type": "cids:Indicator",
+      "@id": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+      "hasName": "Adult learners enrolled",
+      "hasDescription": "Adults enrolled in the literacy program during the year.",
+      "unitDescription": "Learners",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+      "forOutcome": "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/",
+      "forTheme": [
+        "https://metadata.un.org/sdg/4",
+        "https://maplehollow-learning.example/Theme/AdultLiteracy/"
+      ],
+      "hasIndicatorReport": [
+        "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022",
+        "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023",
+        "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024"
+      ],
+      "hasIdentifier": "MH-IND-001",
+      "hasCode": [
+        "https://literacy-standards.example/Code/LIT-01"
+      ],
+      "definedBy": "https://literacy-standards.example/Organization/Council/",
+      "cids:describesPopulation": {
+        "@id": "https://maplehollow-learning.example/Population/AdultLearners"
+      },
+      "hasBaseline": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "150",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      },
+      "hasThreshold": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "200",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      }
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2022",
+      "hasName": "Adult learners enrolled 2022",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "251",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      },
+      "startedAtTime": "2022-01-01T00:00:00-06:00",
+      "endedAtTime": "2022-12-31T23:59:59-06:00",
+      "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+      "hasComment": [
+        "Enrolment includes the spring intake only.",
+        "Figures checked against the attendance register."
+      ]
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2023",
+      "hasName": "Adult learners enrolled 2023",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "274",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      },
+      "startedAtTime": "2023-01-01T00:00:00-06:00",
+      "endedAtTime": "2023-12-31T23:59:59-06:00",
+      "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://maplehollow-learning.example/IndicatorReport/LearnersEnrolled/2024",
+      "hasName": "Adult learners enrolled 2024",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "290",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+      },
+      "startedAtTime": "2024-01-01T00:00:00-06:00",
+      "endedAtTime": "2024-12-31T23:59:59-06:00",
+      "forIndicator": "https://maplehollow-learning.example/Indicator/LearnersEnrolled/",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+    },
+    {
+      "@type": "cids:Indicator",
+      "@id": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+      "hasName": "Program completion rate",
+      "hasDescription": "Percent of enrolled learners who completed the program.",
+      "unitDescription": "Percent",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/",
+      "forOutcome": "https://maplehollow-learning.example/Outcome/ImprovedAdultLiteracy/",
+      "forTheme": [
+        "https://metadata.un.org/sdg/4"
+      ],
+      "hasIndicatorReport": [
+        "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022",
+        "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023",
+        "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024"
+      ]
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2022",
+      "hasName": "Program completion rate 2022",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "66",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+      },
+      "startedAtTime": "2022-01-01T00:00:00-06:00",
+      "endedAtTime": "2022-12-31T23:59:59-06:00",
+      "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2023",
+      "hasName": "Program completion rate 2023",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "68",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+      },
+      "startedAtTime": "2023-01-01T00:00:00-06:00",
+      "endedAtTime": "2023-12-31T23:59:59-06:00",
+      "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+    },
+    {
+      "@type": "cids:IndicatorReport",
+      "@id": "https://maplehollow-learning.example/IndicatorReport/CompletionRate/2024",
+      "hasName": "Program completion rate 2024",
+      "value": {
+        "@type": "i72:Measure",
+        "hasNumericalValue": "71",
+        "unit_of_measure": "https://ontology.commonapproach.org/cids#percentUnit"
+      },
+      "startedAtTime": "2024-01-01T00:00:00-06:00",
+      "endedAtTime": "2024-12-31T23:59:59-06:00",
+      "forIndicator": "https://maplehollow-learning.example/Indicator/CompletionRate/",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+    },
+    {
+      "@type": [
+        "cids:StandardsOrganization",
+        "cids:Organization"
+      ],
+      "@id": "https://literacy-standards.example/Organization/Council/",
+      "hasLegalName": "Example Literacy Standards Council"
+    },
+    {
+      "@type": "cids:Code",
+      "@id": "https://literacy-standards.example/Code/LIT-01",
+      "hasName": "Adult learners enrolled (LIT-01)",
+      "hasDescription": "Standard indicator code for adult literacy enrolment.",
+      "definedBy": "https://literacy-standards.example/Organization/Council/",
+      "hasIdentifier": "LIT-01",
+      "hasSpecification": "https://literacy-standards.example/spec/LIT-01",
+      "sch:codeValue": "LIT-01"
+    },
+    {
+      "@type": "cids:Code",
+      "@id": "https://literacy-standards.example/Code/OUT-ADULT",
+      "hasName": "Adult literacy outcome (OUT-ADULT)",
+      "hasDescription": "Standard outcome code for adult literacy.",
+      "definedBy": "https://literacy-standards.example/Organization/Council/",
+      "sch:codeValue": "OUT-ADULT"
+    },
+    {
+      "@type": "cids:Theme",
+      "@id": "https://maplehollow-learning.example/Theme/AdultLiteracy/",
+      "hasName": "Adult literacy",
+      "hasDescription": "Reading, writing and numeracy for adults.",
+      "relatesTo": [
+        "https://maplehollow-learning.example/Theme/LifelongLearning/"
+      ],
+      "hasCode": [
+        "https://literacy-standards.example/Code/OUT-ADULT"
+      ]
+    },
+    {
+      "@type": "cids:Theme",
+      "@id": "https://maplehollow-learning.example/Theme/LifelongLearning/",
+      "hasName": "Lifelong learning",
+      "hasDescription": "Learning at every stage of life."
+    },
+    {
+      "@type": "cids:Person",
+      "@id": "https://maplehollow-learning.example/Person/ProgramLead/",
+      "givenName": "Noor",
+      "familyName": "Haddad",
+      "hasEmail": "noor.haddad@maplehollow-learning.example"
+    },
+    {
+      "@type": "cids:Characteristic",
+      "@id": "https://maplehollow-learning.example/Characteristic/NewcomerLearners/",
+      "hasName": "Learners who are newcomers to Canada",
+      "hasDescription": "Learners who arrived in Canada in the last five years."
+    },
+    {
+      "@type": "i72:Population",
+      "@id": "https://maplehollow-learning.example/Population/AdultLearners",
+      "label": "Adult learners"
+    },
+    {
+      "@type": "cids:Outcome",
+      "@id": "https://maplehollow-learning.example/Outcome/BetterJobProspects/",
+      "hasName": "Better job prospects",
+      "hasDescription": "Learners qualify for jobs that need a literacy certificate.",
+      "forOrganization": "https://maplehollow-learning.example/Organization/MapleHollow/"
+    }
+  ]
+}

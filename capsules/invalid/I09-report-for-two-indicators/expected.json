@@ -1,0 +1,30 @@
+{
+  "id": "I09-report-for-two-indicators",
+  "category": "invalid",
+  "title": "One IndicatorReport claimed by two Indicators",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2024",
+            "resultPath": "cids:forIndicator",
+            "sourceConstraintComponent": "sh:MaxCountConstraintComponent",
+            "explanation": "An IndicatorReport reports on exactly one Indicator."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2024",
+            "resultPath": "cids:forIndicator",
+            "sourceConstraintComponent": "sh:MaxCountConstraintComponent",
+            "explanation": "An IndicatorReport reports on exactly one Indicator."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

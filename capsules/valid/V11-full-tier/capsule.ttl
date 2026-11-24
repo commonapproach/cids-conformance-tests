@@ -1,0 +1,633 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix ns1: <http://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/part.owl#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix sff: <https://ontology.commonapproach.org/sff#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://cedarline-retrofit.example/ReportInfo/Cedarline/2025/> a sff:ReportInfo ;
+    org:hasName "Cedarline Home Retrofit Co-operative impact report 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> .
+
+<https://cedarline-retrofit.example/StakeholderReport/Homeowners/2025/> a cids:StakeholderReport ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "StakeholderReport: 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:hasCharacteristicReport <https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/> .
+
+<https://cedarline-retrofit.example/Address/Cedarline/> a cids:Address ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Address: 300 Illustrative Street" ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Thunder Bay" ;
+    cids:addressRegion "ON" ;
+    cids:postalCode "P7B 0G8" ;
+    cids:streetAddress "300 Illustrative Street" .
+
+<https://cedarline-retrofit.example/Characteristic/Aged18To29/> a cids:Characteristic ;
+    org:hasName "Aged 18 to 29" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Characteristic: Aged 18 to 29" ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/YouthTrainees/> .
+
+<https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/> a cids:CharacteristicReport ;
+    i72:numberOf <https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/numberOf/> ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "CharacteristicReport: LowIncome" ;
+    cids:forCharacteristic <https://cedarline-retrofit.example/Characteristic/LowIncomeHomeowner/> .
+
+<https://cedarline-retrofit.example/CharacteristicReport/Homeowners/2025/LowIncome/numberOf/> a i72:Measure ;
+    i72:hasNumericalValue "79" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/Code/DeepRetrofit/> a cids:Code ;
+    i72:value <https://cedarline-retrofit.example/Code/DeepRetrofit/value/> ;
+    org:hasName "Deep energy retrofit" ;
+    schema:codeValue "DER-50" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Code: Deep energy retrofit" ;
+    cids:definedBy <https://impact-standards-council.example/Organization/ISC/> ;
+    cids:hasDescription "Identifies indicators about retrofits that cut a home's energy use by at least half." ;
+    cids:hasSpecification "https://impact-standards-council.example/codes/deep-retrofit"^^xsd:anyURI .
+
+<https://cedarline-retrofit.example/Code/DeepRetrofit/value/> a i72:Measure ;
+    i72:hasNumericalValue "50" ;
+    i72:unit_of_measure cids:percentUnit .
+
+<https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/> a cids:Counterfactual ;
+    i72:value <https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/value/> ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Counterfactual: 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://cedarline-retrofit.example/Activity/HouseholdSurvey/> ;
+    cids:hasDescription "Expected bills had the homes not been retrofitted, from utility rate trends." .
+
+<https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "0.00" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg3/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg6/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg3/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://cedarline-retrofit.example/FundingStatus/Cedarline/2026/> a sff:FundingStatus ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/> a cids:ImpactDepth ;
+    i72:value <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/value/> ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "ImpactDepth: ImpactDepth" ;
+    cids:forIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/> ;
+    cids:hasCounterfactual <https://cedarline-retrofit.example/Counterfactual/BillsWithoutRetrofit/2025/> ;
+    cids:hasDescription "How much: bills fell by 41% on average." .
+
+<https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/value/> a i72:Measure ;
+    i72:hasNumericalValue "41" ;
+    i72:unit_of_measure cids:percentUnit .
+
+<https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/> a cids:ImpactDuration ;
+    i72:value <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/value/> ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "ImpactDuration: ImpactDuration" ;
+    prov:endedAtTime "2045-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/> ;
+    cids:hasDescription "How long: savings last for the 20-year life of the equipment." .
+
+<https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/value/> a i72:Measure ;
+    i72:hasNumericalValue "20" ;
+    i72:unit_of_measure cids:unspecifiedUnit .
+
+<https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/> a cids:ImpactScale ;
+    i72:value <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/value/> ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "ImpactScale: ImpactScale" ;
+    cids:forIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/> ;
+    cids:hasDescription "How many: 79 households had lower bills in 2025." .
+
+<https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/value/> a i72:Measure ;
+    i72:hasNumericalValue "79" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/ImpactRisk/SurveyResponseRate/> a cids:EvidenceRisk,
+        cids:ImpactRisk ;
+    org:hasIdentifier "CED-RISK-01" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "EvidenceRisk: SurveyResponseRate" ;
+    cids:forImpactReport <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/> ;
+    cids:forOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:hasConsequence "average" ;
+    cids:hasDescription "Fewer than half of homeowners may return the 12-month bill survey." ;
+    cids:hasLikelihood "likely" ;
+    cids:hasMitigation "Collect bills directly from the utility with the homeowner's consent." .
+
+<https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasBaseline/> a i72:Measure ;
+    i72:hasNumericalValue "0.00" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasThreshold/> a i72:Measure ;
+    i72:hasNumericalValue "800.00" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasBaseline/> a i72:Measure ;
+    i72:hasNumericalValue "0" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasThreshold/> a i72:Measure ;
+    i72:hasNumericalValue "40" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "1180.00" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "1265.50" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "64" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "79" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/Input/RetrofitMaterials/hasActualAmount/> a i72:Measure ;
+    i72:hasNumericalValue "612450.75" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/Input/RetrofitMaterials/hasPlannedAmount/> a i72:Measure ;
+    i72:hasNumericalValue "640000" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/OrganizationID/Cedarline/> a org:OrganizationID ;
+    org:hasIdentifier "789123456RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> .
+
+<https://cedarline-retrofit.example/OrganizationProfile/Cedarline/2026/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    sff:hasBoardProfile <https://cedarline-retrofit.example/TeamProfile/Cedarline/Board/2026/> ;
+    sff:hasFundingStatus <https://cedarline-retrofit.example/FundingStatus/Cedarline/2026/> ;
+    sff:hasManagementTeamProfile <https://cedarline-retrofit.example/TeamProfile/Cedarline/Management/2026/> ;
+    sff:hasPrimaryContact <https://cedarline-retrofit.example/Person/CedarlineContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc2> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#Cooperative> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps15> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#ON> ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Energy> .
+
+<https://cedarline-retrofit.example/Resource/InsulationAndHeatPumps/> a <http://ontology.eil.utoronto.ca/tove/activity#Resource> ;
+    org:hasName "Insulation and heat pumps" .
+
+<https://cedarline-retrofit.example/Service/HomeRetrofit/> a cids:Service ;
+    org:hasName "Free home energy retrofit" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Service: Free home energy retrofit" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:beneficialSizeEnd "6"^^xsd:positiveInteger ;
+    cids:beneficialSizeStart "1"^^xsd:positiveInteger ;
+    cids:canProduce <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:hasDescription "Insulation, air sealing and a heat pump at no cost to eligible homeowners." .
+
+<https://cedarline-retrofit.example/StakeholderOutcome/Homeowners/LowerEnergyBills/> a cids:StakeholderOutcome ;
+    org:hasName "Lower bills for low-income homeowners" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "StakeholderOutcome: Lower bills for low-income homeowners" ;
+    cids:forOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:fromPerspectiveOf <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:hasDescription "Homeowners keep more of their income because heating costs less." ;
+    cids:hasImpactReport <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/> ;
+    cids:hasImportance "highImportance" ;
+    cids:hasIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/> ;
+    cids:intendedImpact "positive" ;
+    cids:isUnderserved true .
+
+<https://cedarline-retrofit.example/Target/AverageBillSavings/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "1100.00" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/Target/AverageBillSavings/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "1200.00" ;
+    i72:unit_of_measure cids:cad .
+
+<https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "60" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "75" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://cedarline-retrofit.example/TeamProfile/Cedarline/Board/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg10/>,
+        <https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg3/>,
+        <https://cedarline-retrofit.example/EDGProfile/Cedarline/Board/2026/edg6/> ;
+    sff:hasEDGSize "4"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "7"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://cedarline-retrofit.example/TeamProfile/Cedarline/Management/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg10/>,
+        <https://cedarline-retrofit.example/EDGProfile/Cedarline/Management/2026/edg3/> ;
+    sff:hasEDGSize "3"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-20T00:00:00-05:00"^^xsd:dateTime .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6> a cids:Characteristic ;
+    org:hasName "Indigenous Peoples: Métis" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps15> a cids:Characteristic ;
+    org:hasName "People Living on Low Income" .
+
+<https://impact-standards-council.example/Organization/ISC/> a cids:Organization,
+        cids:StandardsOrganization ;
+    org:hasLegalName "Impact Standards Council (fictional)" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "StandardsOrganization: Impact Standards Council (fictional)" ;
+    cids:hasDescription "A fictional body that publishes impact codes, used only in this test suite." .
+
+<https://cedarline-retrofit.example/Activity/CrewTraining/> a cids:Activity ;
+    org:hasName "Crew training" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Activity: Crew training" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:canProduce <https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/> ;
+    cids:hasDescription "Classroom and on-site training in building science and safe work." .
+
+<https://cedarline-retrofit.example/Characteristic/LowIncomeHomeowner/> a cids:Characteristic ;
+    org:hasName "Low-income homeowner" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Characteristic: Low-income homeowner" ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/> .
+
+<https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024> a cids:IndicatorReport ;
+    i72:value <https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024/value/> ;
+    org:hasName "Average yearly energy bill savings 2024" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "IndicatorReport: Average yearly energy bill savings 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://cedarline-retrofit.example/Activity/HouseholdSurvey/> ;
+    cids:forIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:forTarget <https://cedarline-retrofit.example/Target/AverageBillSavings/2024/> ;
+    cids:hasComment "Checked against the 2024 inspection log." .
+
+<https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025> a cids:IndicatorReport ;
+    i72:value <https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025/value/> ;
+    org:hasName "Average yearly energy bill savings 2025" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "IndicatorReport: Average yearly energy bill savings 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://cedarline-retrofit.example/Activity/HouseholdSurvey/> ;
+    cids:forIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:forTarget <https://cedarline-retrofit.example/Target/AverageBillSavings/2025/> ;
+    cids:hasComment "Checked against the 2025 inspection log." .
+
+<https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024> a cids:IndicatorReport ;
+    i72:value <https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024/value/> ;
+    org:hasName "Homes retrofitted 2024" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "IndicatorReport: Homes retrofitted 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://cedarline-retrofit.example/Activity/HomeRetrofits/> ;
+    cids:forIndicator <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:forTarget <https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/> ;
+    cids:hasComment "Checked against the 2024 inspection log." .
+
+<https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025> a cids:IndicatorReport ;
+    i72:value <https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025/value/> ;
+    org:hasName "Homes retrofitted 2025" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "IndicatorReport: Homes retrofitted 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    prov:wasGeneratedBy <https://cedarline-retrofit.example/Activity/HomeRetrofits/> ;
+    cids:forIndicator <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:forTarget <https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/> ;
+    cids:hasComment "Checked against the 2025 inspection log." .
+
+<https://cedarline-retrofit.example/Person/CedarlineContact/> a cids:Person ;
+    ic:hasEmail "riley.wapoose@cedarline-retrofit.example" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Person: CedarlineContact" ;
+    foaf:familyName "Wapoose" ;
+    foaf:givenName "Riley" .
+
+<https://cedarline-retrofit.example/Program/RetrofitCrew/> a cids:Program ;
+    org:hasName "Youth retrofit crew program" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Program: Youth retrofit crew program" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:hasBeneficialStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/>,
+        <https://cedarline-retrofit.example/Stakeholder/YouthTrainees/> ;
+    cids:hasContributingStakeholder <https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/> ;
+    cids:hasDescription "A paid, year-long program in which youth crews retrofit low-income homes." ;
+    cids:hasInput <https://cedarline-retrofit.example/Input/RetrofitMaterials/> ;
+    cids:hasOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/>,
+        <https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/> ;
+    cids:hasOutput <https://cedarline-retrofit.example/Output/CompletedRetrofits/> ;
+    cids:hasService <https://cedarline-retrofit.example/Service/HomeRetrofit/> .
+
+<https://cedarline-retrofit.example/Target/AverageBillSavings/2024/> a cids:Target ;
+    i72:value <https://cedarline-retrofit.example/Target/AverageBillSavings/2024/value/> ;
+    org:hasName "Average yearly energy bill savings target 2024" ;
+    schema:dateCreated "2023-12-01T09:00:00-05:00"^^xsd:dateTime ;
+    schema:description "Target: Average yearly energy bill savings target 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024> ;
+    cids:hasComment "Target set in the 2024 funding agreement." .
+
+<https://cedarline-retrofit.example/Target/AverageBillSavings/2025/> a cids:Target ;
+    i72:value <https://cedarline-retrofit.example/Target/AverageBillSavings/2025/value/> ;
+    org:hasName "Average yearly energy bill savings target 2025" ;
+    schema:dateCreated "2024-12-01T09:00:00-05:00"^^xsd:dateTime ;
+    schema:description "Target: Average yearly energy bill savings target 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025> ;
+    cids:hasComment "Target set in the 2025 funding agreement." .
+
+<https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/> a cids:Target ;
+    i72:value <https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/value/> ;
+    org:hasName "Homes retrofitted target 2024" ;
+    schema:dateCreated "2023-12-01T09:00:00-05:00"^^xsd:dateTime ;
+    schema:description "Target: Homes retrofitted target 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024> ;
+    cids:hasComment "Target set in the 2024 funding agreement." .
+
+<https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/> a cids:Target ;
+    i72:value <https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/value/> ;
+    org:hasName "Homes retrofitted target 2025" ;
+    schema:dateCreated "2024-12-01T09:00:00-05:00"^^xsd:dateTime ;
+    schema:description "Target: Homes retrofitted target 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025> ;
+    cids:hasComment "Target set in the 2025 funding agreement." .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> a cids:Characteristic ;
+    org:hasName "Women (Cisgender and Transgender)" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> a cids:Characteristic ;
+    org:hasName "First Generation Immigrants, Refugees & Newcomers" .
+
+<https://metadata.un.org/sdg/8> a cids:Theme ;
+    org:hasName "Goal 8: Decent work and economic growth" ;
+    cids:hasDescription "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all" .
+
+<https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/> a cids:ImpactReport ;
+    org:hasName "Impact report 2025: lower energy bills" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "ImpactReport: Impact report 2025: lower energy bills" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:hasComment "Savings are measured from 12 months of bills before and after each retrofit." ;
+    cids:hasExpectation "Savings were expected to reach CAD 1,200 per household; actual savings beat that." ;
+    cids:hasImpactDepth <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDepth/> ;
+    cids:hasImpactDuration <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactDuration/> ;
+    cids:hasImpactRisk <https://cedarline-retrofit.example/ImpactRisk/SurveyResponseRate/> ;
+    cids:hasImpactScale <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/ImpactScale/> ;
+    cids:hasReportedImpact "positive" .
+
+<https://cedarline-retrofit.example/Output/CompletedRetrofits/> a cids:Output ;
+    org:hasName "Completed retrofits" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Output: Completed retrofits" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:canProduce <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:hasDescription "Homes signed off by a licensed inspector." ;
+    cids:usedByIndicator <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> .
+
+<https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/> a cids:ContributingStakeholder,
+        cids:Stakeholder ;
+    org:hasName "Volunteer tradespeople" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "ContributingStakeholder: Volunteer tradespeople" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:contributes <https://cedarline-retrofit.example/Input/RetrofitMaterials/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:hasCatchmentArea "local" ;
+    cids:hasDescription "Retired and working tradespeople who supervise crews." ;
+    cids:performs <https://cedarline-retrofit.example/Activity/CrewTraining/> .
+
+<https://cedarline-retrofit.example/Stakeholder/YouthTrainees/> a cids:BeneficialStakeholder,
+        cids:Stakeholder ;
+    org:hasName "Youth trainees" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "BeneficialStakeholder: Youth trainees" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:benefitsFrom <https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:hasCatchmentArea "provincial" ;
+    cids:hasCharacteristic <https://cedarline-retrofit.example/Characteristic/Aged18To29/> ;
+    cids:hasDescription "Young adults hired onto retrofit crews for one year." .
+
+<https://metadata.un.org/sdg/7> a cids:Theme ;
+    org:hasName "Goal 7: Affordable and clean energy" ;
+    cids:hasDescription "Ensure access to affordable, reliable, sustainable and modern energy for all" .
+
+<https://cedarline-retrofit.example/Input/RetrofitMaterials/> a cids:Input ;
+    org:hasName "Retrofit materials" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Input: Retrofit materials" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:hasActualAmount <https://cedarline-retrofit.example/Input/RetrofitMaterials/hasActualAmount/> ;
+    cids:hasContributingStakeholder <https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/> ;
+    cids:hasDescription "Insulation, air-sealing supplies and heat pumps bought for the year." ;
+    cids:hasPlannedAmount <https://cedarline-retrofit.example/Input/RetrofitMaterials/hasPlannedAmount/> ;
+    cids:hasType <https://cedarline-retrofit.example/Resource/InsulationAndHeatPumps/> ;
+    cids:inputFor <https://cedarline-retrofit.example/Activity/HomeRetrofits/> .
+
+<https://cedarline-retrofit.example/Activity/HomeRetrofits/> a cids:Activity ;
+    org:hasName "Home retrofits" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Activity: Home retrofits" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:canProduce <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:hasDescription "Crews retrofit homes under the supervision of licensed tradespeople." ;
+    cids:hasInput <https://cedarline-retrofit.example/Input/RetrofitMaterials/> ;
+    cids:hasOutput <https://cedarline-retrofit.example/Output/CompletedRetrofits/> .
+
+<https://cedarline-retrofit.example/Activity/HouseholdSurvey/> a cids:Activity ;
+    org:hasName "Household survey and bill tracking" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Activity: Household survey and bill tracking" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:hasDescription "Homeowners share 12 months of bills before and after the retrofit." .
+
+<https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/> a cids:Outcome ;
+    org:hasName "Youth working in skilled trades" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Outcome: Youth working in skilled trades" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forTheme <https://metadata.un.org/sdg/8> ;
+    cids:hasDescription "Young people who train on retrofit crews go on to apprenticeships and trades jobs." ;
+    cids:hasIndicator <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> .
+
+<https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasIdentifier "CED-IND-01" ;
+    org:hasName "Homes retrofitted" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Indicator: Homes retrofitted" ;
+    prov:wasGeneratedBy <https://cedarline-retrofit.example/Activity/HomeRetrofits/> ;
+    cids:definedBy <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/>,
+        <https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/> ;
+    cids:forTheme <https://metadata.un.org/sdg/7>,
+        <https://metadata.un.org/sdg/8> ;
+    cids:hasAccess <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:hasBaseline <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasBaseline/> ;
+    cids:hasCode <https://cedarline-retrofit.example/Code/DeepRetrofit/> ;
+    cids:hasDescription "Homes where the crew finished insulation, air sealing and a heat-pump install." ;
+    cids:hasIndicatorReport <https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2024>,
+        <https://cedarline-retrofit.example/IndicatorReport/HomesRetrofitted/2025> ;
+    cids:hasTarget <https://cedarline-retrofit.example/Target/HomesRetrofitted/2024/>,
+        <https://cedarline-retrofit.example/Target/HomesRetrofitted/2025/> ;
+    cids:hasThreshold <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/hasThreshold/> ;
+    cids:unitDescription "Homes" .
+
+<https://cedarline-retrofit.example/Indicator/AverageBillSavings/> a cids:Indicator ;
+    i72:unit_of_measure cids:cad ;
+    org:hasIdentifier "CED-IND-02" ;
+    org:hasName "Average yearly energy bill savings" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Indicator: Average yearly energy bill savings" ;
+    prov:wasGeneratedBy <https://cedarline-retrofit.example/Activity/HouseholdSurvey/> ;
+    cids:definedBy <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:forTheme <https://metadata.un.org/sdg/7> ;
+    cids:hasAccess <https://cedarline-retrofit.example/Stakeholder/Homeowners/> ;
+    cids:hasBaseline <https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasBaseline/> ;
+    cids:hasDescription "Average drop in a retrofitted household's yearly energy bill, in Canadian dollars." ;
+    cids:hasIndicatorReport <https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2024>,
+        <https://cedarline-retrofit.example/IndicatorReport/AverageBillSavings/2025> ;
+    cids:hasTarget <https://cedarline-retrofit.example/Target/AverageBillSavings/2024/>,
+        <https://cedarline-retrofit.example/Target/AverageBillSavings/2025/> ;
+    cids:hasThreshold <https://cedarline-retrofit.example/Indicator/AverageBillSavings/hasThreshold/> ;
+    cids:unitDescription "CAD per household per year" .
+
+<https://cedarline-retrofit.example/ImpactPathway/Retrofit/> a cids:ImpactModel,
+        cids:ImpactPathway ;
+    org:hasName "Retrofit impact pathway" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "ImpactPathway: Retrofit impact pathway" ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:hasActivity <https://cedarline-retrofit.example/Activity/CrewTraining/>,
+        <https://cedarline-retrofit.example/Activity/HomeRetrofits/>,
+        <https://cedarline-retrofit.example/Activity/HouseholdSurvey/> ;
+    cids:hasDescription "How crew training and home retrofits lead to lower bills and trades careers." ;
+    cids:hasIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/>,
+        <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> ;
+    cids:hasInput <https://cedarline-retrofit.example/Input/RetrofitMaterials/> ;
+    cids:hasOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/>,
+        <https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/> ;
+    cids:hasOutput <https://cedarline-retrofit.example/Output/CompletedRetrofits/> ;
+    cids:hasProgram <https://cedarline-retrofit.example/Program/RetrofitCrew/> .
+
+<https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> a cids:Outcome ;
+    org:hasName "Lower home energy bills" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Outcome: Lower home energy bills" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:forTheme <https://metadata.un.org/sdg/7> ;
+    cids:hasDescription "Low-income homeowners spend less of their income on heating and electricity." ;
+    cids:hasImpactReport <https://cedarline-retrofit.example/ImpactReport/LowerEnergyBills/2025/> ;
+    cids:hasIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/>,
+        <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> ;
+    cids:hasStakeholderOutcome <https://cedarline-retrofit.example/StakeholderOutcome/Homeowners/LowerEnergyBills/> .
+
+<https://cedarline-retrofit.example/Stakeholder/Homeowners/> a cids:BeneficialStakeholder,
+        cids:Stakeholder ;
+    org:hasName "Low-income homeowners" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "BeneficialStakeholder: Low-income homeowners" ;
+    ns1:partOf <https://cedarline-retrofit.example/ImpactPathway/Retrofit/> ;
+    cids:benefitsFrom <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/> ;
+    cids:forOrganization <https://cedarline-retrofit.example/Organization/Cedarline/> ;
+    cids:hasCatchmentArea "local" ;
+    cids:hasCharacteristic <https://cedarline-retrofit.example/Characteristic/LowIncomeHomeowner/> ;
+    cids:hasDescription "Homeowners in the city whose household income is below the program limit." .
+
+<https://cedarline-retrofit.example/Organization/Cedarline/> a cids:Organization ;
+    org:hasID <https://cedarline-retrofit.example/OrganizationID/Cedarline/> ;
+    org:hasLegalName "Cedarline Home Retrofit Co-operative" ;
+    schema:dateCreated "2026-01-12T09:30:00-05:00"^^xsd:dateTime ;
+    schema:description "Organization: Cedarline Home Retrofit Co-operative" ;
+    cids:hasAddress <https://cedarline-retrofit.example/Address/Cedarline/> ;
+    cids:hasContact <https://cedarline-retrofit.example/Person/CedarlineContact/> ;
+    cids:hasDescription "A worker co-operative that trains youth crews to retrofit low-income homes." ;
+    cids:hasIndicator <https://cedarline-retrofit.example/Indicator/AverageBillSavings/>,
+        <https://cedarline-retrofit.example/Indicator/HomesRetrofitted/> ;
+    cids:hasOutcome <https://cedarline-retrofit.example/Outcome/LowerEnergyBills/>,
+        <https://cedarline-retrofit.example/Outcome/YouthInSkilledTrades/> ;
+    cids:hasProgram <https://cedarline-retrofit.example/Program/RetrofitCrew/> ;
+    cids:hasPurpose "Cut energy poverty and open trades careers for young people in northwestern Ontario." ;
+    cids:hasStakeholder <https://cedarline-retrofit.example/Stakeholder/Homeowners/>,
+        <https://cedarline-retrofit.example/Stakeholder/VolunteerTradespeople/>,
+        <https://cedarline-retrofit.example/Stakeholder/YouthTrainees/> ;
+    cids:hasWebAddress "https://cedarline-retrofit.example/"^^xsd:anyURI ;
+    sff:hasOrganizationProfile <https://cedarline-retrofit.example/OrganizationProfile/Cedarline/2026/> .
+

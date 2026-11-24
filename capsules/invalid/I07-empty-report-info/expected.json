@@ -1,0 +1,36 @@
+{
+  "id": "I07-empty-report-info",
+  "category": "invalid",
+  "title": "ReportInfo with only an organization",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/ReportInfo/Tamarack/2024/",
+            "resultPath": "org:hasName",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "ReportInfo needs a name."
+          },
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/ReportInfo/Tamarack/2024/",
+            "resultPath": "prov:startedAtTime",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "ReportInfo needs the start of the reporting period."
+          },
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/ReportInfo/Tamarack/2024/",
+            "resultPath": "prov:endedAtTime",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "ReportInfo needs the end of the reporting period."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

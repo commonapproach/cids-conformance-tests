@@ -1,0 +1,601 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://silverbirch-family.example/Organization/Silverbirch/",
+    "hasLegalName": "Silverbirch Family Services",
+    "hasAddress": [
+      "https://silverbirch-family.example/Address/Silverbirch/"
+    ],
+    "hasID": [
+      "https://silverbirch-family.example/OrganizationID/Silverbirch/"
+    ],
+    "hasOutcome": [
+      "https://silverbirch-family.example/Outcome/StableHousing/"
+    ],
+    "hasIndicator": [
+      "https://silverbirch-family.example/Indicator/FamiliesSupported/"
+    ],
+    "hasOrganizationProfile": [
+      "https://silverbirch-family.example/OrganizationProfile/Silverbirch/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://silverbirch-family.example/Address/Silverbirch/",
+    "streetAddress": "9 Mock Street",
+    "addressLocality": "Fredericton",
+    "addressRegion": "NB",
+    "postalCode": "E3B 0A8",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://silverbirch-family.example/OrganizationID/Silverbirch/",
+    "hasIdentifier": "789123456RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/1",
+    "hasName": "Goal 1: No poverty",
+    "hasDescription": "End poverty in all its forms everywhere"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://silverbirch-family.example/Outcome/StableHousing/",
+    "hasName": "Families in stable housing",
+    "hasDescription": "Families at risk of eviction keep their homes.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/1"
+    ],
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/",
+    "hasIndicator": [
+      "https://silverbirch-family.example/Indicator/FamiliesSupported/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://silverbirch-family.example/Indicator/FamiliesSupported/",
+    "hasName": "Families supported",
+    "hasDescription": "Families who received a housing support plan.",
+    "unitDescription": "Families",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/",
+    "forOutcome": "https://silverbirch-family.example/Outcome/StableHousing/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/1"
+    ],
+    "hasIndicatorReport": [
+      "https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2022-23",
+      "https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2023-24",
+      "https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2024-25"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2022-23",
+    "hasName": "Families supported FY2022-23",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "188",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-04-01T00:00:00-03:00",
+    "endedAtTime": "2023-03-31T23:59:59-03:00",
+    "forIndicator": "https://silverbirch-family.example/Indicator/FamiliesSupported/",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2023-24",
+    "hasName": "Families supported FY2023-24",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "203",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-04-01T00:00:00-03:00",
+    "endedAtTime": "2024-03-31T23:59:59-03:00",
+    "forIndicator": "https://silverbirch-family.example/Indicator/FamiliesSupported/",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://silverbirch-family.example/IndicatorReport/FamiliesSupported/FY2024-25",
+    "hasName": "Families supported FY2024-25",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "219",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-04-01T00:00:00-03:00",
+    "endedAtTime": "2025-03-31T23:59:59-03:00",
+    "forIndicator": "https://silverbirch-family.example/Indicator/FamiliesSupported/",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://silverbirch-family.example/OrganizationProfile/Silverbirch/2025/",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/",
+    "reportedDate": "2025-06-30T00:00:00-03:00",
+    "hasPrimaryContact": "https://silverbirch-family.example/Person/SilverbirchContact/",
+    "hasManagementTeamProfile": [
+      "https://silverbirch-family.example/TeamProfile/Silverbirch/Management/2025/"
+    ],
+    "hasBoardProfile": [
+      "https://silverbirch-family.example/TeamProfile/Silverbirch/Board/2025/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#RealEstate"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc2"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#NB"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps11",
+      "https://codelist.commonapproach.org/PopulationServed#ps15"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#Charitable"
+    ],
+    "hasFundingStatus": [
+      "https://silverbirch-family.example/FundingStatus/Silverbirch/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://silverbirch-family.example/Person/SilverbirchContact/",
+    "givenName": "Taylor",
+    "familyName": "Arsenault",
+    "hasEmail": "taylor.arsenault@silverbirch-family.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://silverbirch-family.example/TeamProfile/Silverbirch/Management/2025/",
+    "hasTeamSize": 3,
+    "hasEDGSize": 1,
+    "hasEDGProfile": [
+      "https://silverbirch-family.example/EDGProfile/Silverbirch/Management/2025/edg10/"
+    ],
+    "reportedDate": "2025-06-30T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://silverbirch-family.example/EDGProfile/Silverbirch/Management/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 1,
+    "reportedDate": "2025-06-30T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://silverbirch-family.example/TeamProfile/Silverbirch/Board/2025/",
+    "hasTeamSize": 5,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://silverbirch-family.example/EDGProfile/Silverbirch/Board/2025/edg10/"
+    ],
+    "reportedDate": "2025-06-30T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://silverbirch-family.example/EDGProfile/Silverbirch/Board/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2025-06-30T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://silverbirch-family.example/FundingStatus/Silverbirch/2025/",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2025-06-30T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://silverbirch-family.example/ReportInfo/Silverbirch/FY2024-25/",
+    "hasName": "Silverbirch Family Services impact report FY2024-25",
+    "startedAtTime": "2024-04-01T00:00:00-03:00",
+    "endedAtTime": "2025-03-31T23:59:59-03:00",
+    "forOrganization": "https://silverbirch-family.example/Organization/Silverbirch/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps11",
+    "hasName": "Lone Parent Families"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps15",
+    "hasName": "People Living on Low Income"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://lakeshore-repair.example/Organization/Lakeshore/",
+    "hasLegalName": "Lakeshore Repair Café Co-operative",
+    "hasAddress": [
+      "https://lakeshore-repair.example/Address/Lakeshore/"
+    ],
+    "hasID": [
+      "https://lakeshore-repair.example/OrganizationID/Lakeshore/"
+    ],
+    "hasOutcome": [
+      "https://lakeshore-repair.example/Outcome/LessWaste/"
+    ],
+    "hasIndicator": [
+      "https://lakeshore-repair.example/Indicator/ItemsRepaired/"
+    ],
+    "hasOrganizationProfile": [
+      "https://lakeshore-repair.example/OrganizationProfile/Lakeshore/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://lakeshore-repair.example/Address/Lakeshore/",
+    "streetAddress": "300 Pretend Boulevard",
+    "addressLocality": "Kingston",
+    "addressRegion": "ON",
+    "postalCode": "K7L 0A9",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://lakeshore-repair.example/OrganizationID/Lakeshore/",
+    "hasIdentifier": "891234567RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/12",
+    "hasName": "Goal 12: Responsible consumption and production",
+    "hasDescription": "Ensure sustainable consumption and production patterns"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://lakeshore-repair.example/Outcome/LessWaste/",
+    "hasName": "Fewer items thrown away",
+    "hasDescription": "Broken items are repaired instead of replaced.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/12"
+    ],
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/",
+    "hasIndicator": [
+      "https://lakeshore-repair.example/Indicator/ItemsRepaired/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://lakeshore-repair.example/Indicator/ItemsRepaired/",
+    "hasName": "Items repaired",
+    "hasDescription": "Household items repaired at repair events.",
+    "unitDescription": "Items",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/",
+    "forOutcome": "https://lakeshore-repair.example/Outcome/LessWaste/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/12"
+    ],
+    "hasIndicatorReport": [
+      "https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2022-23",
+      "https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2023-24",
+      "https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2024-25"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2022-23",
+    "hasName": "Items repaired FY2022-23",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1320",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-07-01T00:00:00-04:00",
+    "endedAtTime": "2023-06-30T23:59:59-04:00",
+    "forIndicator": "https://lakeshore-repair.example/Indicator/ItemsRepaired/",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2023-24",
+    "hasName": "Items repaired FY2023-24",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1475",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-07-01T00:00:00-04:00",
+    "endedAtTime": "2024-06-30T23:59:59-04:00",
+    "forIndicator": "https://lakeshore-repair.example/Indicator/ItemsRepaired/",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://lakeshore-repair.example/IndicatorReport/ItemsRepaired/FY2024-25",
+    "hasName": "Items repaired FY2024-25",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1590",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-07-01T00:00:00-04:00",
+    "endedAtTime": "2025-06-30T23:59:59-04:00",
+    "forIndicator": "https://lakeshore-repair.example/Indicator/ItemsRepaired/",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://lakeshore-repair.example/OrganizationProfile/Lakeshore/2025/",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/",
+    "reportedDate": "2025-08-29T00:00:00-04:00",
+    "hasPrimaryContact": "https://lakeshore-repair.example/Person/LakeshoreContact/",
+    "hasManagementTeamProfile": [
+      "https://lakeshore-repair.example/TeamProfile/Lakeshore/Management/2025/"
+    ],
+    "hasBoardProfile": [
+      "https://lakeshore-repair.example/TeamProfile/Lakeshore/Board/2025/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Waste"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc2"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#ON"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps25"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#Cooperative"
+    ],
+    "hasFundingStatus": [
+      "https://lakeshore-repair.example/FundingStatus/Lakeshore/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://lakeshore-repair.example/Person/LakeshoreContact/",
+    "givenName": "Jamie",
+    "familyName": "Kowalczyk",
+    "hasEmail": "jamie.kowalczyk@lakeshore-repair.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://lakeshore-repair.example/TeamProfile/Lakeshore/Management/2025/",
+    "hasTeamSize": 2,
+    "hasEDGSize": 1,
+    "hasEDGProfile": [
+      "https://lakeshore-repair.example/EDGProfile/Lakeshore/Management/2025/edg3/"
+    ],
+    "reportedDate": "2025-08-29T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://lakeshore-repair.example/EDGProfile/Lakeshore/Management/2025/edg3/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasSize": 1,
+    "reportedDate": "2025-08-29T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://lakeshore-repair.example/TeamProfile/Lakeshore/Board/2025/",
+    "hasTeamSize": 5,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://lakeshore-repair.example/EDGProfile/Lakeshore/Board/2025/edg10/"
+    ],
+    "reportedDate": "2025-08-29T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://lakeshore-repair.example/EDGProfile/Lakeshore/Board/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2025-08-29T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://lakeshore-repair.example/FundingStatus/Lakeshore/2025/",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2025-08-29T00:00:00-04:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://lakeshore-repair.example/ReportInfo/Lakeshore/FY2024-25/",
+    "hasName": "Lakeshore Repair Café Co-operative impact report FY2024-25",
+    "startedAtTime": "2024-07-01T00:00:00-04:00",
+    "endedAtTime": "2025-06-30T23:59:59-04:00",
+    "forOrganization": "https://lakeshore-repair.example/Organization/Lakeshore/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps25",
+    "hasName": "General Population"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasName": "First Generation Immigrants, Refugees & Newcomers"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  }
+]

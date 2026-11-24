@@ -1,0 +1,30 @@
+{
+  "id": "I01-address-missing-postal-code",
+  "category": "invalid",
+  "title": "Address with no postal code",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Address/Tamarack/",
+            "resultPath": "cids:postalCode",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Address needs exactly one postalCode."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/Address/Tamarack/",
+            "resultPath": "cids:postalCode",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "Every Address needs exactly one postalCode."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

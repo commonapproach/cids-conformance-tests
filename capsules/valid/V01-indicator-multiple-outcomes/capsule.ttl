@@ -1,0 +1,170 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://metadata.un.org/sdg/13> a cids:Theme ;
+    org:hasName "Goal 13: Climate action" ;
+    cids:hasDescription "Take urgent action to combat climate change and its impacts" .
+
+<https://northwind-food.example/Address/Northwind/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Vancouver" ;
+    cids:addressRegion "BC" ;
+    cids:postalCode "V5K 0C3" ;
+    cids:streetAddress "88 Imaginary Avenue" .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "58900" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "61200" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "64800" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/MealsProvided/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "67400" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Meals provided 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/MealsProvided/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1040" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1115" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1190" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1260" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of food recovered 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://northwind-food.example/OrganizationID/Northwind/> a org:OrganizationID ;
+    org:hasIdentifier "345678912RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> .
+
+<https://metadata.un.org/sdg/12> a cids:Theme ;
+    org:hasName "Goal 12: Responsible consumption and production" ;
+    cids:hasDescription "Ensure sustainable consumption and production patterns" .
+
+<https://metadata.un.org/sdg/2> a cids:Theme ;
+    org:hasName "Goal 2: Zero hunger" ;
+    cids:hasDescription "End hunger, achieve food security and improved nutrition and promote sustainable agriculture" .
+
+<https://northwind-food.example/Outcome/LessFoodWaste/> a cids:Outcome ;
+    org:hasName "Less food waste sent to landfill" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasDescription "Surplus food is recovered instead of thrown away." ;
+    cids:hasIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> .
+
+<https://northwind-food.example/Outcome/LowerLandfillMethane/> a cids:Outcome ;
+    org:hasName "Lower methane emissions from landfills" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forTheme <https://metadata.un.org/sdg/13> ;
+    cids:hasDescription "Less organic waste in landfills means less methane released." ;
+    cids:hasIndicator <https://northwind-food.example/Indicator/TonnesFoodRecovered/> .
+
+<https://northwind-food.example/Outcome/ImprovedFoodSecurity/> a cids:Outcome ;
+    org:hasName "Improved food security" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forTheme <https://metadata.un.org/sdg/2> ;
+    cids:hasDescription "Low-income households have reliable access to healthy food." ;
+    cids:hasIndicator <https://northwind-food.example/Indicator/MealsProvided/>,
+        <https://northwind-food.example/Indicator/TonnesFoodRecovered/> .
+
+<https://northwind-food.example/Indicator/MealsProvided/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Meals provided" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forOutcome <https://northwind-food.example/Outcome/ImprovedFoodSecurity/> ;
+    cids:forTheme <https://metadata.un.org/sdg/2> ;
+    cids:hasDescription "Meals provided through partner agencies." ;
+    cids:hasIndicatorReport <https://northwind-food.example/IndicatorReport/MealsProvided/2022>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2023>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2024>,
+        <https://northwind-food.example/IndicatorReport/MealsProvided/2025> ;
+    cids:unitDescription "Meals" .
+
+<https://northwind-food.example/Indicator/TonnesFoodRecovered/> a cids:Indicator ;
+    i72:unit_of_measure cids:tonne ;
+    org:hasName "Tonnes of food recovered" ;
+    cids:forOrganization <https://northwind-food.example/Organization/Northwind/> ;
+    cids:forOutcome <https://northwind-food.example/Outcome/ImprovedFoodSecurity/>,
+        <https://northwind-food.example/Outcome/LessFoodWaste/>,
+        <https://northwind-food.example/Outcome/LowerLandfillMethane/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasDescription "Tonnes of surplus food recovered from grocers and farms." ;
+    cids:hasIndicatorReport <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2022>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2023>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2024>,
+        <https://northwind-food.example/IndicatorReport/TonnesFoodRecovered/2025> ;
+    cids:unitDescription "Tonnes" .
+
+<https://northwind-food.example/Organization/Northwind/> a cids:Organization ;
+    org:hasID <https://northwind-food.example/OrganizationID/Northwind/> ;
+    org:hasLegalName "Northwind Food Recovery Society" ;
+    cids:hasAddress <https://northwind-food.example/Address/Northwind/> ;
+    cids:hasIndicator <https://northwind-food.example/Indicator/MealsProvided/>,
+        <https://northwind-food.example/Indicator/TonnesFoodRecovered/> ;
+    cids:hasOutcome <https://northwind-food.example/Outcome/ImprovedFoodSecurity/>,
+        <https://northwind-food.example/Outcome/LessFoodWaste/>,
+        <https://northwind-food.example/Outcome/LowerLandfillMethane/> .
+

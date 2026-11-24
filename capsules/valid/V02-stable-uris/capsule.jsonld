@@ -1,0 +1,233 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "http://legacy.kestrel-arts.example/Organization/1",
+    "hasLegalName": "Kestrel Community Arts Society",
+    "hasAddress": [
+      "https://kestrel-arts.example:8443/address/main"
+    ],
+    "hasOutcome": [
+      "https://kestrel-arts.example/impact#outcome-community",
+      "https://kestrel-arts.example//Outcome/YouthArts"
+    ],
+    "hasIndicator": [
+      "https://kestrel-arts.example/Indicator/Workshops",
+      "https://kestrel-arts.example/Indicator/workshops/",
+      "urn:uuid:6f1c2a7e-3b9d-4c55-9a1e-2d7f0b8c4e91",
+      "tag:kestrel-arts.example,2026:indicator/volunteer-hours"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://kestrel-arts.example:8443/address/main",
+    "streetAddress": "3 Example Mews",
+    "addressLocality": "Halifax",
+    "addressRegion": "NS",
+    "postalCode": "B3H 0A6",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/4",
+    "hasName": "Goal 4: Quality education",
+    "hasDescription": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/11",
+    "hasName": "Goal 11: Sustainable cities and communities",
+    "hasDescription": "Make cities and human settlements inclusive, safe, resilient and sustainable"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://kestrel-arts.example/impact#outcome-community",
+    "hasName": "Stronger community connections",
+    "hasDescription": "Residents meet and create together.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/11"
+    ],
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1",
+    "hasIndicator": [
+      "https://kestrel-arts.example/Indicator/Workshops",
+      "tag:kestrel-arts.example,2026:indicator/volunteer-hours"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://kestrel-arts.example//Outcome/YouthArts",
+    "hasName": "Youth arts skills",
+    "hasDescription": "Young people learn an art form.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/4"
+    ],
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1",
+    "hasIndicator": [
+      "https://kestrel-arts.example/Indicator/workshops/",
+      "urn:uuid:6f1c2a7e-3b9d-4c55-9a1e-2d7f0b8c4e91"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://kestrel-arts.example/Indicator/Workshops",
+    "hasName": "Community workshops held",
+    "hasDescription": "Workshops open to all residents.",
+    "unitDescription": "Workshops",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1",
+    "forOutcome": "https://kestrel-arts.example/impact#outcome-community",
+    "hasIndicatorReport": [
+      "https://kestrel-arts.example/data?type=report&id=2024-001"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://kestrel-arts.example/Indicator/workshops/",
+    "hasName": "Youth workshops held",
+    "hasDescription": "Workshops for participants aged 12-18. A different Indicator from .../Indicator/Workshops: IRIs are case-sensitive.",
+    "unitDescription": "Workshops",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1",
+    "forOutcome": "https://kestrel-arts.example//Outcome/YouthArts",
+    "hasIndicatorReport": [
+      "https://kestrel-arts.example/r%C3%A9sultats/2024/ateliers"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "urn:uuid:6f1c2a7e-3b9d-4c55-9a1e-2d7f0b8c4e91",
+    "hasName": "Youth participants",
+    "hasDescription": "Distinct young people who attended at least one workshop.",
+    "unitDescription": "Participants",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1",
+    "forOutcome": "https://kestrel-arts.example//Outcome/YouthArts",
+    "hasIndicatorReport": [
+      "https://kestrel-arts.example/Indicator%20Report/2024/participants"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "tag:kestrel-arts.example,2026:indicator/volunteer-hours",
+    "hasName": "Volunteer hours",
+    "hasDescription": "Hours given by community volunteers.",
+    "unitDescription": "Hours",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#unspecifiedUnit",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1",
+    "forOutcome": "https://kestrel-arts.example/impact#outcome-community",
+    "hasIndicatorReport": [
+      "https://kestrel-arts.example/IndicatorReport/volunteer-hours/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://kestrel-arts.example/data?type=report&id=2024-001",
+    "hasName": "Community workshops held 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "46",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://kestrel-arts.example/Indicator/Workshops",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://kestrel-arts.example/r%C3%A9sultats/2024/ateliers",
+    "hasName": "Youth workshops held 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "31",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://kestrel-arts.example/Indicator/workshops/",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://kestrel-arts.example/Indicator%20Report/2024/participants",
+    "hasName": "Youth participants 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "214",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "urn:uuid:6f1c2a7e-3b9d-4c55-9a1e-2d7f0b8c4e91",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://kestrel-arts.example/IndicatorReport/volunteer-hours/2024",
+    "hasName": "Volunteer hours 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1875",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#unspecifiedUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "tag:kestrel-arts.example,2026:indicator/volunteer-hours",
+    "forOrganization": "http://legacy.kestrel-arts.example/Organization/1"
+  }
+]

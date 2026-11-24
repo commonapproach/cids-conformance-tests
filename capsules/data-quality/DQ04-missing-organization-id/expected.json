@@ -1,0 +1,21 @@
+{
+  "id": "DQ04-missing-organization-id",
+  "category": "data-quality",
+  "title": "Organization with no identifier",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-MISSING-ORG-ID",
+          "focusNode": "https://tamarack-youth.example/Organization/Tamarack/",
+          "resultPath": "org:hasID",
+          "explanation": "Without a business number or registry ID, the organization can't be matched across reports."
+        }
+      ]
+    }
+  }
+}

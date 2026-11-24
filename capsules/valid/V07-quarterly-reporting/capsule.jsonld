@@ -1,0 +1,478 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://harbourlight-health.example/Organization/Harbourlight/",
+    "hasLegalName": "Harbourlight Health Navigation Inc.",
+    "hasAddress": [
+      "https://harbourlight-health.example/Address/Harbourlight/"
+    ],
+    "hasID": [
+      "https://harbourlight-health.example/OrganizationID/Harbourlight/"
+    ],
+    "hasOutcome": [
+      "https://harbourlight-health.example/Outcome/FewerHospitalDays/"
+    ],
+    "hasIndicator": [
+      "https://harbourlight-health.example/Indicator/PatientsSupported/",
+      "https://harbourlight-health.example/Indicator/HospitalDaysAvoided/"
+    ],
+    "hasOrganizationProfile": [
+      "https://harbourlight-health.example/OrganizationProfile/Harbourlight/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://harbourlight-health.example/Address/Harbourlight/",
+    "streetAddress": "55 Hypothetical Wharf",
+    "addressLocality": "Halifax",
+    "addressRegion": "NS",
+    "postalCode": "B3J 0A7",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://harbourlight-health.example/OrganizationID/Harbourlight/",
+    "hasIdentifier": "678912345RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/3",
+    "hasName": "Goal 3: Good health and well-being",
+    "hasDescription": "Ensure healthy lives and promote well-being for all at all ages"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://harbourlight-health.example/Outcome/FewerHospitalDays/",
+    "hasName": "Fewer avoidable hospital days",
+    "hasDescription": "Patients get care at home instead of waiting in hospital.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/3"
+    ],
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/",
+    "hasIndicator": [
+      "https://harbourlight-health.example/Indicator/PatientsSupported/",
+      "https://harbourlight-health.example/Indicator/HospitalDaysAvoided/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "hasName": "Patients supported",
+    "hasDescription": "Patients who received navigation support in the quarter.",
+    "unitDescription": "Patients",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/",
+    "forOutcome": "https://harbourlight-health.example/Outcome/FewerHospitalDays/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/3"
+    ],
+    "hasIndicatorReport": [
+      "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q1",
+      "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q2",
+      "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q3",
+      "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q4",
+      "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q1",
+      "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q2",
+      "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q3"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q1",
+    "hasName": "Patients supported 2024-Q1",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "412",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-04:00",
+    "endedAtTime": "2024-03-31T23:59:59-03:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q2",
+    "hasName": "Patients supported 2024-Q2",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "438",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-04-01T00:00:00-03:00",
+    "endedAtTime": "2024-06-30T23:59:59-03:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q3",
+    "hasName": "Patients supported 2024-Q3",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "451",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-07-01T00:00:00-03:00",
+    "endedAtTime": "2024-09-30T23:59:59-03:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2024-Q4",
+    "hasName": "Patients supported 2024-Q4",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "470",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-10-01T00:00:00-03:00",
+    "endedAtTime": "2024-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q1",
+    "hasName": "Patients supported 2025-Q1",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "486",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2025-01-01T00:00:00-04:00",
+    "endedAtTime": "2025-03-31T23:59:59-03:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q2",
+    "hasName": "Patients supported 2025-Q2",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "502",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2025-04-01T00:00:00-03:00",
+    "endedAtTime": "2025-06-30T23:59:59-03:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/PatientsSupported/2025-Q3",
+    "hasName": "Patients supported 2025-Q3",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "519",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2025-07-01T00:00:00-03:00",
+    "endedAtTime": "2025-09-30T23:59:59-03:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/PatientsSupported/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://harbourlight-health.example/Indicator/HospitalDaysAvoided/",
+    "hasName": "Hospital days avoided",
+    "hasDescription": "Estimated hospital bed-days avoided in the year.",
+    "unitDescription": "Days",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#dayUnit",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/",
+    "forOutcome": "https://harbourlight-health.example/Outcome/FewerHospitalDays/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/3"
+    ],
+    "hasIndicatorReport": [
+      "https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2022",
+      "https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2023",
+      "https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2024"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2022",
+    "hasName": "Hospital days avoided 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "2950",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#dayUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-04:00",
+    "endedAtTime": "2022-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/HospitalDaysAvoided/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2023",
+    "hasName": "Hospital days avoided 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "3310",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#dayUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-04:00",
+    "endedAtTime": "2023-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/HospitalDaysAvoided/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://harbourlight-health.example/IndicatorReport/HospitalDaysAvoided/2024",
+    "hasName": "Hospital days avoided 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "3605",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#dayUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-04:00",
+    "endedAtTime": "2024-12-31T23:59:59-04:00",
+    "forIndicator": "https://harbourlight-health.example/Indicator/HospitalDaysAvoided/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://harbourlight-health.example/OrganizationProfile/Harbourlight/2025/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/",
+    "reportedDate": "2025-10-15T00:00:00-03:00",
+    "hasPrimaryContact": "https://harbourlight-health.example/Person/HarbourlightContact/",
+    "hasManagementTeamProfile": [
+      "https://harbourlight-health.example/TeamProfile/Harbourlight/Management/2025/"
+    ],
+    "hasBoardProfile": [
+      "https://harbourlight-health.example/TeamProfile/Harbourlight/Board/2025/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Health"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc1",
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc4"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#NS"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps19",
+      "https://codelist.commonapproach.org/PopulationServed#ps18"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#forProfit"
+    ],
+    "hasFundingStatus": [
+      "https://harbourlight-health.example/FundingStatus/Harbourlight/2025/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://harbourlight-health.example/Person/HarbourlightContact/",
+    "givenName": "Casey",
+    "familyName": "MacNeil",
+    "hasEmail": "casey.macneil@harbourlight-health.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://harbourlight-health.example/TeamProfile/Harbourlight/Management/2025/",
+    "hasTeamSize": 5,
+    "hasEDGSize": 2,
+    "hasEDGProfile": [
+      "https://harbourlight-health.example/EDGProfile/Harbourlight/Management/2025/edg10/"
+    ],
+    "reportedDate": "2025-10-15T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://harbourlight-health.example/EDGProfile/Harbourlight/Management/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2025-10-15T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://harbourlight-health.example/TeamProfile/Harbourlight/Board/2025/",
+    "hasTeamSize": 6,
+    "hasEDGSize": 3,
+    "hasEDGProfile": [
+      "https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg2/",
+      "https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg10/"
+    ],
+    "reportedDate": "2025-10-15T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg2/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2",
+    "hasSize": 1,
+    "reportedDate": "2025-10-15T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://harbourlight-health.example/EDGProfile/Harbourlight/Board/2025/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2025-10-15T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://harbourlight-health.example/FundingStatus/Harbourlight/2025/",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2025-10-15T00:00:00-03:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://harbourlight-health.example/ReportInfo/Harbourlight/2025-Q3/",
+    "hasName": "Harbourlight Health Navigation Inc. impact report 2025-Q3",
+    "startedAtTime": "2025-07-01T00:00:00-03:00",
+    "endedAtTime": "2025-09-30T23:59:59-03:00",
+    "forOrganization": "https://harbourlight-health.example/Organization/Harbourlight/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps19",
+    "hasName": "People of Advanced Age (65+)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps18",
+    "hasName": "People Living with Terminal or Chronic Illness/Diseases"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2",
+    "hasName": "Black People"
+  }
+]

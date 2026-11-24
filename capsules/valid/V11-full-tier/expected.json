@@ -1,0 +1,16 @@
+{
+  "id": "V11-full-tier",
+  "category": "valid",
+  "title": "Full, realistic Full tier capsule",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": [],
+        "essential": [],
+        "full": []
+      },
+      "dq": []
+    }
+  }
+}

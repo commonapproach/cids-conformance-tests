@@ -1,0 +1,386 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://harbourlight-kitchens.example/Address/Harbourlight/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Halifax" ;
+    cids:addressRegion "NS" ;
+    cids:postalCode "B3K 0F7" ;
+    cids:streetAddress "52 Specimen Wharf Road" .
+
+<https://harbourlight-kitchens.example/Characteristic/BarriersToEmployment/> a cids:Characteristic ;
+    org:hasName "Facing barriers to employment" .
+
+<https://harbourlight-kitchens.example/Characteristic/LowIncomeHousehold/> a cids:Characteristic ;
+    org:hasName "Low-income household" .
+
+<https://harbourlight-kitchens.example/Code/FoodServiceCertificate/> a cids:Code ;
+    i72:value <https://harbourlight-kitchens.example/Code/FoodServiceCertificate/value/> ;
+    org:hasName "Recognised food-service training credential" ;
+    schema:codeValue "FSC-01" ;
+    cids:definedBy <https://impact-standards-council.example/Organization/ISC/> ;
+    cids:hasDescription "Identifies indicators about graduates of a recognised food-service training program." ;
+    cids:hasSpecification "https://impact-standards-council.example/codes/food-service-credential"^^xsd:anyURI .
+
+<https://harbourlight-kitchens.example/Code/FoodServiceCertificate/value/> a i72:Measure ;
+    i72:hasNumericalValue "1" ;
+    i72:unit_of_measure cids:unspecifiedUnit .
+
+<https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/> a cids:ImpactDepth ;
+    i72:value <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/value/> ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/> ;
+    cids:hasDescription "How much: 62% reported a large improvement." .
+
+<https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/value/> a i72:Measure ;
+    i72:hasNumericalValue "62" ;
+    i72:unit_of_measure cids:percentUnit .
+
+<https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/> a cids:ImpactDuration ;
+    i72:value <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/value/> ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/> ;
+    cids:hasDescription "How long: the change lasts about 18 months." .
+
+<https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/value/> a i72:Measure ;
+    i72:hasNumericalValue "18" ;
+    i72:unit_of_measure cids:unspecifiedUnit .
+
+<https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/> a cids:ImpactScale ;
+    i72:value <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/value/> ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/> ;
+    cids:hasDescription "How many: 51 people or meals reached in 2025." .
+
+<https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/value/> a i72:Measure ;
+    i72:hasNumericalValue "51" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/> a cids:ImpactDepth ;
+    i72:value <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/value/> ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:hasDescription "How much: 40% reported a large improvement." .
+
+<https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/value/> a i72:Measure ;
+    i72:hasNumericalValue "40" ;
+    i72:unit_of_measure cids:percentUnit .
+
+<https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/> a cids:ImpactDuration ;
+    i72:value <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/value/> ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:hasDescription "How long: the change lasts about 12 months." .
+
+<https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/value/> a i72:Measure ;
+    i72:hasNumericalValue "12" ;
+    i72:unit_of_measure cids:unspecifiedUnit .
+
+<https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/> a cids:ImpactScale ;
+    i72:value <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/value/> ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:hasDescription "How many: 26100 people or meals reached in 2025." .
+
+<https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/value/> a i72:Measure ;
+    i72:hasNumericalValue "26100" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/hasBaseline/> a i72:Measure ;
+    i72:hasNumericalValue "30" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/Indicator/MealsServed/hasBaseline/> a i72:Measure ;
+    i72:hasNumericalValue "18000" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023/value/> a i72:Measure ;
+    i72:hasNumericalValue "38" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "44" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "51" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023/value/> a i72:Measure ;
+    i72:hasNumericalValue "21400" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "23850" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "26100" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/OrganizationID/Harbourlight/> a org:OrganizationID ;
+    org:hasIdentifier "678912345RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> .
+
+<https://harbourlight-kitchens.example/StakeholderOutcome/NeighbourhoodHouseholds/ImprovedFoodSecurity/> a cids:StakeholderOutcome ;
+    org:hasName "Reliable meals for neighbourhood households" ;
+    cids:forOutcome <https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/> ;
+    cids:forStakeholder <https://harbourlight-kitchens.example/Stakeholder/NeighbourhoodHouseholds/> ;
+    cids:hasDescription "Households that often skip meals get at least one healthy meal a day." ;
+    cids:hasImpactReport <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/> ;
+    cids:isUnderserved false .
+
+<https://harbourlight-kitchens.example/StakeholderOutcome/TrainingParticipants/GraduatesInFoodServiceJobs/> a cids:StakeholderOutcome ;
+    org:hasName "Stable jobs for training participants" ;
+    cids:forOutcome <https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/> ;
+    cids:forStakeholder <https://harbourlight-kitchens.example/Stakeholder/TrainingParticipants/> ;
+    cids:hasDescription "Participants move from unemployment or precarious work into steady food-service jobs." ;
+    cids:hasImpactReport <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/> ;
+    cids:isUnderserved true .
+
+<https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/value/> a i72:Measure ;
+    i72:hasNumericalValue "40" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "45" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "50" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/Target/MealsServed/2023/value/> a i72:Measure ;
+    i72:hasNumericalValue "22000" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/Target/MealsServed/2024/value/> a i72:Measure ;
+    i72:hasNumericalValue "24000" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/Target/MealsServed/2025/value/> a i72:Measure ;
+    i72:hasNumericalValue "26000" ;
+    i72:unit_of_measure cids:countUnit .
+
+<https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/> a cids:ImpactReport ;
+    org:hasName "Impact report 2025: jobs" ;
+    prov:endedAtTime "2025-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forOutcome <https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/> ;
+    cids:hasComment "Based on the year-end participant survey and the meal log." ;
+    cids:hasImpactDepth <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDepth/> ;
+    cids:hasImpactDuration <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactDuration/> ;
+    cids:hasImpactScale <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/ImpactScale/> .
+
+<https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/> a cids:ImpactReport ;
+    org:hasName "Impact report 2025: food security" ;
+    prov:endedAtTime "2025-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forOutcome <https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/> ;
+    cids:hasComment "Based on the year-end participant survey and the meal log." ;
+    cids:hasImpactDepth <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDepth/> ;
+    cids:hasImpactDuration <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactDuration/> ;
+    cids:hasImpactScale <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/ImpactScale/> .
+
+<https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023> a cids:IndicatorReport ;
+    i72:value <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023/value/> ;
+    org:hasName "Graduates employed after six months 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTarget <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/> .
+
+<https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024> a cids:IndicatorReport ;
+    i72:value <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024/value/> ;
+    org:hasName "Graduates employed after six months 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTarget <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/> .
+
+<https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025> a cids:IndicatorReport ;
+    i72:value <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025/value/> ;
+    org:hasName "Graduates employed after six months 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTarget <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/> .
+
+<https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023> a cids:IndicatorReport ;
+    i72:value <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023/value/> ;
+    org:hasName "Community meals served 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTarget <https://harbourlight-kitchens.example/Target/MealsServed/2023/> .
+
+<https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024> a cids:IndicatorReport ;
+    i72:value <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024/value/> ;
+    org:hasName "Community meals served 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTarget <https://harbourlight-kitchens.example/Target/MealsServed/2024/> .
+
+<https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025> a cids:IndicatorReport ;
+    i72:value <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025/value/> ;
+    org:hasName "Community meals served 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicator <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTarget <https://harbourlight-kitchens.example/Target/MealsServed/2025/> .
+
+<https://harbourlight-kitchens.example/Stakeholder/NeighbourhoodHouseholds/> a cids:Stakeholder ;
+    org:hasName "Neighbourhood households" ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:hasCatchmentArea "local" ;
+    cids:hasCharacteristic <https://harbourlight-kitchens.example/Characteristic/LowIncomeHousehold/> ;
+    cids:hasDescription "Low-income households in the north end who eat at the dining room or get meals delivered." .
+
+<https://harbourlight-kitchens.example/Stakeholder/TrainingParticipants/> a cids:Stakeholder ;
+    org:hasName "Kitchen training participants" ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:hasCatchmentArea "local" ;
+    cids:hasCharacteristic <https://harbourlight-kitchens.example/Characteristic/BarriersToEmployment/> ;
+    cids:hasDescription "Adults facing barriers to employment who enrol in the 16-week kitchen training program." .
+
+<https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/> a cids:Target ;
+    i72:value <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/value/> ;
+    org:hasName "Graduates employed after six months target 2023" ;
+    schema:dateCreated "2022-11-15T09:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime "2023-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023> ;
+    cids:hasComment "Board-approved target for 2023." .
+
+<https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/> a cids:Target ;
+    i72:value <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/value/> ;
+    org:hasName "Graduates employed after six months target 2024" ;
+    schema:dateCreated "2023-11-15T09:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime "2024-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024> ;
+    cids:hasComment "Board-approved target for 2024." .
+
+<https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/> a cids:Target ;
+    i72:value <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/value/> ;
+    org:hasName "Graduates employed after six months target 2025" ;
+    schema:dateCreated "2024-11-15T09:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime "2025-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025> ;
+    cids:hasComment "Board-approved target for 2025." .
+
+<https://harbourlight-kitchens.example/Target/MealsServed/2023/> a cids:Target ;
+    i72:value <https://harbourlight-kitchens.example/Target/MealsServed/2023/value/> ;
+    org:hasName "Community meals served target 2023" ;
+    schema:dateCreated "2022-11-15T09:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime "2023-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023> ;
+    cids:hasComment "Board-approved target for 2023." .
+
+<https://harbourlight-kitchens.example/Target/MealsServed/2024/> a cids:Target ;
+    i72:value <https://harbourlight-kitchens.example/Target/MealsServed/2024/value/> ;
+    org:hasName "Community meals served target 2024" ;
+    schema:dateCreated "2023-11-15T09:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime "2024-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024> ;
+    cids:hasComment "Board-approved target for 2024." .
+
+<https://harbourlight-kitchens.example/Target/MealsServed/2025/> a cids:Target ;
+    i72:value <https://harbourlight-kitchens.example/Target/MealsServed/2025/value/> ;
+    org:hasName "Community meals served target 2025" ;
+    schema:dateCreated "2024-11-15T09:00:00-04:00"^^xsd:dateTime ;
+    prov:endedAtTime "2025-12-31T23:59:59-04:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-04:00"^^xsd:dateTime ;
+    cids:forIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025> ;
+    cids:hasComment "Board-approved target for 2025." .
+
+<https://impact-standards-council.example/Organization/ISC/> a cids:Organization,
+        cids:StandardsOrganization ;
+    org:hasLegalName "Impact Standards Council (fictional)" .
+
+<https://metadata.un.org/sdg/2> a cids:Theme ;
+    org:hasName "Goal 2: Zero hunger" ;
+    cids:hasDescription "End hunger, achieve food security and improved nutrition and promote sustainable agriculture" .
+
+<https://metadata.un.org/sdg/8> a cids:Theme ;
+    org:hasName "Goal 8: Decent work and economic growth" ;
+    cids:hasDescription "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all" .
+
+<https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/> a cids:Outcome ;
+    org:hasName "Improved food security for neighbours" ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTheme <https://metadata.un.org/sdg/2> ;
+    cids:hasDescription "Households in the neighbourhood have reliable access to healthy meals." ;
+    cids:hasImpactReport <https://harbourlight-kitchens.example/ImpactReport/ImprovedFoodSecurity/2025/> ;
+    cids:hasIndicator <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:hasStakeholderOutcome <https://harbourlight-kitchens.example/StakeholderOutcome/NeighbourhoodHouseholds/ImprovedFoodSecurity/> .
+
+<https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/> a cids:Outcome ;
+    org:hasName "Graduates in stable food-service jobs" ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forTheme <https://metadata.un.org/sdg/8> ;
+    cids:hasDescription "People who complete the kitchen training program find and keep jobs in food service." ;
+    cids:hasImpactReport <https://harbourlight-kitchens.example/ImpactReport/GraduatesInFoodServiceJobs/2025/> ;
+    cids:hasIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/>,
+        <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:hasStakeholderOutcome <https://harbourlight-kitchens.example/StakeholderOutcome/TrainingParticipants/GraduatesInFoodServiceJobs/> .
+
+<https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Graduates employed after six months" ;
+    cids:definedBy <https://impact-standards-council.example/Organization/ISC/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forOutcome <https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/> ;
+    cids:forTheme <https://metadata.un.org/sdg/8> ;
+    cids:hasBaseline <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/hasBaseline/> ;
+    cids:hasCode <https://harbourlight-kitchens.example/Code/FoodServiceCertificate/> ;
+    cids:hasDescription "Program graduates who are working in food service six months after finishing the program." ;
+    cids:hasIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2023>,
+        <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2024>,
+        <https://harbourlight-kitchens.example/IndicatorReport/GraduatesEmployed/2025> ;
+    cids:hasTarget <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2023/>,
+        <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2024/>,
+        <https://harbourlight-kitchens.example/Target/GraduatesEmployed/2025/> ;
+    cids:unitDescription "Graduates" .
+
+<https://harbourlight-kitchens.example/Indicator/MealsServed/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Community meals served" ;
+    cids:definedBy <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forOrganization <https://harbourlight-kitchens.example/Organization/Harbourlight/> ;
+    cids:forOutcome <https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/>,
+        <https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/> ;
+    cids:forTheme <https://metadata.un.org/sdg/2>,
+        <https://metadata.un.org/sdg/8> ;
+    cids:hasBaseline <https://harbourlight-kitchens.example/Indicator/MealsServed/hasBaseline/> ;
+    cids:hasDescription "Meals cooked by trainees and served at the community dining room or delivered to households." ;
+    cids:hasIndicatorReport <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2023>,
+        <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2024>,
+        <https://harbourlight-kitchens.example/IndicatorReport/MealsServed/2025> ;
+    cids:hasTarget <https://harbourlight-kitchens.example/Target/MealsServed/2023/>,
+        <https://harbourlight-kitchens.example/Target/MealsServed/2024/>,
+        <https://harbourlight-kitchens.example/Target/MealsServed/2025/> ;
+    cids:unitDescription "Meals" .
+
+<https://harbourlight-kitchens.example/Organization/Harbourlight/> a cids:Organization ;
+    org:hasID <https://harbourlight-kitchens.example/OrganizationID/Harbourlight/> ;
+    org:hasLegalName "Harbourlight Community Kitchen Society" ;
+    cids:hasAddress <https://harbourlight-kitchens.example/Address/Harbourlight/> ;
+    cids:hasIndicator <https://harbourlight-kitchens.example/Indicator/GraduatesEmployed/>,
+        <https://harbourlight-kitchens.example/Indicator/MealsServed/> ;
+    cids:hasOutcome <https://harbourlight-kitchens.example/Outcome/GraduatesInFoodServiceJobs/>,
+        <https://harbourlight-kitchens.example/Outcome/ImprovedFoodSecurity/> ;
+    cids:hasStakeholder <https://harbourlight-kitchens.example/Stakeholder/NeighbourhoodHouseholds/>,
+        <https://harbourlight-kitchens.example/Stakeholder/TrainingParticipants/> .
+

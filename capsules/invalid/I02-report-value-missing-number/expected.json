@@ -1,0 +1,30 @@
+{
+  "id": "I02-report-value-missing-number",
+  "category": "invalid",
+  "title": "IndicatorReport value with no number",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2022 / i72:value",
+            "resultPath": "i72:hasNumericalValue",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "The Measure behind a report's value needs exactly one hasNumericalValue."
+          }
+        ],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2022 / i72:value",
+            "resultPath": "i72:hasNumericalValue",
+            "sourceConstraintComponent": "sh:MinCountConstraintComponent",
+            "explanation": "The Measure behind a report's value needs exactly one hasNumericalValue."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

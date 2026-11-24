@@ -1,0 +1,79 @@
+name: Conformance suite
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # Weekly, to notice when the published shapes or codelists change.
+    - cron: "0 6 * * 1"
+
+jobs:
+  suite:
+    name: Capsules give their expected results (pinned reference data, Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # The README promises Python 3.10 or newer.
+        python: ["3.10", "3.11"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Capsules match the generator
+        run: python -m cidsconformance build --check
+      - name: Test suite
+        run: python -m pytest
+
+  jena-crosscheck:
+    name: Expected results agree with Apache Jena
+    runs-on: ubuntu-latest
+    env:
+      # Same version as used locally. The checksum is from
+      # https://archive.apache.org/dist/jena/binaries/apache-jena-5.5.0.tar.gz.sha512
+      JENA_VERSION: "5.5.0"
+      JENA_SHA512: f9ae68a748e642c6a8175ee25afdfa37ce057ed37e7caf279a8a46ad93284bea808cf14d96bf30b6e4e6a4ddaf30cf5ee9d441f48a9a3d3c9e647a9b71645e0c
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"     # Jena 5 needs Java 17 or newer
+      - run: pip install -r requirements.txt
+      - name: Install Apache Jena
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/jena.tar.gz" \
+            "https://archive.apache.org/dist/jena/binaries/apache-jena-${JENA_VERSION}.tar.gz"
+          echo "${JENA_SHA512}  $RUNNER_TEMP/jena.tar.gz" | sha512sum -c -
+          tar -xzf "$RUNNER_TEMP/jena.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/apache-jena-${JENA_VERSION}/bin" >> "$GITHUB_PATH"
+      - run: shacl --version
+      - name: Check every expected SHACL result with Jena
+        run: python scripts/jena_crosscheck.py
+
+  latest-reference:
+    name: Against the latest published shapes and codelists
+    runs-on: ubuntu-latest
+    # Informational: tells us when ontology.commonapproach.org or
+    # codelist.commonapproach.org change in a way that affects the capsules.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Download the latest reference data
+        run: python -m cidsconformance refresh-reference --dest "$RUNNER_TEMP/reference"
+      - name: Run the capsules against it
+        run: python -m cidsconformance suite
+        env:
+          CIDS_REFERENCE_DIR: ${{ runner.temp }}/reference

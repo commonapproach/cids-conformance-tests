@@ -1,0 +1,825 @@
+[
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Organization",
+    "@id": "https://riverbend-energy.example/Organization/Riverbend/",
+    "hasLegalName": "Riverbend Community Energy Co-operative",
+    "hasAddress": [
+      "https://riverbend-energy.example/Address/Riverbend/"
+    ],
+    "hasID": [
+      "https://riverbend-energy.example/OrganizationID/Riverbend/"
+    ],
+    "hasOutcome": [
+      "https://riverbend-energy.example/Outcome/ReducedGHGEmissions/",
+      "https://riverbend-energy.example/Outcome/AffordableCleanEnergy/"
+    ],
+    "hasIndicator": [
+      "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+      "https://riverbend-energy.example/Indicator/RenewableMWh/",
+      "https://riverbend-energy.example/Indicator/MembersServed/"
+    ],
+    "hasOrganizationProfile": [
+      "https://riverbend-energy.example/OrganizationProfile/Riverbend/2026/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Address",
+    "@id": "https://riverbend-energy.example/Address/Riverbend/",
+    "streetAddress": "25 Placeholder Lane",
+    "addressLocality": "Peterborough",
+    "addressRegion": "ON",
+    "postalCode": "K9J 0B2",
+    "addressCountry": "Canada"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "org:OrganizationID",
+    "@id": "https://riverbend-energy.example/OrganizationID/Riverbend/",
+    "hasIdentifier": "234567891RC0001",
+    "issuedBy": "https://codelist.commonapproach.org/CanadianCorporateRegistries#cra",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/7",
+    "hasName": "Goal 7: Affordable and clean energy",
+    "hasDescription": "Ensure access to affordable, reliable, sustainable and modern energy for all"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Theme",
+    "@id": "https://metadata.un.org/sdg/13",
+    "hasName": "Goal 13: Climate action",
+    "hasDescription": "Take urgent action to combat climate change and its impacts"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://riverbend-energy.example/Outcome/ReducedGHGEmissions/",
+    "hasName": "Reduced greenhouse gas emissions",
+    "hasDescription": "Members' homes and the local grid emit less greenhouse gas.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/13"
+    ],
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/",
+    "hasIndicator": [
+      "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+      "https://riverbend-energy.example/Indicator/RenewableMWh/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Outcome",
+    "@id": "https://riverbend-energy.example/Outcome/AffordableCleanEnergy/",
+    "hasName": "More affordable clean energy",
+    "hasDescription": "Members get renewable electricity at or below grid prices.",
+    "forTheme": [
+      "https://metadata.un.org/sdg/7"
+    ],
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/",
+    "hasIndicator": [
+      "https://riverbend-energy.example/Indicator/RenewableMWh/",
+      "https://riverbend-energy.example/Indicator/MembersServed/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "hasName": "Tonnes of GHG emissions avoided",
+    "hasDescription": "Tonnes of CO2-equivalent avoided compared with grid electricity.",
+    "unitDescription": "Tonnes CO2e",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/",
+    "forOutcome": "https://riverbend-energy.example/Outcome/ReducedGHGEmissions/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/13"
+    ],
+    "hasIndicatorReport": [
+      "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2019",
+      "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2020",
+      "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2021",
+      "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2022",
+      "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2023",
+      "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2024",
+      "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2025"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2019",
+    "hasName": "Tonnes of GHG emissions avoided 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "410",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-05:00",
+    "endedAtTime": "2019-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2020",
+    "hasName": "Tonnes of GHG emissions avoided 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "455",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-05:00",
+    "endedAtTime": "2020-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2021",
+    "hasName": "Tonnes of GHG emissions avoided 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "498",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-05:00",
+    "endedAtTime": "2021-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2022",
+    "hasName": "Tonnes of GHG emissions avoided 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "540",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2023",
+    "hasName": "Tonnes of GHG emissions avoided 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "602",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-05:00",
+    "endedAtTime": "2023-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2024",
+    "hasName": "Tonnes of GHG emissions avoided 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "655",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2025",
+    "hasName": "Tonnes of GHG emissions avoided 2025",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "701",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#tonne"
+    },
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/TonnesGHGAvoided/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "hasName": "Renewable electricity generated",
+    "hasDescription": "Megawatt-hours generated by the co-op's solar arrays.",
+    "unitDescription": "MWh",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/",
+    "forOutcome": [
+      "https://riverbend-energy.example/Outcome/AffordableCleanEnergy/",
+      "https://riverbend-energy.example/Outcome/ReducedGHGEmissions/"
+    ],
+    "forTheme": [
+      "https://metadata.un.org/sdg/7",
+      "https://metadata.un.org/sdg/13"
+    ],
+    "hasIndicatorReport": [
+      "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2019",
+      "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2020",
+      "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2021",
+      "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2022",
+      "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2023",
+      "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2024",
+      "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2025"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2019",
+    "hasName": "Renewable electricity generated 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1210",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-05:00",
+    "endedAtTime": "2019-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2020",
+    "hasName": "Renewable electricity generated 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1340",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-05:00",
+    "endedAtTime": "2020-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2021",
+    "hasName": "Renewable electricity generated 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1395",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-05:00",
+    "endedAtTime": "2021-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2022",
+    "hasName": "Renewable electricity generated 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1502",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2023",
+    "hasName": "Renewable electricity generated 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1610",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-05:00",
+    "endedAtTime": "2023-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2024",
+    "hasName": "Renewable electricity generated 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1688",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/RenewableMWh/2025",
+    "hasName": "Renewable electricity generated 2025",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "1745",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#megawattHour"
+    },
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/RenewableMWh/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Indicator",
+    "@id": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "hasName": "Member households served",
+    "hasDescription": "Households buying electricity through the co-op at year end.",
+    "unitDescription": "Households",
+    "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/",
+    "forOutcome": "https://riverbend-energy.example/Outcome/AffordableCleanEnergy/",
+    "forTheme": [
+      "https://metadata.un.org/sdg/7"
+    ],
+    "hasIndicatorReport": [
+      "https://riverbend-energy.example/IndicatorReport/MembersServed/2019",
+      "https://riverbend-energy.example/IndicatorReport/MembersServed/2020",
+      "https://riverbend-energy.example/IndicatorReport/MembersServed/2021",
+      "https://riverbend-energy.example/IndicatorReport/MembersServed/2022",
+      "https://riverbend-energy.example/IndicatorReport/MembersServed/2023",
+      "https://riverbend-energy.example/IndicatorReport/MembersServed/2024",
+      "https://riverbend-energy.example/IndicatorReport/MembersServed/2025"
+    ],
+    "cids:describesPopulation": {
+      "@id": "https://riverbend-energy.example/Population/MemberHouseholds"
+    }
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/MembersServed/2019",
+    "hasName": "Member households served 2019",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "640",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2019-01-01T00:00:00-05:00",
+    "endedAtTime": "2019-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/MembersServed/2020",
+    "hasName": "Member households served 2020",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "702",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2020-01-01T00:00:00-05:00",
+    "endedAtTime": "2020-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/MembersServed/2021",
+    "hasName": "Member households served 2021",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "765",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2021-01-01T00:00:00-05:00",
+    "endedAtTime": "2021-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/MembersServed/2022",
+    "hasName": "Member households served 2022",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "810",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2022-01-01T00:00:00-05:00",
+    "endedAtTime": "2022-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/MembersServed/2023",
+    "hasName": "Member households served 2023",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "872",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2023-01-01T00:00:00-05:00",
+    "endedAtTime": "2023-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/MembersServed/2024",
+    "hasName": "Member households served 2024",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "915",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2024-01-01T00:00:00-05:00",
+    "endedAtTime": "2024-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:IndicatorReport",
+    "@id": "https://riverbend-energy.example/IndicatorReport/MembersServed/2025",
+    "hasName": "Member households served 2025",
+    "value": {
+      "@type": "i72:Measure",
+      "hasNumericalValue": "968",
+      "unit_of_measure": "https://ontology.commonapproach.org/cids#countUnit"
+    },
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "forIndicator": "https://riverbend-energy.example/Indicator/MembersServed/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:OrganizationProfile",
+    "@id": "https://riverbend-energy.example/OrganizationProfile/Riverbend/2026/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/",
+    "reportedDate": "2026-02-27T00:00:00-05:00",
+    "hasPrimaryContact": "https://riverbend-energy.example/Person/RiverbendContact/",
+    "hasManagementTeamProfile": [
+      "https://riverbend-energy.example/TeamProfile/Riverbend/Management/2026/"
+    ],
+    "hasBoardProfile": [
+      "https://riverbend-energy.example/TeamProfile/Riverbend/Board/2026/"
+    ],
+    "sectorServed": [
+      "https://codelist.commonapproach.org/IRISImpactCategory#Energy",
+      "https://codelist.commonapproach.org/IRISImpactCategory#Climate"
+    ],
+    "localityServed": [
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc3",
+      "https://codelist.commonapproach.org/LocalityStatsCan#loc4"
+    ],
+    "provinceTerritoryServed": [
+      "https://codelist.commonapproach.org/ProvinceTerritory#ON"
+    ],
+    "primaryPopulationServed": [
+      "https://codelist.commonapproach.org/PopulationServed#ps15",
+      "https://codelist.commonapproach.org/PopulationServed#ps25"
+    ],
+    "organizationType": [
+      "https://codelist.commonapproach.org/OrgTypeGOC#Cooperative"
+    ],
+    "hasFundingStatus": [
+      "https://riverbend-energy.example/FundingStatus/Riverbend/2026/"
+    ]
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Person",
+    "@id": "https://riverbend-energy.example/Person/RiverbendContact/",
+    "givenName": "Sam",
+    "familyName": "Lindqvist",
+    "hasEmail": "sam.lindqvist@riverbend-energy.example"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://riverbend-energy.example/TeamProfile/Riverbend/Management/2026/",
+    "hasTeamSize": 6,
+    "hasEDGSize": 3,
+    "hasEDGProfile": [
+      "https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg3/",
+      "https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg10/"
+    ],
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg3/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasSize": 1,
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 2,
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:TeamProfile",
+    "@id": "https://riverbend-energy.example/TeamProfile/Riverbend/Board/2026/",
+    "hasTeamSize": 9,
+    "hasEDGSize": 5,
+    "hasEDGProfile": [
+      "https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg4/",
+      "https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg6/",
+      "https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg10/"
+    ],
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg4/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4",
+    "hasSize": 1,
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg6/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6",
+    "hasSize": 1,
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:EDGProfile",
+    "@id": "https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg10/",
+    "forEDG": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasSize": 3,
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:FundingStatus",
+    "@id": "https://riverbend-energy.example/FundingStatus/Riverbend/2026/",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/",
+    "hasFundingState": "https://codelist.commonapproach.org/FundingState#funded",
+    "forFunder": "Example Social Finance Fund",
+    "hasDescription": "Investment from the Example Social Finance Fund.",
+    "reportedDate": "2026-02-27T00:00:00-05:00"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "sff:ReportInfo",
+    "@id": "https://riverbend-energy.example/ReportInfo/Riverbend/2025/",
+    "hasName": "Riverbend Community Energy Co-operative impact report 2025",
+    "startedAtTime": "2025-01-01T00:00:00-05:00",
+    "endedAtTime": "2025-12-31T23:59:59-05:00",
+    "forOrganization": "https://riverbend-energy.example/Organization/Riverbend/"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps15",
+    "hasName": "People Living on Low Income"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/PopulationServed#ps25",
+    "hasName": "General Population"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3",
+    "hasName": "First Generation Immigrants, Refugees & Newcomers"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10",
+    "hasName": "Women (Cisgender and Transgender)"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4",
+    "hasName": "Indigenous Peoples: First Nations"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "cids:Characteristic",
+    "@id": "https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6",
+    "hasName": "Indigenous Peoples: Métis"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@type": "i72:Population",
+    "@id": "https://riverbend-energy.example/Population/MemberHouseholds",
+    "label": "Member households"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@id": "https://ontology.commonapproach.org/cids#tonne",
+    "label": "Tonne",
+    "@type": "i72:Singular_unit",
+    "i72:symbol": "t"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@id": "https://ontology.commonapproach.org/cids#megawattHour",
+    "label": "Megawatt-hour",
+    "@type": "i72:Unit_multiplication",
+    "i72:symbol": "MWh"
+  },
+  {
+    "@context": [
+      "https://ontology.commonapproach.org/contexts/cidsContext.jsonld",
+      "https://ontology.commonapproach.org/contexts/sffContext.jsonld"
+    ],
+    "@id": "https://ontology.commonapproach.org/cids#countUnit",
+    "label": "Count",
+    "@type": "i72:Cardinality_unit",
+    "i72:symbol": "count"
+  }
+]

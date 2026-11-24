@@ -1,0 +1,319 @@
+[
+  {
+    "id": "V01-indicator-multiple-outcomes",
+    "category": "valid",
+    "title": "One Indicator linked to several Outcomes",
+    "path": "valid/V01-indicator-multiple-outcomes",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V02-stable-uris",
+    "category": "valid",
+    "title": "IRIs that must survive unchanged",
+    "path": "valid/V02-stable-uris",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V03-literal-fidelity",
+    "category": "valid",
+    "title": "Text, numbers and dates that must survive unchanged",
+    "path": "valid/V03-literal-fidelity",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V04-uncommon-properties",
+    "category": "valid",
+    "title": "Less common CIDS properties",
+    "path": "valid/V04-uncommon-properties",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V05-sff-full",
+    "category": "valid",
+    "title": "Full, realistic SFF capsule for one organization",
+    "path": "valid/V05-sff-full",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V06-portfolio-incremental-import",
+    "category": "valid",
+    "title": "Three organizations, imported in two steps",
+    "path": "valid/V06-portfolio-incremental-import",
+    "files": [
+      "part-1-up-to-2024.jsonld",
+      "part-2-2025.jsonld",
+      "expected-after-both-parts.jsonld"
+    ]
+  },
+  {
+    "id": "V07-quarterly-reporting",
+    "category": "valid",
+    "title": "A portfolio organization that reports by quarter",
+    "path": "valid/V07-quarterly-reporting",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V08-mismatched-year-ends",
+    "category": "valid",
+    "title": "Organizations with different fiscal year ends",
+    "path": "valid/V08-mismatched-year-ends",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V09-bcorp-indicator-hascode",
+    "category": "valid",
+    "title": "B Corp assessment as an Indicator with hasCode",
+    "path": "valid/V09-bcorp-indicator-hascode",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V10-essential-tier",
+    "category": "valid",
+    "title": "Full, realistic Essential tier capsule",
+    "path": "valid/V10-essential-tier",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "V11-full-tier",
+    "category": "valid",
+    "title": "Full, realistic Full tier capsule",
+    "path": "valid/V11-full-tier",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I01-address-missing-postal-code",
+    "category": "invalid",
+    "title": "Address with no postal code",
+    "path": "invalid/I01-address-missing-postal-code",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I02-report-value-missing-number",
+    "category": "invalid",
+    "title": "IndicatorReport value with no number",
+    "path": "invalid/I02-report-value-missing-number",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I03-organization-id-missing-values",
+    "category": "invalid",
+    "title": "OrganizationID with no identifier and no issuer",
+    "path": "invalid/I03-organization-id-missing-values",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I04-invalid-date",
+    "category": "invalid",
+    "title": "\"Invalid date\" as a report's end date",
+    "path": "invalid/I04-invalid-date",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I05-report-without-indicator",
+    "category": "invalid",
+    "title": "IndicatorReport not linked to any Indicator",
+    "path": "invalid/I05-report-without-indicator",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I06-undefined-indicator",
+    "category": "invalid",
+    "title": "Link to an Indicator that isn't in the capsule",
+    "path": "invalid/I06-undefined-indicator",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I07-empty-report-info",
+    "category": "invalid",
+    "title": "ReportInfo with only an organization",
+    "path": "invalid/I07-empty-report-info",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I08-indicator-missing-unit-description",
+    "category": "invalid",
+    "title": "Indicator with no unit description",
+    "path": "invalid/I08-indicator-missing-unit-description",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I09-report-for-two-indicators",
+    "category": "invalid",
+    "title": "One IndicatorReport claimed by two Indicators",
+    "path": "invalid/I09-report-for-two-indicators",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I10-negative-team-size",
+    "category": "invalid",
+    "title": "Negative team size",
+    "path": "invalid/I10-negative-team-size",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I11-organization-missing-legal-name",
+    "category": "invalid",
+    "title": "Organization with no legal name",
+    "path": "invalid/I11-organization-missing-legal-name",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I12-invalid-reported-date",
+    "category": "invalid",
+    "title": "\"Invalid date\" as an OrganizationProfile's reportedDate",
+    "path": "invalid/I12-invalid-reported-date",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I13-undefined-outcome",
+    "category": "invalid",
+    "title": "Link to an Outcome that isn't in the capsule",
+    "path": "invalid/I13-undefined-outcome",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "I14-indicator-missing-organization",
+    "category": "invalid",
+    "title": "Indicator with no organization",
+    "path": "invalid/I14-indicator-missing-organization",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ01-missing-address",
+    "category": "data-quality",
+    "title": "Organization with no address",
+    "path": "data-quality/DQ01-missing-address",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ02-missing-primary-contact",
+    "category": "data-quality",
+    "title": "Organization profile with no primary contact",
+    "path": "data-quality/DQ02-missing-primary-contact",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ03-indicator-without-reports",
+    "category": "data-quality",
+    "title": "Indicator with no reports",
+    "path": "data-quality/DQ03-indicator-without-reports",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ04-missing-organization-id",
+    "category": "data-quality",
+    "title": "Organization with no identifier",
+    "path": "data-quality/DQ04-missing-organization-id",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ05-malformed-business-number",
+    "category": "data-quality",
+    "title": "Business number in the wrong format",
+    "path": "data-quality/DQ05-malformed-business-number",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ06-outlier-value",
+    "category": "data-quality",
+    "title": "B Impact score far too high",
+    "path": "data-quality/DQ06-outlier-value",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ07-time-series-gap",
+    "category": "data-quality",
+    "title": "Missing year in a time series",
+    "path": "data-quality/DQ07-time-series-gap",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ08-empty-numerical-value",
+    "category": "data-quality",
+    "title": "Empty value in an IndicatorReport",
+    "path": "data-quality/DQ08-empty-numerical-value",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ09-address-fields-swapped",
+    "category": "data-quality",
+    "title": "Postal code and country swapped",
+    "path": "data-quality/DQ09-address-fields-swapped",
+    "files": [
+      "capsule.jsonld"
+    ]
+  },
+  {
+    "id": "DQ10-unknown-unit",
+    "category": "data-quality",
+    "title": "Unit of measure that isn't defined anywhere",
+    "path": "data-quality/DQ10-unknown-unit",
+    "files": [
+      "capsule.jsonld"
+    ]
+  }
+]

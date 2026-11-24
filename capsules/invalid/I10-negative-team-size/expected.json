@@ -1,0 +1,22 @@
+{
+  "id": "I10-negative-team-size",
+  "category": "invalid",
+  "title": "Negative team size",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/TeamProfile/Tamarack/Management/2025/",
+            "resultPath": "sff:hasTeamSize",
+            "sourceConstraintComponent": "sh:DatatypeConstraintComponent",
+            "explanation": "hasTeamSize must be a whole number of 0 or more."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

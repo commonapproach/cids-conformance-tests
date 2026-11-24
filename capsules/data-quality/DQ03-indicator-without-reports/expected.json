@@ -1,0 +1,21 @@
+{
+  "id": "DQ03-indicator-without-reports",
+  "category": "data-quality",
+  "title": "Indicator with no reports",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-INDICATOR-NO-REPORTS",
+          "focusNode": "https://tamarack-youth.example/Indicator/MentorHoursLogged/",
+          "resultPath": "cids:hasIndicatorReport",
+          "explanation": "An Indicator with no reports carries no data. Usually the reports were lost or never entered."
+        }
+      ]
+    }
+  }
+}

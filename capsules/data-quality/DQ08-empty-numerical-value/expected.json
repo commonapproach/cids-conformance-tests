@@ -1,0 +1,21 @@
+{
+  "id": "DQ08-empty-numerical-value",
+  "category": "data-quality",
+  "title": "Empty value in an IndicatorReport",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-NON-NUMERIC-VALUE",
+          "focusNode": "https://tamarack-youth.example/IndicatorReport/BImpactScore/2022 / i72:value",
+          "resultPath": "i72:hasNumericalValue",
+          "explanation": "The value is empty. Either remove the report or fill in the number."
+        }
+      ]
+    }
+  }
+}

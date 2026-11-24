@@ -1,0 +1,21 @@
+{
+  "id": "DQ09-address-fields-swapped",
+  "category": "data-quality",
+  "title": "Postal code and country swapped",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-ADDRESS-FIELDS-SWAPPED",
+          "focusNode": "https://tamarack-youth.example/Address/Tamarack/",
+          "resultPath": "cids:postalCode",
+          "explanation": "Both fields are plain strings, so SHACL can't tell they are in the wrong places."
+        }
+      ]
+    }
+  }
+}

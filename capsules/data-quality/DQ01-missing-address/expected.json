@@ -1,0 +1,21 @@
+{
+  "id": "DQ01-missing-address",
+  "category": "data-quality",
+  "title": "Organization with no address",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": [
+        {
+          "code": "DQ-MISSING-ADDRESS",
+          "focusNode": "https://tamarack-youth.example/Organization/Tamarack/",
+          "resultPath": "cids:hasAddress",
+          "explanation": "hasAddress is optional in SHACL, but a reporting organization without an address is almost always a mistake."
+        }
+      ]
+    }
+  }
+}

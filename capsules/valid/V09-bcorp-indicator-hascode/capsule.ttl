@@ -1,0 +1,185 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix sff: <https://ontology.commonapproach.org/sff#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://driftwood-gear.example/ReportInfo/Driftwood/2025/> a sff:ReportInfo ;
+    org:hasName "Driftwood Outdoor Gear Inc. impact report 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> .
+
+<https://cids-conformance.example/Code/BImpactAssessmentOverallScore> a cids:Code ;
+    org:hasName "B Impact Assessment overall score" ;
+    schema:codeValue "BIA-OVERALL" ;
+    cids:definedBy <https://cids-conformance.example/Organization/BLab/> ;
+    cids:hasDescription "The overall score a company earns on the B Impact Assessment. Scores run from 0 to 200; 80 or more is needed for B Corp certification." .
+
+<https://cids-conformance.example/Organization/BLab/> a cids:Organization,
+        cids:StandardsOrganization ;
+    org:hasLegalName "B Lab" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8> a cids:Characteristic ;
+    org:hasName "Other Racialized Peoples" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps25> a cids:Characteristic ;
+    org:hasName "General Population" .
+
+<https://driftwood-gear.example/Address/Driftwood/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Victoria" ;
+    cids:addressRegion "BC" ;
+    cids:postalCode "V8W 0A2" ;
+    cids:streetAddress "18 Sample Quay" .
+
+<https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-31T00:00:00-08:00"^^xsd:dateTime .
+
+<https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg8/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg8> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-31T00:00:00-08:00"^^xsd:dateTime .
+
+<https://driftwood-gear.example/EDGProfile/Driftwood/Management/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-31T00:00:00-08:00"^^xsd:dateTime .
+
+<https://driftwood-gear.example/FundingStatus/Driftwood/2026/> a sff:FundingStatus ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2026-01-31T00:00:00-08:00"^^xsd:dateTime .
+
+<https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "84.6" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment overall score 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forIndicator <https://driftwood-gear.example/Indicator/BImpactAssessment/> ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> .
+
+<https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "86.2" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment overall score 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forIndicator <https://driftwood-gear.example/Indicator/BImpactAssessment/> ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> .
+
+<https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "89.0" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment overall score 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forIndicator <https://driftwood-gear.example/Indicator/BImpactAssessment/> ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> .
+
+<https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "91.3" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment overall score 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forIndicator <https://driftwood-gear.example/Indicator/BImpactAssessment/> ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> .
+
+<https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "92.8" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment overall score 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-08:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-08:00"^^xsd:dateTime ;
+    cids:forIndicator <https://driftwood-gear.example/Indicator/BImpactAssessment/> ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> .
+
+<https://driftwood-gear.example/OrganizationID/Driftwood/> a org:OrganizationID ;
+    org:hasIdentifier "912345678RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> .
+
+<https://driftwood-gear.example/OrganizationProfile/Driftwood/2026/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> ;
+    sff:hasBoardProfile <https://driftwood-gear.example/TeamProfile/Driftwood/Board/2026/> ;
+    sff:hasFundingStatus <https://driftwood-gear.example/FundingStatus/Driftwood/2026/> ;
+    sff:hasManagementTeamProfile <https://driftwood-gear.example/TeamProfile/Driftwood/Management/2026/> ;
+    sff:hasPrimaryContact <https://driftwood-gear.example/Person/DriftwoodContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc1> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#forProfit> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps25> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#BC> ;
+    sff:reportedDate "2026-01-31T00:00:00-08:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Climate>,
+        <https://codelist.commonapproach.org/IRISImpactCategory#Waste> .
+
+<https://driftwood-gear.example/Person/DriftwoodContact/> a cids:Person ;
+    ic:hasEmail "riley.chen@driftwood-gear.example" ;
+    foaf:familyName "Chen" ;
+    foaf:givenName "Riley" .
+
+<https://driftwood-gear.example/TeamProfile/Driftwood/Board/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg10/>,
+        <https://driftwood-gear.example/EDGProfile/Driftwood/Board/2026/edg8/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "5"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-31T00:00:00-08:00"^^xsd:dateTime .
+
+<https://driftwood-gear.example/TeamProfile/Driftwood/Management/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://driftwood-gear.example/EDGProfile/Driftwood/Management/2026/edg10/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "4"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-01-31T00:00:00-08:00"^^xsd:dateTime .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> a cids:Characteristic ;
+    org:hasName "Women (Cisgender and Transgender)" .
+
+<https://driftwood-gear.example/Outcome/ResponsibleBusiness/> a cids:Outcome ;
+    org:hasName "Responsible business practices" ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasDescription "The company is run in a way that benefits workers, community and environment." ;
+    cids:hasIndicator <https://driftwood-gear.example/Indicator/BImpactAssessment/> .
+
+<https://metadata.un.org/sdg/12> a cids:Theme ;
+    org:hasName "Goal 12: Responsible consumption and production" ;
+    cids:hasDescription "Ensure sustainable consumption and production patterns" .
+
+<https://driftwood-gear.example/Indicator/BImpactAssessment/> a cids:Indicator ;
+    i72:unit_of_measure cids:scoreUnit ;
+    org:hasName "B Impact Assessment overall score" ;
+    cids:forOrganization <https://driftwood-gear.example/Organization/Driftwood/> ;
+    cids:forOutcome <https://driftwood-gear.example/Outcome/ResponsibleBusiness/> ;
+    cids:forTheme <https://metadata.un.org/sdg/12> ;
+    cids:hasCode <https://cids-conformance.example/Code/BImpactAssessmentOverallScore> ;
+    cids:hasDescription "Overall score from the company's B Impact Assessment (0-200 scale)." ;
+    cids:hasIndicatorReport <https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2021>,
+        <https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2022>,
+        <https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2023>,
+        <https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2024>,
+        <https://driftwood-gear.example/IndicatorReport/BImpactAssessment/2025> ;
+    cids:unitDescription "Points" .
+
+<https://driftwood-gear.example/Organization/Driftwood/> a cids:Organization ;
+    org:hasID <https://driftwood-gear.example/OrganizationID/Driftwood/> ;
+    org:hasLegalName "Driftwood Outdoor Gear Inc." ;
+    cids:hasAddress <https://driftwood-gear.example/Address/Driftwood/> ;
+    cids:hasIndicator <https://driftwood-gear.example/Indicator/BImpactAssessment/> ;
+    cids:hasOutcome <https://driftwood-gear.example/Outcome/ResponsibleBusiness/> ;
+    sff:hasOrganizationProfile <https://driftwood-gear.example/OrganizationProfile/Driftwood/2026/> .
+

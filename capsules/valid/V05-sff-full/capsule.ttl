@@ -1,0 +1,425 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sff: <https://ontology.commonapproach.org/sff#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://riverbend-energy.example/ReportInfo/Riverbend/2025/> a sff:ReportInfo ;
+    org:hasName "Riverbend Community Energy Co-operative impact report 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> a cids:Characteristic ;
+    org:hasName "First Generation Immigrants, Refugees & Newcomers" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4> a cids:Characteristic ;
+    org:hasName "Indigenous Peoples: First Nations" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6> a cids:Characteristic ;
+    org:hasName "Indigenous Peoples: Métis" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps15> a cids:Characteristic ;
+    org:hasName "People Living on Low Income" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps25> a cids:Characteristic ;
+    org:hasName "General Population" .
+
+<https://riverbend-energy.example/Address/Riverbend/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Peterborough" ;
+    cids:addressRegion "ON" ;
+    cids:postalCode "K9J 0B2" ;
+    cids:streetAddress "25 Placeholder Lane" .
+
+<https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "3"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg4/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg6/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg6> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg3/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg3> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://riverbend-energy.example/FundingStatus/Riverbend/2026/> a sff:FundingStatus ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://riverbend-energy.example/IndicatorReport/MembersServed/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "640" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Member households served 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/MembersServed/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/MembersServed/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "702" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Member households served 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/MembersServed/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/MembersServed/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "765" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Member households served 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/MembersServed/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/MembersServed/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "810" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Member households served 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/MembersServed/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/MembersServed/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "872" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Member households served 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/MembersServed/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/MembersServed/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "915" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Member households served 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/MembersServed/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/MembersServed/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "968" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Member households served 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/MembersServed/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/RenewableMWh/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1210" ;
+            i72:unit_of_measure cids:megawattHour ] ;
+    org:hasName "Renewable electricity generated 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/RenewableMWh/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1340" ;
+            i72:unit_of_measure cids:megawattHour ] ;
+    org:hasName "Renewable electricity generated 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/RenewableMWh/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1395" ;
+            i72:unit_of_measure cids:megawattHour ] ;
+    org:hasName "Renewable electricity generated 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/RenewableMWh/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1502" ;
+            i72:unit_of_measure cids:megawattHour ] ;
+    org:hasName "Renewable electricity generated 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/RenewableMWh/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1610" ;
+            i72:unit_of_measure cids:megawattHour ] ;
+    org:hasName "Renewable electricity generated 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/RenewableMWh/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1688" ;
+            i72:unit_of_measure cids:megawattHour ] ;
+    org:hasName "Renewable electricity generated 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/RenewableMWh/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "1745" ;
+            i72:unit_of_measure cids:megawattHour ] ;
+    org:hasName "Renewable electricity generated 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "410" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of GHG emissions avoided 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "455" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of GHG emissions avoided 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "498" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of GHG emissions avoided 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "540" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of GHG emissions avoided 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "602" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of GHG emissions avoided 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "655" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of GHG emissions avoided 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2025> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "701" ;
+            i72:unit_of_measure cids:tonne ] ;
+    org:hasName "Tonnes of GHG emissions avoided 2025" ;
+    prov:endedAtTime "2025-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/OrganizationID/Riverbend/> a org:OrganizationID ;
+    org:hasIdentifier "234567891RC0001" ;
+    org:issuedBy <https://codelist.commonapproach.org/CanadianCorporateRegistries#cra> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> .
+
+<https://riverbend-energy.example/OrganizationProfile/Riverbend/2026/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> ;
+    sff:hasBoardProfile <https://riverbend-energy.example/TeamProfile/Riverbend/Board/2026/> ;
+    sff:hasFundingStatus <https://riverbend-energy.example/FundingStatus/Riverbend/2026/> ;
+    sff:hasManagementTeamProfile <https://riverbend-energy.example/TeamProfile/Riverbend/Management/2026/> ;
+    sff:hasPrimaryContact <https://riverbend-energy.example/Person/RiverbendContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc3>,
+        <https://codelist.commonapproach.org/LocalityStatsCan#loc4> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#Cooperative> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps15>,
+        <https://codelist.commonapproach.org/PopulationServed#ps25> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#ON> ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Climate>,
+        <https://codelist.commonapproach.org/IRISImpactCategory#Energy> .
+
+<https://riverbend-energy.example/Person/RiverbendContact/> a cids:Person ;
+    ic:hasEmail "sam.lindqvist@riverbend-energy.example" ;
+    foaf:familyName "Lindqvist" ;
+    foaf:givenName "Sam" .
+
+<https://riverbend-energy.example/Population/MemberHouseholds> a i72:Population ;
+    rdfs:label "Member households" .
+
+<https://riverbend-energy.example/TeamProfile/Riverbend/Board/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg10/>,
+        <https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg4/>,
+        <https://riverbend-energy.example/EDGProfile/Riverbend/Board/2026/edg6/> ;
+    sff:hasEDGSize "5"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "9"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://riverbend-energy.example/TeamProfile/Riverbend/Management/2026/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg10/>,
+        <https://riverbend-energy.example/EDGProfile/Riverbend/Management/2026/edg3/> ;
+    sff:hasEDGSize "3"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "6"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2026-02-27T00:00:00-05:00"^^xsd:dateTime .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> a cids:Characteristic ;
+    org:hasName "Women (Cisgender and Transgender)" .
+
+<https://metadata.un.org/sdg/13> a cids:Theme ;
+    org:hasName "Goal 13: Climate action" ;
+    cids:hasDescription "Take urgent action to combat climate change and its impacts" .
+
+<https://metadata.un.org/sdg/7> a cids:Theme ;
+    org:hasName "Goal 7: Affordable and clean energy" ;
+    cids:hasDescription "Ensure access to affordable, reliable, sustainable and modern energy for all" .
+
+<https://riverbend-energy.example/Outcome/AffordableCleanEnergy/> a cids:Outcome ;
+    org:hasName "More affordable clean energy" ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> ;
+    cids:forTheme <https://metadata.un.org/sdg/7> ;
+    cids:hasDescription "Members get renewable electricity at or below grid prices." ;
+    cids:hasIndicator <https://riverbend-energy.example/Indicator/MembersServed/>,
+        <https://riverbend-energy.example/Indicator/RenewableMWh/> .
+
+<https://riverbend-energy.example/Outcome/ReducedGHGEmissions/> a cids:Outcome ;
+    org:hasName "Reduced greenhouse gas emissions" ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> ;
+    cids:forTheme <https://metadata.un.org/sdg/13> ;
+    cids:hasDescription "Members' homes and the local grid emit less greenhouse gas." ;
+    cids:hasIndicator <https://riverbend-energy.example/Indicator/RenewableMWh/>,
+        <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> .
+
+cids:countUnit a i72:Cardinality_unit ;
+    rdfs:label "Count" ;
+    i72:symbol "count" .
+
+cids:megawattHour a i72:Unit_multiplication ;
+    rdfs:label "Megawatt-hour" ;
+    i72:symbol "MWh" .
+
+cids:tonne a i72:Singular_unit ;
+    rdfs:label "Tonne" ;
+    i72:symbol "t" .
+
+<https://riverbend-energy.example/Indicator/MembersServed/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Member households served" ;
+    cids:describesPopulation <https://riverbend-energy.example/Population/MemberHouseholds> ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> ;
+    cids:forOutcome <https://riverbend-energy.example/Outcome/AffordableCleanEnergy/> ;
+    cids:forTheme <https://metadata.un.org/sdg/7> ;
+    cids:hasDescription "Households buying electricity through the co-op at year end." ;
+    cids:hasIndicatorReport <https://riverbend-energy.example/IndicatorReport/MembersServed/2019>,
+        <https://riverbend-energy.example/IndicatorReport/MembersServed/2020>,
+        <https://riverbend-energy.example/IndicatorReport/MembersServed/2021>,
+        <https://riverbend-energy.example/IndicatorReport/MembersServed/2022>,
+        <https://riverbend-energy.example/IndicatorReport/MembersServed/2023>,
+        <https://riverbend-energy.example/IndicatorReport/MembersServed/2024>,
+        <https://riverbend-energy.example/IndicatorReport/MembersServed/2025> ;
+    cids:unitDescription "Households" .
+
+<https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> a cids:Indicator ;
+    i72:unit_of_measure cids:tonne ;
+    org:hasName "Tonnes of GHG emissions avoided" ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> ;
+    cids:forOutcome <https://riverbend-energy.example/Outcome/ReducedGHGEmissions/> ;
+    cids:forTheme <https://metadata.un.org/sdg/13> ;
+    cids:hasDescription "Tonnes of CO2-equivalent avoided compared with grid electricity." ;
+    cids:hasIndicatorReport <https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2019>,
+        <https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2020>,
+        <https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2021>,
+        <https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2022>,
+        <https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2023>,
+        <https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2024>,
+        <https://riverbend-energy.example/IndicatorReport/TonnesGHGAvoided/2025> ;
+    cids:unitDescription "Tonnes CO2e" .
+
+<https://riverbend-energy.example/Indicator/RenewableMWh/> a cids:Indicator ;
+    i72:unit_of_measure cids:megawattHour ;
+    org:hasName "Renewable electricity generated" ;
+    cids:forOrganization <https://riverbend-energy.example/Organization/Riverbend/> ;
+    cids:forOutcome <https://riverbend-energy.example/Outcome/AffordableCleanEnergy/>,
+        <https://riverbend-energy.example/Outcome/ReducedGHGEmissions/> ;
+    cids:forTheme <https://metadata.un.org/sdg/13>,
+        <https://metadata.un.org/sdg/7> ;
+    cids:hasDescription "Megawatt-hours generated by the co-op's solar arrays." ;
+    cids:hasIndicatorReport <https://riverbend-energy.example/IndicatorReport/RenewableMWh/2019>,
+        <https://riverbend-energy.example/IndicatorReport/RenewableMWh/2020>,
+        <https://riverbend-energy.example/IndicatorReport/RenewableMWh/2021>,
+        <https://riverbend-energy.example/IndicatorReport/RenewableMWh/2022>,
+        <https://riverbend-energy.example/IndicatorReport/RenewableMWh/2023>,
+        <https://riverbend-energy.example/IndicatorReport/RenewableMWh/2024>,
+        <https://riverbend-energy.example/IndicatorReport/RenewableMWh/2025> ;
+    cids:unitDescription "MWh" .
+
+<https://riverbend-energy.example/Organization/Riverbend/> a cids:Organization ;
+    org:hasID <https://riverbend-energy.example/OrganizationID/Riverbend/> ;
+    org:hasLegalName "Riverbend Community Energy Co-operative" ;
+    cids:hasAddress <https://riverbend-energy.example/Address/Riverbend/> ;
+    cids:hasIndicator <https://riverbend-energy.example/Indicator/MembersServed/>,
+        <https://riverbend-energy.example/Indicator/RenewableMWh/>,
+        <https://riverbend-energy.example/Indicator/TonnesGHGAvoided/> ;
+    cids:hasOutcome <https://riverbend-energy.example/Outcome/AffordableCleanEnergy/>,
+        <https://riverbend-energy.example/Outcome/ReducedGHGEmissions/> ;
+    sff:hasOrganizationProfile <https://riverbend-energy.example/OrganizationProfile/Riverbend/2026/> .
+

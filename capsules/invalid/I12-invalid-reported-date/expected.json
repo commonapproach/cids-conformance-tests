@@ -1,0 +1,22 @@
+{
+  "id": "I12-invalid-reported-date",
+  "category": "invalid",
+  "title": "\"Invalid date\" as an OrganizationProfile's reportedDate",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": [
+          {
+            "severity": "Violation",
+            "focusNode": "https://tamarack-youth.example/OrganizationProfile/Tamarack/2025/",
+            "resultPath": "sff:reportedDate",
+            "sourceConstraintComponent": "sh:DatatypeConstraintComponent",
+            "explanation": "reportedDate must be an xsd:dateTime such as 2025-03-31T00:00:00-04:00."
+          }
+        ]
+      },
+      "dq": null
+    }
+  }
+}

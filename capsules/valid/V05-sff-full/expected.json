@@ -1,0 +1,14 @@
+{
+  "id": "V05-sff-full",
+  "category": "valid",
+  "title": "Full, realistic SFF capsule for one organization",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}

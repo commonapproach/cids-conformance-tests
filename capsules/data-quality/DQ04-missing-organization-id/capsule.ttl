@@ -1,0 +1,262 @@
+@prefix cids: <https://ontology.commonapproach.org/cids#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix i72: <http://ontology.eil.utoronto.ca/ISO21972/iso21972#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/tove/icontact#> .
+@prefix org: <http://ontology.eil.utoronto.ca/tove/organization#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sff: <https://ontology.commonapproach.org/sff#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://tamarack-youth.example/ReportInfo/Tamarack/2024/> a sff:ReportInfo ;
+    org:hasName "Tamarack Youth Employment Network impact report 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2> a cids:Characteristic ;
+    org:hasName "Black People" .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4> a cids:Characteristic ;
+    org:hasName "Indigenous Peoples: First Nations" .
+
+<https://codelist.commonapproach.org/PopulationServed#ps24> a cids:Characteristic ;
+    org:hasName "Youth (Ages 15-24)" .
+
+<https://tamarack-youth.example/Address/Tamarack/> a cids:Address ;
+    cids:addressCountry "Canada" ;
+    cids:addressLocality "Sudbury" ;
+    cids:addressRegion "ON" ;
+    cids:postalCode "P3E 0A1" ;
+    cids:streetAddress "410 Sample Road" .
+
+<https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "3"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime .
+
+<https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg2/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg2> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime .
+
+<https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg10/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> ;
+    sff:hasSize "2"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime .
+
+<https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg4/> a sff:EDGProfile ;
+    sff:forEDG <https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg4> ;
+    sff:hasSize "1"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime .
+
+<https://tamarack-youth.example/FundingStatus/Tamarack/2025/> a sff:FundingStatus ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> ;
+    cids:hasDescription "Investment from the Example Social Finance Fund." ;
+    sff:forFunder "Example Social Finance Fund" ;
+    sff:hasFundingState <https://codelist.commonapproach.org/FundingState#funded> ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime .
+
+<https://tamarack-youth.example/IndicatorReport/BImpactScore/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "82.4" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment score 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/BImpactScore/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/BImpactScore/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "85.1" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment score 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/BImpactScore/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/BImpactScore/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "88.9" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment score 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/BImpactScore/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/BImpactScore/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "90.2" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment score 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/BImpactScore/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/BImpactScore/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "93.6" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment score 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/BImpactScore/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/BImpactScore/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "95.0" ;
+            i72:unit_of_measure cids:scoreUnit ] ;
+    org:hasName "B Impact Assessment score 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/BImpactScore/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2019> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "112" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Youth placed in jobs 2019" ;
+    prov:endedAtTime "2019-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2019-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2020> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "126" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Youth placed in jobs 2020" ;
+    prov:endedAtTime "2020-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2020-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2021> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "131" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Youth placed in jobs 2021" ;
+    prov:endedAtTime "2021-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2021-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2022> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "148" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Youth placed in jobs 2022" ;
+    prov:endedAtTime "2022-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2022-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2023> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "155" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Youth placed in jobs 2023" ;
+    prov:endedAtTime "2023-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2023-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2024> a cids:IndicatorReport ;
+    i72:value [ a i72:Measure ;
+            i72:hasNumericalValue "163" ;
+            i72:unit_of_measure cids:countUnit ] ;
+    org:hasName "Youth placed in jobs 2024" ;
+    prov:endedAtTime "2024-12-31T23:59:59-05:00"^^xsd:dateTime ;
+    prov:startedAtTime "2024-01-01T00:00:00-05:00"^^xsd:dateTime ;
+    cids:forIndicator <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> .
+
+<https://tamarack-youth.example/OrganizationProfile/Tamarack/2025/> a sff:OrganizationProfile ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> ;
+    sff:hasBoardProfile <https://tamarack-youth.example/TeamProfile/Tamarack/Board/2025/> ;
+    sff:hasFundingStatus <https://tamarack-youth.example/FundingStatus/Tamarack/2025/> ;
+    sff:hasManagementTeamProfile <https://tamarack-youth.example/TeamProfile/Tamarack/Management/2025/> ;
+    sff:hasPrimaryContact <https://tamarack-youth.example/Person/TamarackContact/> ;
+    sff:localityServed <https://codelist.commonapproach.org/LocalityStatsCan#loc2> ;
+    sff:organizationType <https://codelist.commonapproach.org/OrgTypeGOC#nonProfit> ;
+    sff:primaryPopulationServed <https://codelist.commonapproach.org/PopulationServed#ps24> ;
+    sff:provinceTerritoryServed <https://codelist.commonapproach.org/ProvinceTerritory#ON> ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime ;
+    sff:sectorServed <https://codelist.commonapproach.org/IRISImpactCategory#Employment> .
+
+<https://tamarack-youth.example/Person/TamarackContact/> a cids:Person ;
+    ic:hasEmail "robin.okafor@tamarack-youth.example" ;
+    foaf:familyName "Okafor" ;
+    foaf:givenName "Robin" .
+
+<https://tamarack-youth.example/TeamProfile/Tamarack/Board/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg10/>,
+        <https://tamarack-youth.example/EDGProfile/Tamarack/Board/2025/edg2/> ;
+    sff:hasEDGSize "4"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "7"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime .
+
+<https://tamarack-youth.example/TeamProfile/Tamarack/Management/2025/> a sff:TeamProfile ;
+    sff:hasEDGProfile <https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg10/>,
+        <https://tamarack-youth.example/EDGProfile/Tamarack/Management/2025/edg4/> ;
+    sff:hasEDGSize "2"^^xsd:nonNegativeInteger ;
+    sff:hasTeamSize "4"^^xsd:nonNegativeInteger ;
+    sff:reportedDate "2025-03-31T00:00:00-04:00"^^xsd:dateTime .
+
+<https://codelist.commonapproach.org/EquityDeservingGroupsESDC#edg10> a cids:Characteristic ;
+    org:hasName "Women (Cisgender and Transgender)" .
+
+<https://metadata.un.org/sdg/8> a cids:Theme ;
+    org:hasName "Goal 8: Decent work and economic growth" ;
+    cids:hasDescription "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all" .
+
+<https://tamarack-youth.example/Outcome/YouthInStableEmployment/> a cids:Outcome ;
+    org:hasName "Youth in stable employment" ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> ;
+    cids:forTheme <https://metadata.un.org/sdg/8> ;
+    cids:hasDescription "Young people facing barriers find and keep stable jobs." ;
+    cids:hasIndicator <https://tamarack-youth.example/Indicator/BImpactScore/>,
+        <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> .
+
+<https://tamarack-youth.example/Indicator/BImpactScore/> a cids:Indicator ;
+    i72:unit_of_measure cids:scoreUnit ;
+    org:hasName "B Impact Assessment score" ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> ;
+    cids:forOutcome <https://tamarack-youth.example/Outcome/YouthInStableEmployment/> ;
+    cids:hasDescription "Overall B Impact Assessment score." ;
+    cids:hasIndicatorReport <https://tamarack-youth.example/IndicatorReport/BImpactScore/2019>,
+        <https://tamarack-youth.example/IndicatorReport/BImpactScore/2020>,
+        <https://tamarack-youth.example/IndicatorReport/BImpactScore/2021>,
+        <https://tamarack-youth.example/IndicatorReport/BImpactScore/2022>,
+        <https://tamarack-youth.example/IndicatorReport/BImpactScore/2023>,
+        <https://tamarack-youth.example/IndicatorReport/BImpactScore/2024> ;
+    cids:unitDescription "Points" .
+
+<https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> a cids:Indicator ;
+    i72:unit_of_measure cids:countUnit ;
+    org:hasName "Youth placed in jobs" ;
+    cids:forOrganization <https://tamarack-youth.example/Organization/Tamarack/> ;
+    cids:forOutcome <https://tamarack-youth.example/Outcome/YouthInStableEmployment/> ;
+    cids:forTheme <https://metadata.un.org/sdg/8> ;
+    cids:hasDescription "Number of program participants who started a job lasting at least three months." ;
+    cids:hasIndicatorReport <https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2019>,
+        <https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2020>,
+        <https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2021>,
+        <https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2022>,
+        <https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2023>,
+        <https://tamarack-youth.example/IndicatorReport/YouthPlacedInJobs/2024> ;
+    cids:unitDescription "Youth" .
+
+<https://tamarack-youth.example/Organization/Tamarack/> a cids:Organization ;
+    org:hasLegalName "Tamarack Youth Employment Network" ;
+    cids:hasAddress <https://tamarack-youth.example/Address/Tamarack/> ;
+    cids:hasIndicator <https://tamarack-youth.example/Indicator/BImpactScore/>,
+        <https://tamarack-youth.example/Indicator/YouthPlacedInJobs/> ;
+    cids:hasOutcome <https://tamarack-youth.example/Outcome/YouthInStableEmployment/> ;
+    sff:hasOrganizationProfile <https://tamarack-youth.example/OrganizationProfile/Tamarack/2025/> .
+

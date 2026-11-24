@@ -1,0 +1,14 @@
+{
+  "id": "V01-indicator-multiple-outcomes",
+  "category": "valid",
+  "title": "One Indicator linked to several Outcomes",
+  "files": {
+    "capsule.jsonld": {
+      "shacl": {
+        "basic": [],
+        "sff": []
+      },
+      "dq": []
+    }
+  }
+}
